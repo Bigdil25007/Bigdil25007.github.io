@@ -21,14 +21,10 @@ onUnmounted(() => {
 
 <template>
   <header :class="{ opaque: isOpaque }">
-    <a
-      id="ButtonSideMenu"
-      href="index.php#home"
-      class="material-symbols-outlined"
-    >
-      home
+    <a id="boutonAccueil" href="/">
+      <img src="/icons/home.svg?url" alt="Home button">
     </a>
-    <ul>
+    <ul class="nav">
       <li><a href="index.php">projets</a></li>
       <li><a href="index.php#">compétences</a></li>
       <li><a href="index.php#">parcours</a></li>
@@ -41,53 +37,68 @@ onUnmounted(() => {
 header {
   position: fixed;
   display: flex;
+  align-items: center;
 
   top: 0;
   left: 0;
   z-index: 1;
 
   width: 100%;
-  height: 60px;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 1em;
+  height: 10%;
   background-color: transparent;
-  transition: background-color 0.3s ease-in-out;
+  transition: all 0.4s cubic-bezier(.71, .15, .17, .77);
 
-  &>ul {
+  #boutonAccueil {
+    flex: 0 1 33%;
+    margin-left: 2.5%;
+
+    & img {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+
+  .nav {
+    margin-bottom: 1%;
+    margin-left: 25%;
+    display: flex;
+    flex: 0 1 40%;
+    flex-flow: row-reverse wrap;
+    justify-content:space-around;
     margin-top: 1.6%;
     list-style-type: none;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    margin-left: 50vh;
 
     &>li a {
         color: white;
-        padding-right: 1vw;
         text-decoration: none;
         text-transform: uppercase;
-        transition: color 0.5s cubic-bezier(.71, .15, .17, .77);
-    }
 
-    &>li a::after {
-        content: "";
-        display: block;
-        height: 0.15rem;
-        background-color: white;
-        margin: auto;
-        width: 0;
-        background: transparent;
-        transition: all 0.5s cubic-bezier(.71, .15, .17, .77);
-    }
+        transition: color 0.4s cubic-bezier(.71, .15, .17, .77);
 
-    &>li a:hover {
-        color: #F54337;
-    }
+        &::after {
+            content: "";
+            display: block;
+            height: 0.15rem;
+            background-color: white;
+            margin: auto;
+            width: 0;
+            background: transparent;
+            transition: all 0.4s cubic-bezier(.71, .15, .17, .77);
+        }
 
-    &>li a:hover::after {
-        background-color: #F54337;
-        width: 95%;
+        &:hover {
+            color: #F54337;
+
+            &::after {
+                background-color: #F54337;
+                width: 95%;
+            }
+        }
+
+        &:hover::after {
+            background-color: #F54337;
+            width: 95%;
+        }
     }
   }
 }
@@ -95,5 +106,6 @@ header {
 header.opaque {
   background-color: rgba(86, 83, 233, 0.9); /* Modifier cette valeur pour ajuster l'opacité */
   backdrop-filter: blur(10px); /* Modifier cette valeur pour ajuster l'effet de glassmorphism */
+  height: 7%;
 }
 </style>
