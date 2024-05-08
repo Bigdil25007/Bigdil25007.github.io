@@ -6,7 +6,9 @@ export default defineConfig({
   plugins: [vue()],
   resolve: {
     alias: {
-      '@component': path.resolve(__dirname, 'src/components')
+      '@component': path.resolve(__dirname, 'src/components'),
+      '@page': path.resolve(__dirname, 'src/pages'),
+      '@particle': path.resolve(__dirname, 'src/particle-js'),
     }
   }
 })
