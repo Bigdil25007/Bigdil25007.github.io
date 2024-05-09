@@ -1,5 +1,6 @@
 <script setup>
 import Header from "@component/Header.vue";
+import Footer from "@component/Footer.vue";
 import Accueil from "@component/Accueil.vue";
 import Caroussel from "@component/caroussel/Caroussel.vue";
 </script>
@@ -7,8 +8,9 @@ import Caroussel from "@component/caroussel/Caroussel.vue";
 <template>
   <Header />
   <Accueil />
-  <div class="separator"></div>
+  <div id="a-propos" class="separator"></div>
   <Caroussel />
+  <Footer />
 </template>
 
 <style scoped>

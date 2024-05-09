@@ -12,9 +12,9 @@ onMounted(() => {
     <section>
         <div id="particles-js"></div>
         <div class="content">
-            <h1>Bilal Oulahal</h1>
-            <h2>Développeur Web - Backend</h2>
-            <button><a href="/#aboutMe"></a>Qui-suis je ?</button>
+            <h1>à la recherche d'un développeur web backend ? </h1>
+            <h2>Ça tombe bien je suis passionné par ce domaine ! Découvrez juste en dessous mon profil</h2>
+            <button><a href="#a-propos"></a>Qui-suis je ?</button>
         </div>
     </section>
 </template>
@@ -36,21 +36,24 @@ section {
 
 .content {
     position: absolute;
-    top: 40%;
-    width: 40%;
-    left: 30%;
+    top: 30%;
+    width: 50%;
+    left: 25%;
     right: auto;
     text-align: center;
     color: white;
     pointer-events: none;
     
     h1 {
-        font-size: 4rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 2.5rem;
         margin-bottom: 1.5rem;
     }
 
     h2 {
-        font-size: 2.5rem;
+        color: rgb(203, 203, 203);
+        font-size: 1.5rem;
         margin-bottom: 1.5rem;
     }
 }
