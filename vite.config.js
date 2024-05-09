@@ -9,6 +9,7 @@ export default defineConfig({
       '@component': path.resolve(__dirname, 'src/components'),
       '@page': path.resolve(__dirname, 'src/pages'),
       '@particle': path.resolve(__dirname, 'src/particle-js'),
+      '@parallax': path.resolve(__dirname, 'src/parallax-js'),
     }
   }
 })

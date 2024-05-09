@@ -1,5 +1,5 @@
 <script setup>
-import Questionnaire from '@component/Questionnaire.vue';
+import Questionnaire from '@component/section/Questionnaire.vue';
 </script>
 
 <template>
