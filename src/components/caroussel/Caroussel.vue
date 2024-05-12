@@ -1,5 +1,6 @@
 <script setup>
 import Slide from "@component/caroussel/Slide.vue";
+import Anchor from '@component/utils/Anchor.vue';
 
 const slides = [
   {
@@ -25,7 +26,8 @@ const slides = [
 </script>
 
 <template>
-  <section id="projets">
+  <Anchor id="projets"/>
+  <section>
     <h2>Mes projets</h2>
     <div id="caroussel" class="carousel slide">
       <div class="carousel-indicators">

@@ -2,9 +2,7 @@
 import { onMounted } from 'vue';
 
 onMounted(() => {
-  particlesJS.load('particles-js', 'src/particle-js/particles.json', function() {
-      console.log('particles.js loaded - callback');
-  });
+  particlesJS.load('particles-js', 'src/particle-js/particles.json');
 });
 </script>
 
@@ -14,7 +12,7 @@ onMounted(() => {
         <div class="content">
             <h1>à la recherche d'un développeur web backend ? </h1>
             <h2>Ça tombe bien je suis passionné par ce domaine ! Découvrez juste en dessous mon profil</h2>
-            <button><a href="#a-propos"></a>Qui-suis je ?</button>
+            <button><a href="#a-propos">Qui-suis je ?</a></button>
         </div>
     </section>
 </template>
@@ -36,7 +34,7 @@ section {
 
 .content {
     position: absolute;
-    top: 30%;
+    top: 40%;
     width: 50%;
     left: 25%;
     right: auto;
@@ -60,16 +58,20 @@ section {
 
 button {
     pointer-events: all;
-    color: white;
-    text-transform: uppercase;
     padding: 0.5rem 1rem;
-    font-size: 1.5rem;
     background-color: #1c385e;
     transition: all 0.3s ease-in-out;
 
     &:hover {
         cursor: pointer;
         background-color: #050a11;
+    }
+
+    a {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        color: white;
+        text-decoration: none;
     }
 }
 </style>

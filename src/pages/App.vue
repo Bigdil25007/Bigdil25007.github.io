@@ -11,7 +11,10 @@ import Parallax from "@component/effet/Parallax.vue";
   <Header />
   <Accueil />
   <Profil />
-  <Parallax src="/background/test.jpg?url"/>
+  <Parallax src="/background/servor.jpg?url">
+    <h1>Test</h1>
+    <p>Actuellement étudiant</p>
+  </Parallax>
   <Caroussel />
   <Footer />
 </template>

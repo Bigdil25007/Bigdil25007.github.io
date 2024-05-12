@@ -2,17 +2,18 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 
 const isOpaque = ref(false);
-const currentSection = ref('')
+const currentSection = ref('');
+
+const sections = ['projets', 'competences', 'parcours', 'a-propos'];
 
 const detectCurrentSection = () => {
-  const sections = ['projets', 'competences', 'parcours', 'a-propos']
+  
 
   for (const id of sections) {
     const element = document.getElementById(id);
-    if (!element) return '';
+    if (!element) continue;
 
     const rect = element.getBoundingClientRect();
-
     if (rect.top <= 0 && rect.bottom >= 0) return id;
   }
 
@@ -28,9 +29,9 @@ const handleScroll = () => {
   currentSection.value = detectCurrentSection();
 }
 
-const linkClasses = (section) => ({
-  active: currentSection.value === section
-})
+const linkClasses = (section) => {
+  return currentSection.value === section ? 'current' : '';
+};
 
 onMounted(() => {
   window.addEventListener('scroll', handleScroll)
@@ -54,6 +55,16 @@ onUnmounted(() => {
 </template>
 
 <style scoped>
+header.opaque {
+  background-color: rgba(86, 83, 233, 0.9); /* Modifier cette valeur pour ajuster l'opacité */
+  backdrop-filter: blur(10px); /* Modifier cette valeur pour ajuster l'effet de glassmorphism */
+  height: 7%;
+}
+
+.current {
+  color: #F54337;
+}
+
 header {
   position: fixed;
   display: flex;
@@ -114,15 +125,5 @@ a {
     text-transform: uppercase;
     color: white;
     text-decoration: none;
-
-  &.current {
-    color: #F54337;
-  }
-}
-
-header.opaque {
-  background-color: rgba(86, 83, 233, 0.9); /* Modifier cette valeur pour ajuster l'opacité */
-  backdrop-filter: blur(10px); /* Modifier cette valeur pour ajuster l'effet de glassmorphism */
-  height: 7%;
 }
 </style>
