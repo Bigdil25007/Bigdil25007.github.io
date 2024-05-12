@@ -7,8 +7,6 @@ const currentSection = ref('');
 const sections = ['projets', 'competences', 'parcours', 'a-propos'];
 
 const detectCurrentSection = () => {
-  
-
   for (const id of sections) {
     const element = document.getElementById(id);
     if (!element) continue;
@@ -58,7 +56,7 @@ onUnmounted(() => {
 header.opaque {
   background-color: rgba(86, 83, 233, 0.9); /* Modifier cette valeur pour ajuster l'opacité */
   backdrop-filter: blur(10px); /* Modifier cette valeur pour ajuster l'effet de glassmorphism */
-  height: 7%;
+  height: 8%;
 }
 
 .current {
@@ -75,7 +73,7 @@ header {
   z-index: 10;
 
   width: 100%;
-  height: 10%;
+  height: 12%;
   background-color: transparent;
   transition: all 0.4s cubic-bezier(.71, .15, .17, .77);
 

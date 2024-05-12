@@ -4,7 +4,7 @@ import Footer from "@component/Footer.vue";
 import Accueil from "@component/section/Accueil.vue";
 import Profil from "@component/section/Profil.vue";
 import Caroussel from "@component/caroussel/Caroussel.vue";
-import Parallax from "@component/effet/Parallax.vue";
+import Parallax from "@component/utils/Parallax.vue";
 </script>
 
 <template>
