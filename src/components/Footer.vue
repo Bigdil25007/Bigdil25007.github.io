@@ -1,11 +1,6 @@
-<script setup>
-import Contact from '@component/section/Contact.vue';
-</script>
-
 <template>
     <footer>
         <span>Contactez-moi !</span>
-        <Contact />
         <div class="barre"></div>
         <ul class="link">
             <a href="https://github.com/Bigdil25007" class="icone-github"> <img src="/icons/github.png?url"></a>

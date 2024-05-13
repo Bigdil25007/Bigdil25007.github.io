@@ -4,6 +4,7 @@ import Footer from "@component/Footer.vue";
 import Accueil from "@component/section/Accueil.vue";
 import Profil from "@component/section/Profil.vue";
 import Parcours from "@component/section/Parcours.vue";
+import Contact from '@component/section/Contact.vue';
 import Caroussel from "@component/caroussel/Caroussel.vue";
 import Parallax from "@component/utils/Parallax.vue";
 </script>
@@ -22,6 +23,7 @@ import Parallax from "@component/utils/Parallax.vue";
     <p>Actuellement étudiant</p>
   </Parallax>
   <Caroussel />
+  <Contact />
   <Footer />
 </template>
 

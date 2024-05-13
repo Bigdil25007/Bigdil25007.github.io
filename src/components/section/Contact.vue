@@ -8,15 +8,13 @@ const message = ref('');
 const errorMessage = ref('');
 
 const submitForm = async (event) => {
-    errorMessage.value = '';
-    
     if (!nom.value || !email.value || !message.value) {
-        errorMessage.value = "Au moins un champ n'a pas été rempli.";
+        displayError("Au moins un champ n'a pas été rempli.");
         return;
     }
 
     if (!validateEmail(email.value)) {
-        errorMessage.value = "L'adresse e-mail n'est pas valide.";
+        displayError("L'adresse e-mail n'est pas valide.");
         return;
     }
 
@@ -37,10 +35,10 @@ const submitForm = async (event) => {
             alert('Merci d\'avoir rempli ce formulaire, je vous recontacterai dans les plus brefs délais');
             window.location.href = window.location.href + '#formulaire';
         } else {
-            errorMessage.value = 'Une erreur s\'est produite lors de la soumission du formulaire.';
+            displayError('L\'API pour stocker le formulaire ne peut pas être implémenté tant que le site tourne en localhost.');
         }
     } catch (error) {
-        errorMessage.value = 'Une erreur s\'est produite lors de la soumission du formulaire.';
+        displayError('L\'API pour stocker le formulaire ne peut pas être implémenté tant que le site tourne en localhost.');
     }
 };
 
@@ -48,17 +46,31 @@ const validateEmail = (email) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
 };
+
+const displayError = (message) => {
+    errorMessage.value = message;
+
+    setTimeout(() => {
+        errorMessage.value = '';
+    }, 5000);
+};
 </script>
 
 <template>
     <Anchor id="contact"/>
     <section>
         <form @submit.prevent="submitForm">
-            <input v-model="nom" type="text" placeholder="Nom" maxlength="50" required>
-            <input v-model="email" type="email" placeholder="Adresse e-mail" maxlength="70" required>
-            <textarea v-model="message" placeholder="Votre message" maxlength="5000" required></textarea>
+            <label for="name">Nom et prénom<span class="required">*</span></label>
+            <input v-model="nom" id="name" type="text" placeholder="Nom" maxlength="50" required>
+            
+            <label for="name">Email<span class="required">*</span></label>
+            <input v-model="email" id="email" type="email" placeholder="Adresse e-mail" maxlength="70" required>
+            
+            <label for="name">Message<span class="required">*</span></label>
+            <textarea v-model="message" id="message" placeholder="Votre message" maxlength="2000" required></textarea>
+            <div class="char-counter">{{ message.length }}/2000</div>    
 
-            <span v-if="errorMessage" id="error">{{ errorMessage }}</span>
+            <span v-if="errorMessage" class="error">{{ errorMessage }}</span>
 
             <button type="submit">Me contacter</button>
         </form>
@@ -67,83 +79,71 @@ const validateEmail = (email) => {
 
 <style scoped>
 form {
-    margin-top: 10%;
-    width: 50%;
-    margin: auto;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
 
-    &>.FormContact {
-        display: flex;
-        flex-direction: column;
+input, textarea {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    padding: 0.7rem;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 0.15rem;
 
-        & textarea[name="nom"] {
-            margin-top: 3%;
-            height: 5vh;
-            padding: 2%;
-            padding-top: 1.5%;
-            overflow-y: hidden;
-            border-color: #DDDDDD;
-            resize: none;
-            transition: border-color 0.3s ease-out;
+    &:focus {
+        outline: none;
+        border-color: rgb(206, 54, 4);
+    }
 
-            &:hover {
-                border-color: #343434;
-            }
-        }
+    &::placeholder {
+        color: rgb(144, 144, 144);
+    }
+}
 
-        & textarea[name="email"] {
-            margin-top: 3%;
-            height: 5vh;
-            padding: 2%;
-            padding-top: 1.5%;
-            overflow-y: hidden;
-            border-color: #DDDDDD;
-            resize: none;
-            transition: border-color 0.3s ease-out;
+textarea {
+    position: relative;
+    padding-bottom: 1.5rem;
+    margin-bottom: 0.2rem;
+}
 
-            &:hover {
-                border-color: #343434;
-            }
-        }
+.char-counter {
+  align-self: flex-end;
+  color: rgb(82, 81, 81);
+}
+
+label {
+    font-weight: bold;
+    margin: 0.2rem 0;
+    align-self: flex-start;
+}
+
+.required {
+    color: rgb(220, 18, 18);
+}
 
 
-        & textarea[name="message"] {
-            margin-top: 3%;
-            margin-bottom: 3%;
-            height: 10vh;
-            min-height: 5vh;
-            max-height: 30vh;
-            max-width: 96%;
-            min-width: 96%;
-            padding: 2%;
-            border-color: #DDDDDD;
-            transition: border-color 0.4s ease-out;
+.error {
+    justify-self: center;
+    color: rgb(220, 18, 18);
+    margin-bottom: 0.5rem;
+}
 
-            &:hover {
-                border-color: #343434;
-            }
-        }
+button {
+    height: 4rem;
+    width: 75%;
+    font-size: 1.1rem;
+    background-color: #343434;
+    color: #efefef;
+    text-transform: uppercase;
+    transition: all 0.8s ease-in-out;
+    border-color: #343434;
 
-        &>button {
-            height: 4.5vh;
-            background-color: #343434;
-            color: #efefef;
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            transition: all 0.9s ease-in-out;
-            border-color: #343434;
-        }
-
-        &>button:hover {
-            color: #343434;
-            box-shadow: inset -25vw 0 0 0 #efefef, inset 25vw 0 0 0 #efefef;
-            border-color: #efefef;
-        }
-
-        &>#error {
-            justify-self: center;
-            color: rgb(220, 18, 18);
-        }
-
+    &:hover {
+        color: #343434;
+        box-shadow: inset -30vw 0 0 0 #efefef, inset 30vw 0 0 0 #efefef;
     }
 }
 </style>
