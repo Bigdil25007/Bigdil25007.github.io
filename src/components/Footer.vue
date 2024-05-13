@@ -1,10 +1,11 @@
 <script setup>
-import Questionnaire from '@component/section/Questionnaire.vue';
+import Contact from '@component/section/Contact.vue';
 </script>
 
 <template>
     <footer>
-        <span id="contact">Contactez-moi !</span>
+        <span>Contactez-moi !</span>
+        <Contact />
         <div class="barre"></div>
         <ul class="link">
             <a href="https://github.com/Bigdil25007" class="icone-github"> <img src="/icons/github.png?url"></a>
@@ -24,7 +25,7 @@ footer {
     background-color: #244057;
 }
 
-#contact {
+span {
     color: white;
     font-size: 200%;
     text-align: center;

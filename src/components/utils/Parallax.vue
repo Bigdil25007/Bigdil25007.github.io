@@ -26,7 +26,9 @@ onMounted(() => {
 <template>
     <div class="thumbnail">
         <img class="thumbnail" :src="props.src" :alt="props.alt">
-        <slot></slot>
+        <div class="slot-wrapper">
+          <slot></slot>
+        </div>
     </div>
 </template>
 
@@ -38,6 +40,20 @@ onMounted(() => {
   & img {
     object-fit: cover;
     filter: brightness(50%);
+  }
+}
+
+.slot-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  
+  & * {
+    font-size: 1.5rem;
+    padding: 2%;
   }
 }
 

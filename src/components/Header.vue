@@ -46,6 +46,7 @@ onMounted(() => {
   <header :class="{ opaque: isOpaque }">
     <a id="boutonAccueil" href="/" title="Bilal Oulahal">Bilal Oulahal</a>
     <ul class="nav">
+      <li><a :class="linkClasses('contact')" href="#contact">contacts</a></li>
       <li><a :class="linkClasses('projets')" href="#projets">projets</a></li>
       <li><a :class="linkClasses('competences')" href="#competences">compétences</a></li>
       <li><a :class="linkClasses('parcours')" href="#parcours">parcours</a></li>
@@ -87,7 +88,7 @@ header {
 
   .nav {
     margin-bottom: 1%;
-    margin-left: 25%;
+    margin-left: 20%;
     display: flex;
     flex: 0 1 40%;
     flex-flow: row-reverse wrap;

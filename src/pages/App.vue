@@ -13,8 +13,8 @@ import Parallax from "@component/utils/Parallax.vue";
   <Accueil />
   <Profil />
   <Parallax src="/background/servor.jpg?url">
-    <h1>Test</h1>
-    <p>Actuellement étudiant</p>
+    <h1>Actuellement : </h1>
+    <p>Développeur logiciel chez OVHcloud (stage)</p>
   </Parallax>
   <Parcours />
   <Parallax src="/background/servor.jpg?url">
