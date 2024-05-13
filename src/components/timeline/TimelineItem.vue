@@ -27,7 +27,6 @@ const props = defineProps({
 
 <style scoped>
 li {
-  list-style-type: none;
   position: relative;
   width: 4px;
   margin: 0 auto;

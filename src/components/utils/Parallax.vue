@@ -14,7 +14,7 @@ const props = defineProps({
 });
 
 const params = {
-    scale: 1.15
+    scale: 1.25
 };
 
 onMounted(() => {

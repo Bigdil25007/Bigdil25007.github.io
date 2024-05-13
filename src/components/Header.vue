@@ -93,9 +93,9 @@ header {
     flex-flow: row-reverse wrap;
     justify-content:space-around;
     margin-top: 1.6%;
-    list-style-type: none;
 
     &>li a {
+        font-size: 1.2rem;
         transition: color 0.4s cubic-bezier(.71, .15, .17, .77);
 
         &::after {
@@ -124,6 +124,5 @@ header {
 a {
     text-transform: uppercase;
     color: white;
-    text-decoration: none;
 }
 </style>
