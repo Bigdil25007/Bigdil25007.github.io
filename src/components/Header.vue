@@ -1,30 +1,35 @@
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue'
+import { ref, onMounted } from 'vue'
 
 const isOpaque = ref(false);
 const currentSection = ref('');
 
-const sections = ['projets', 'competences', 'parcours', 'a-propos'];
+let sections = {};
 
-const detectCurrentSection = () => {
-  for (const id of sections) {
-    const element = document.getElementById(id);
-    if (!element) continue;
-
-    const rect = element.getBoundingClientRect();
-    if (rect.top <= 0 && rect.bottom >= 0) return id;
-  }
-
-  return ''
+const detectCurrentSection = (scrollPosition) => {
+  const sectionNames = Object.keys(sections);
+  return sectionNames.find((section, i) => {
+    const currentSectionStart = sections[section];
+    const nextSectionStart = sections[sectionNames[i + 1]] || Infinity;
+    return scrollPosition >= currentSectionStart && scrollPosition < nextSectionStart;
+  }) || '';
 }
 
 const handleScroll = () => {
+  const scrollPosition = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop;
+  
   //Passage du header en opaque
-  const scrollPosition = window.scrollY;
   const threshold = 200;
   isOpaque.value = scrollPosition > threshold;
 
-  currentSection.value = detectCurrentSection();
+  //scrollspy
+  currentSection.value = detectCurrentSection(scrollPosition);
+}
+
+const setSections = () => {
+  return document.querySelectorAll('.anchor').forEach((section) => {
+    sections[section.id] = section.offsetTop;
+  });
 }
 
 const linkClasses = (section) => {
@@ -32,11 +37,8 @@ const linkClasses = (section) => {
 };
 
 onMounted(() => {
+  setSections();
   window.addEventListener('scroll', handleScroll)
-})
-
-onUnmounted(() => {
-  window.removeEventListener('scroll', handleScroll)
 })
 </script>
 

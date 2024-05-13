@@ -1,5 +1,5 @@
 <script setup>
-import Slide from "@component/caroussel/Slide.vue";
+import Slide from "./Slide.vue";
 import Anchor from '@component/utils/Anchor.vue';
 
 const slides = [

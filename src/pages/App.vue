@@ -3,6 +3,7 @@ import Header from "@component/Header.vue";
 import Footer from "@component/Footer.vue";
 import Accueil from "@component/section/Accueil.vue";
 import Profil from "@component/section/Profil.vue";
+import Parcours from "@component/section/Parcours.vue";
 import Caroussel from "@component/caroussel/Caroussel.vue";
 import Parallax from "@component/utils/Parallax.vue";
 </script>
@@ -11,6 +12,11 @@ import Parallax from "@component/utils/Parallax.vue";
   <Header />
   <Accueil />
   <Profil />
+  <Parallax src="/background/servor.jpg?url">
+    <h1>Test</h1>
+    <p>Actuellement étudiant</p>
+  </Parallax>
+  <Parcours />
   <Parallax src="/background/servor.jpg?url">
     <h1>Test</h1>
     <p>Actuellement étudiant</p>

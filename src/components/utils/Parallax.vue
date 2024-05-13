@@ -1,5 +1,5 @@
 <script setup>
-import { onMounted, useSlots } from 'vue';
+import { onMounted } from 'vue';
 import simpleParallax from '@parallax/simpleParallax';
 
 const props = defineProps({
