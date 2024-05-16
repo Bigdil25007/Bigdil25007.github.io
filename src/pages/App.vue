@@ -4,24 +4,24 @@ import Footer from "@component/Footer.vue";
 import Accueil from "@component/section/Accueil.vue";
 import Profil from "@component/section/Profil.vue";
 import Parcours from "@component/section/Parcours.vue";
+import Competences from "@component/section/Competences.vue";
 import Contact from '@component/section/Contact.vue';
 import Caroussel from "@component/caroussel/Caroussel.vue";
-import Parallax from "@component/utils/Parallax.vue";
+import Banner from "@component/utils/Banner.vue";
 </script>
 
 <template>
   <Header />
   <Accueil />
   <Profil />
-  <Parallax src="/background/servor.jpg?url">
+  <Banner src="/background/servor.jpg?url">
     <h1>Actuellement : </h1>
     <p>Développeur logiciel chez OVHcloud (stage)</p>
-  </Parallax>
+  </Banner>
   <Parcours />
-  <Parallax src="/background/servor.jpg?url">
-    <h1>Test</h1>
-    <p>Actuellement étudiant</p>
-  </Parallax>
+  <Banner src="/background/servor.jpg?url">
+  </Banner>
+  <Competences />
   <Caroussel />
   <Contact />
   <Footer />

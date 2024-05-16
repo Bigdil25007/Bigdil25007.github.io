@@ -50,16 +50,16 @@ onMounted(() => {
       <li><a :class="linkClasses('projets')" href="#projets">projets</a></li>
       <li><a :class="linkClasses('competences')" href="#competences">compétences</a></li>
       <li><a :class="linkClasses('parcours')" href="#parcours">parcours</a></li>
-      <li><a :class="linkClasses('a-propos')" href="#a-propos">à propos de moi</a></li>
+      <li><a :class="linkClasses('about-me')" href="#about-me">à propos de moi</a></li>
     </ul>
   </header>
 </template>
 
 <style scoped>
 header.opaque {
-  background-color: rgba(86, 83, 233, 0.9); /* Modifier cette valeur pour ajuster l'opacité */
-  backdrop-filter: blur(10px); /* Modifier cette valeur pour ajuster l'effet de glassmorphism */
-  height: 8%;
+  background-color: rgba(85, 83, 233, 0.764); /* Modifier cette valeur pour ajuster l'opacité */
+  backdrop-filter: blur(1.2rem); /* Modifier cette valeur pour ajuster l'effet de glassmorphism */
+  height: 9%;
 }
 
 .current {
@@ -76,7 +76,7 @@ header {
   z-index: 10;
 
   width: 100%;
-  height: 12%;
+  height: 13%;
   background-color: transparent;
   transition: all 0.4s cubic-bezier(.71, .15, .17, .77);
 
@@ -85,45 +85,45 @@ header {
     margin-left: 5%;
     font-size: 1.75rem;
   }
-
-  .nav {
-    margin-bottom: 1%;
-    margin-left: 20%;
-    display: flex;
-    flex: 0 1 40%;
-    flex-flow: row-reverse wrap;
-    justify-content:space-around;
-    margin-top: 1.6%;
-
-    &>li a {
-        font-size: 1.2rem;
-        transition: color 0.4s cubic-bezier(.71, .15, .17, .77);
-
-        &::after {
-            content: "";
-            display: block;
-            height: 0.15rem;
-            background-color: white;
-            margin: auto;
-            width: 0;
-            background: transparent;
-            transition: all 0.4s cubic-bezier(.71, .15, .17, .77);
-        }
-
-        &:hover {
-            color: #F54337;
-
-            &::after {
-                background-color: #F54337;
-                width: 95%;
-            }
-        }
-    }
-  }
 }
 
 a {
     text-transform: uppercase;
     color: white;
+}
+
+.nav {
+  margin-bottom: 1%;
+  margin-left: 20%;
+  display: flex;
+  flex: 0 1 40%;
+  flex-flow: row-reverse wrap;
+  justify-content:space-around;
+  margin-top: 1.6%;
+
+  &>li a {
+      font-size: 1.2rem;
+      transition: color 0.4s cubic-bezier(.71, .15, .17, .77);
+
+      &::after {
+          content: "";
+          display: block;
+          height: 0.15rem;
+          background-color: white;
+          margin: auto;
+          width: 0;
+          background: transparent;
+          transition: all 0.4s cubic-bezier(.71, .15, .17, .77);
+      }
+
+      &:hover {
+          color: #F54337;
+
+          &::after {
+              background-color: #F54337;
+              width: 95%;
+          }
+      }
+  }
 }
 </style>

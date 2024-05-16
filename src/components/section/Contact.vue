@@ -84,6 +84,9 @@ form {
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
+    background-color: rgba(65, 66, 69, 0.479);
+    border-radius: 1.25rem;
+    padding: 2.5rem 2rem;
 }
 
 input, textarea {
@@ -96,6 +99,7 @@ input, textarea {
     &:focus {
         outline: none;
         border-color: rgb(206, 54, 4);
+        border-width: 0.12rem;
     }
 
     &::placeholder {
@@ -111,7 +115,7 @@ textarea {
 
 .char-counter {
   align-self: flex-end;
-  color: rgb(82, 81, 81);
+  color: rgb(54, 54, 54);
 }
 
 label {

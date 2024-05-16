@@ -12,7 +12,7 @@ onMounted(() => {
         <div class="content">
             <h1>à la recherche d'un développeur web backend ? </h1>
             <h2>Ça tombe bien je suis passionné par ce domaine ! Découvrez juste en dessous mon profil</h2>
-            <button><a href="#a-propos">Qui-suis je ?</a></button>
+            <button><a href="#about-me">Qui-suis je ?</a></button>
         </div>
     </section>
 </template>
@@ -24,8 +24,8 @@ section {
 }
 
 #particles-js {
-    width: 100vw;
-    height: auto;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
     background-color: #212529;
     background-size: cover;

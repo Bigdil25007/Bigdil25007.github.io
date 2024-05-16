@@ -8,13 +8,15 @@ const paragraph = ref("Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 </script>
 
 <template>
-    <Anchor id="a-propos"/>
+    <Anchor id="about-me"/>
     <section>
-        <img src="/divers/profile.jpg?url" alt="Profile Photo">
+        <h1>{{ title }}</h1>
         <div class="content">
-            <h1>{{ title }}</h1>
-            <h2>{{ subtitle }}</h2>
-            <p>{{ paragraph }}</p>
+            <img src="/divers/profile.jpg?url" alt="Profile Photo">
+            <div class="text">
+                <h2>{{ subtitle }}</h2>
+                <p>{{ paragraph }}</p>
+            </div>
         </div>
     </section>
 </template>
@@ -22,11 +24,10 @@ const paragraph = ref("Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 <style scoped>
 section {
     width: 70%;
-    left: 15%;
-    margin: 5% 0;
+    margin: 2% auto;
     position: relative;
     display: flex;
-    align-content: center;
+    flex-direction: column;
     text-align: center;
 
     & img {
@@ -38,14 +39,19 @@ section {
 
 .content {
     width: 70%;
-    margin-left: 5%;
-    margin-top: 5%;
+    margin: 5% auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     text-align: left;
 
     &>* {
         margin-bottom: 1.5rem;
     }
+}
+
+@media (max-width: 600px) {
+  .content {
+    flex-direction: column;
+  }
 }
 </style>
