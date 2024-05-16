@@ -1,7 +1,4 @@
 <script setup>
-import { onMounted } from 'vue';
-import simpleParallax from '@parallax/simpleParallax';
-
 const props = defineProps({
     src: {
         type: String,
@@ -10,22 +7,17 @@ const props = defineProps({
     alt: {
         type: String,
         default: ''
+    },
+    height: {
+        type: String,
+        default: '25rem'
     }
-});
-
-const params = {
-    scale: 1.25
-};
-
-onMounted(() => {
-  var image = document.getElementsByClassName('thumbnail');
-  new simpleParallax(image, params);
 });
 </script>
 
 <template>
-    <div class="thumbnail">
-        <img class="thumbnail" :src="props.src" :alt="props.alt">
+    <div class="banner" :style="{ height: props.height }">
+        <img :src="props.src" :alt="props.alt">
         <div class="slot-wrapper">
           <slot></slot>
         </div>
@@ -33,13 +25,15 @@ onMounted(() => {
 </template>
 
 <style scoped>
-.thumbnail {
+.banner {
+  position: relative;
   width: 100vw;
-  height: 25rem;
 
   & img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    filter: brightness(50%);
+    filter: brightness(60%);
   }
 }
 
