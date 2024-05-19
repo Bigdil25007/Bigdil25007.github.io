@@ -1,6 +1,4 @@
 <script setup>
-import Header from "@component/Header.vue";
-import Footer from "@component/Footer.vue";
 import Accueil from "@component/section/Accueil.vue";
 import Profil from "@component/section/Profil.vue";
 import Parcours from "@component/section/Parcours.vue";
@@ -11,7 +9,6 @@ import Banner from "@component/utils/Banner.vue";
 </script>
 
 <template>
-  <Header />
   <Accueil />
   <Profil />
   <Banner src="/background/servor.jpg?url">
@@ -24,7 +21,6 @@ import Banner from "@component/utils/Banner.vue";
   <Competences />
   <Caroussel />
   <Contact />
-  <Footer />
 </template>
 
 <style scoped>

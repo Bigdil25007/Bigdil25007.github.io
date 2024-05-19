@@ -46,11 +46,11 @@ onMounted(() => {
   <header :class="{ opaque: isOpaque }">
     <a id="boutonAccueil" href="/" title="Bilal Oulahal">Bilal Oulahal</a>
     <ul class="nav">
-      <li><a :class="linkClasses('contact')" href="#contact">contacts</a></li>
-      <li><a :class="linkClasses('projets')" href="#projets">projets</a></li>
-      <li><a :class="linkClasses('competences')" href="#competences">compétences</a></li>
-      <li><a :class="linkClasses('parcours')" href="#parcours">parcours</a></li>
-      <li><a :class="linkClasses('about-me')" href="#about-me">à propos de moi</a></li>
+      <li><a :class="linkClasses('contact')" href="/#contact">contacts</a></li>
+      <li><a :class="linkClasses('projets')" href="/#projets">projets</a></li>
+      <li><a :class="linkClasses('competences')" href="/#competences">compétences</a></li>
+      <li><a :class="linkClasses('parcours')" href="/#parcours">parcours</a></li>
+      <li><a :class="linkClasses('about-me')" href="/#about-me">à propos de moi</a></li>
     </ul>
   </header>
 </template>

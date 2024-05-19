@@ -1,7 +1,7 @@
 <script setup>
 import Anchor from '@component/utils/Anchor.vue';
 import CV from "@component/utils/CV.vue";
-import ProgressBar from "@component/utils/ProgressBar.vue";4
+import ProgressBar from "@component/utils/ProgressBar.vue";
 
 const competences = {
     backend: {
