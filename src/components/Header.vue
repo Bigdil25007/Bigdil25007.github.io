@@ -96,7 +96,7 @@ a {
   margin-bottom: 1%;
   margin-left: 20%;
   display: flex;
-  flex: 0 1 40%;
+  flex: 0 1 80%;
   flex-flow: row-reverse wrap;
   justify-content:space-around;
   margin-top: 1.6%;

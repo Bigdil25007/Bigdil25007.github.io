@@ -28,7 +28,7 @@ const pdfFilePath = '/cv/CV.pdf?url';
         background-color: #007bff;
         color: #fff;
         border: none;
-        border-radius: 4px;
+        border-radius: 0.5rem;
         cursor: pointer;
 
         &:hover {
