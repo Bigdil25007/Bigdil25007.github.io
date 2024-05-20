@@ -85,11 +85,10 @@ header {
     margin-left: 5%;
     font-size: 1.75rem;
   }
-}
 
-a {
+  a {
     text-transform: uppercase;
-    color: white;
+  }
 }
 
 .nav {
