@@ -68,9 +68,9 @@ onMounted(() => {
 
 <style scoped>
 header.opaque {
-  background-color: rgba(85, 83, 233, 0.764); /* Modifier cette valeur pour ajuster l'opacité */
-  backdrop-filter: blur(1.2rem); /* Modifier cette valeur pour ajuster l'effet de glassmorphism */
-  height: 9%;
+  background-color: rgba(85, 83, 233, 0.604); /* Modifier cette valeur pour ajuster l'opacité */
+  backdrop-filter: blur(1rem); /* Modifier cette valeur pour ajuster l'effet de glassmorphism */
+  height: 5rem;
 }
 
 .current {

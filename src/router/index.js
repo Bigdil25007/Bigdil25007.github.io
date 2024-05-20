@@ -4,6 +4,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import MainPage from '@page/MainPage.vue';
 import Projets from '@page/Projets.vue';
 import LegalMentions from '@page/LegalMentions.vue';
+import Sitemap from '@page/Sitemap.vue';
 
 const routes = [
   {
@@ -20,6 +21,11 @@ const routes = [
     path: '/mentions-legales',
     name: 'LegalMentions',
     component: LegalMentions,
+  },
+  {
+    path: '/plan-site',
+    name: 'PlanSite',
+    component: Sitemap,
   }
 ];
 
