@@ -74,4 +74,17 @@ button {
         text-decoration: none;
     }
 }
+
+@media (max-width: 700px) {
+  .content {
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+  }
+}
 </style>

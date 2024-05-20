@@ -9,12 +9,11 @@ const paragraph = ref("Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 
 <template>
     <Anchor id="about-me"/>
-    <section>
+    <section class="profil">
         <h1>{{ title }}</h1>
         <div class="content">
             <img src="/divers/profile.jpg?url" alt="Profile Photo">
             <div class="text">
-                <h2>{{ subtitle }}</h2>
                 <p>{{ paragraph }}</p>
             </div>
         </div>
@@ -29,12 +28,12 @@ section {
     display: flex;
     flex-direction: column;
     text-align: center;
+}
 
-    & img {
-        width: 25%;
-        height: fit-content;
-        margin-right: 15%;
-    }
+img {
+    height: 20rem;
+    width: auto;
+    margin-right: 15%;
 }
 
 .content {
@@ -43,15 +42,21 @@ section {
     display: flex;
     flex-direction: row;
     text-align: left;
+    align-items: center;
 
     &>* {
         margin-bottom: 1.5rem;
+        text-align: justify;
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1200px) {
   .content {
     flex-direction: column;
+  }
+
+  img {
+    margin-right: 0;
   }
 }
 </style>

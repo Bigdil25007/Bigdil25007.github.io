@@ -66,7 +66,7 @@ section {
     margin: 1rem 0;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1150px) {
   .content {
     flex-direction: column;
   }
