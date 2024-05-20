@@ -1,10 +1,19 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 
-const isOpaque = ref(false);
+const props = defineProps({
+    noeffect: {
+        type: Boolean,
+        default: false
+    }
+});
+
+
+const isOpaque = ref(props.noeffect);
 const currentSection = ref('');
 
 let sections = {};
+const threshold = 200;
 
 const detectCurrentSection = (scrollPosition) => {
   const sectionNames = Object.keys(sections);
@@ -19,7 +28,6 @@ const handleScroll = () => {
   const scrollPosition = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop;
   
   //Passage du header en opaque
-  const threshold = 200;
   isOpaque.value = scrollPosition > threshold;
 
   //scrollspy
@@ -37,6 +45,9 @@ const linkClasses = (section) => {
 };
 
 onMounted(() => {
+  //On désactive l'effet de scroll si la props noeffect est à true
+  if (props.noeffect) return;
+
   setSections();
   window.addEventListener('scroll', handleScroll)
 })
