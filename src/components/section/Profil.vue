@@ -3,7 +3,6 @@ import { ref } from 'vue';
 import Anchor from '@component/utils/Anchor.vue';
 
 const title = ref("A propos de moi");
-const subtitle = ref("Sous-titre");
 const paragraph = ref("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae justo sed nunc fringilla ultrices. Nulla facilisi. Sed nec nunc id nunc lacinia lacinia. Nullam auctor, nunc id aliquet tincidunt, nunc nunc facilisis nunc, vitae lacinia nunc nunc at nunc. Sed id nunc id nunc lacinia lacinia. Nullam auctor, nunc id aliquet tincidunt, nunc nunc facilisis nunc, vitae lacinia nunc nunc at nunc.");
 </script>
 

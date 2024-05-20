@@ -30,9 +30,9 @@ const props = defineProps({
 <template>
   <div :class="['carousel-item', { active: isActive }]">
     <div class="img-container">
-      <a :href="link">
+      <router-link :to="link">
         <img :src="imgSrc" :alt="imgAlt" class="d-block w-100">
-      </a>
+      </router-link>
       <span class="overlay-text">En savoir plus</span>
     </div>
     <div class="carousel-caption d-md-block">
@@ -56,7 +56,7 @@ const props = defineProps({
 }
 
 img {
-  object-fit:scale-down;
+  object-fit:cover;
   transition: all 0.3s ease-in-out;
 
   :hover {

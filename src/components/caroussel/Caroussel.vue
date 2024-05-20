@@ -65,8 +65,10 @@ h2 {
 
 #caroussel {
   display: flex;
-  left: 20%;
-  width: 60%;
+  flex-direction: column;
+  align-items: center;
+  width: 50vw;
+  height: auto;
 }
 
 /* Boutons défilement */

@@ -9,23 +9,21 @@ import Header from "@component/Header.vue";
       <h1>Plan du site</h1>
       <ul>
         <li>
-          <a href="/">Présentation Bilal Oulahal</a>
+          <router-link to="/">Présentation Bilal Oulahal</router-link>
         </li>
         <li>
-          <a href="/projets">Projets</a>
+          <router-link to="/projets">Projets</router-link>
         </li>
         <li>
-          <a href="/mentions-legales">Mentions légales</a>
+          <router-link to="/mentions-legales">Mentions légales</router-link>
         </li>
         <li>
-          <a href="/plan-site">Plan du site</a>
+          <router-link to="/plan-site">Plan du site</router-link>
         </li>
       </ul>
     </div>
   </section>
 </template>
-
-
 
 <style scoped>
 .sitemap {

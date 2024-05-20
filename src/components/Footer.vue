@@ -3,15 +3,19 @@
     <span>Contactez-moi !</span>
     <div class="barre"></div>
     <ul class="contacts">
-        <a href="https://github.com/Bigdil25007" class="icone-github"> <img src="/icons/github.png?url"></a>
-        <a href="https://www.linkedin.com/in/bilal-oulahal" class="icone-linkedin"> <img src="/icons/linkedin.png?url"></a>
+      <a href="https://github.com/Bigdil25007" class="icone-github">
+        <img src="/icons/github.png?url">
+      </a>
+      <a href="https://www.linkedin.com/in/bilal-oulahal" class="icone-linkedin">
+        <img src="/icons/linkedin.png?url">
+      </a>
     </ul>
     <ul class="pages">
       <span>© Copyright 2024 - Bilal Oulahal. Tous droits réservés.</span>
       <div class="wrapper">
-        <a href="/mentions-legales">Mentions légales</a>
+        <router-link to="/mentions-legales">Mentions légales</router-link>
         <span>|</span>
-        <a href="/plan-site">Plan du site</a>
+        <router-link to="/plan-site">Plan du site</router-link>
       </div>
     </ul>
   </footer>
