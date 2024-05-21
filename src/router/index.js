@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 
 import MainPage from '@page/MainPage.vue';
 import Projets from '@page/Projets.vue';
+import ProjetDetail from '@page/ProjetDetail.vue';
 import LegalMentions from '@page/LegalMentions.vue';
 import Sitemap from '@page/Sitemap.vue';
 
@@ -16,6 +17,12 @@ const routes = [
     path: '/projets',
     name: 'Projets',
     component: Projets,
+  },
+  {
+    path: '/projets/:id',
+    name: 'ProjetDetail',
+    component: ProjetDetail,
+    props: true,
   },
   {
     path: '/mentions-legales',
