@@ -10,8 +10,7 @@ export default defineConfig({
       '@component': path.resolve(__dirname, 'src/components'),
       '@page': path.resolve(__dirname, 'src/pages'),
       '@particle': path.resolve(__dirname, 'src/particle-js'),
-      '@fr': path.resolve(__dirname, 'src/languages/fr'),
-      '@en': path.resolve(__dirname, 'src/languages/en'),
+      '@content': path.resolve(__dirname, 'src/content'),
     }
   }
 })

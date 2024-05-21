@@ -1,5 +1,6 @@
 <script setup>
 import { onMounted } from 'vue';
+import yml from '@content/accueil.yml'
 
 onMounted(() => {
   particlesJS.load('particles-js', 'src/particle-js/particles.json');
@@ -7,14 +8,16 @@ onMounted(() => {
 </script>
 
 <template>
-    <section>
-        <div id="particles-js"></div>
-        <div class="content">
-            <h1>à la recherche d'un développeur web backend ? </h1>
-            <h2>Ça tombe bien je suis passionné par ce domaine ! Découvrez juste en dessous mon profil</h2>
-            <button><a href="#about-me">Qui-suis je ?</a></button>
-        </div>
-    </section>
+  <section>
+    <div id="particles-js"></div>
+    <div class="content">
+      <h1>{{ yml.h1 }}</h1>
+      <h2>{{ yml.h2 }}</h2>
+      <button>
+        <router-link :to="yml.button_link">{{ yml.button_text }}</router-link>
+      </button>
+    </div>
+  </section>
 </template>
 
 <style scoped>

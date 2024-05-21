@@ -1,19 +1,16 @@
 <script setup>
-import { ref } from 'vue';
 import Anchor from '@component/utils/Anchor.vue';
-
-const title = ref("A propos de moi");
-const paragraph = ref("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae justo sed nunc fringilla ultrices. Nulla facilisi. Sed nec nunc id nunc lacinia lacinia. Nullam auctor, nunc id aliquet tincidunt, nunc nunc facilisis nunc, vitae lacinia nunc nunc at nunc. Sed id nunc id nunc lacinia lacinia. Nullam auctor, nunc id aliquet tincidunt, nunc nunc facilisis nunc, vitae lacinia nunc nunc at nunc.");
+import yml from '@content/profil.yml'
 </script>
 
 <template>
-    <Anchor id="about-me"/>
+    <Anchor :id="yml.id"/>
     <section class="profil">
-        <h1>{{ title }}</h1>
+        <h1>{{ yml.title }}</h1>
         <div class="content">
-            <img src="/divers/profile.jpg?url" alt="Profile Photo">
+            <img :src="yml.img.src" :alt="yml.img.alt">
             <div class="text">
-                <p>{{ paragraph }}</p>
+                <p>{{ yml.paragraph }}</p>
             </div>
         </div>
     </section>
