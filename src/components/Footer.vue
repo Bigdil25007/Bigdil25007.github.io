@@ -83,7 +83,7 @@ footer {
         a {
             transition: all 0.25s ease-in-out;
             &:hover {
-                opacity: 0.8;
+                opacity: 0.7;
             }
         }
     }

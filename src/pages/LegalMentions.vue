@@ -85,7 +85,6 @@ import Header from "@component/Header.vue";
   margin: 0 auto;
   box-sizing: border-box;
 
-
   * {
     text-align: justify;
   }
@@ -98,8 +97,9 @@ h1, h2 {
 }
 
 h1 {
-    font-size: 3rem;
+  font-size: 3rem;
   margin-bottom: 3rem;
+  text-align: center;
 }
 
 h2 {

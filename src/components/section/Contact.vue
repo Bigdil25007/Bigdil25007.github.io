@@ -6,6 +6,7 @@ const nom = ref('');
 const email = ref('');
 const message = ref('');
 const errorMessage = ref('');
+const sujet = ref('');
 
 const submitForm = async (event) => {
     if (!nom.value || !email.value || !message.value) {
@@ -27,6 +28,7 @@ const submitForm = async (event) => {
             body: JSON.stringify({
                 nom: nom.value,
                 email: email.value,
+                sujet: sujet.value,
                 message: message.value,
             }),
         });
@@ -57,36 +59,56 @@ const displayError = (message) => {
 </script>
 
 <template>
-    <Anchor id="contact"/>
-    <section>
-        <form @submit.prevent="submitForm">
-            <label for="name">Nom et prénom<span class="required">*</span></label>
-            <input v-model="nom" id="name" type="text" placeholder="Nom" maxlength="50" required>
-            
-            <label for="name">Email<span class="required">*</span></label>
-            <input v-model="email" id="email" type="email" placeholder="Adresse e-mail" maxlength="70" required>
-            
-            <label for="name">Message<span class="required">*</span></label>
-            <textarea v-model="message" id="message" placeholder="Votre message" maxlength="2000" required></textarea>
-            <div class="char-counter">{{ message.length }}/2000</div>    
+  <Anchor id="contact"/>
+  <section>
+    <form @submit.prevent="submitForm">
+      <div class="input-field">
+        <label for="name">Nom et prénom<span class="required">*</span></label>
+        <input v-model="nom" id="name" type="text" placeholder="Nom" maxlength="50" required>
+        
+        <label for="email">Email<span class="required">*</span></label>
+        <input v-model="email" id="email" type="email" placeholder="Adresse e-mail" maxlength="70" required>
 
-            <span v-if="errorMessage" class="error">{{ errorMessage }}</span>
+        <label for="sujet">Objet</label>
+        <input v-model="sujet" id="sujet" type="text" placeholder="Objet" maxlength="90">
+      </div>
+      <div class="send">
+        <label for="name">Message<span class="required">*</span></label>
+        <textarea v-model="message" id="message" placeholder="Votre message" maxlength="2000" required></textarea>
 
-            <button type="submit">Me contacter</button>
-        </form>
-    </section>
+        <div class="char-counter">{{ message.length }}/2000</div>  
+
+        <span v-if="errorMessage" class="error">{{ errorMessage }}</span>  
+        <button type="submit">Me contacter</button>
+      </div>
+    </form>
+  </section>
 </template>
 
 <style scoped>
 form {
     width: 75%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     margin: 0 auto;
     background-color: rgba(65, 66, 69, 0.479);
     border-radius: 1.25rem;
     padding: 2.5rem 2rem;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.send {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
 }
 
 input, textarea {
@@ -111,6 +133,7 @@ textarea {
     position: relative;
     padding-bottom: 1.5rem;
     margin-bottom: 0.2rem;
+    height: 10rem;
 }
 
 .char-counter {
@@ -148,6 +171,16 @@ button {
     &:hover {
         color: #343434;
         box-shadow: inset -30vw 0 0 0 #efefef, inset 30vw 0 0 0 #efefef;
+    }
+}
+
+@media (max-width: 900px) {
+    form {
+        flex-direction: column;
+
+        &>* {
+            width: 100%;
+        }
     }
 }
 </style>
