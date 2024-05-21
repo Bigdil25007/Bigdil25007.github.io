@@ -11,13 +11,13 @@ const slides = [
     content: "Some representative placeholder content for the first slide."
   },
   {
-    imgSrc: "/projets/1/code.webp?url",
+    imgSrc: "/projets/0/resultat.webp?url",
     imgAlt: "...",
     title: "Second slide label",
     content: "Some representative placeholder content for the second slide."
   },
   {
-    imgSrc: "/projets/2/ide.webp?url",
+    imgSrc: "/projets/0/resultat.webp?url",
     imgAlt: "...",
     title: "Third slide label",
     content: "Some representative placeholder content for the third slide."
@@ -53,40 +53,65 @@ const slides = [
         <span class="carousel-control-next-icon"></span>
       </button>
     </div>
+    <router-link to="/projets">Retrouvez tous les projets ici</router-link>
   </section>
 </template>
 
 <style scoped>
-h2 {
-  text-transform: uppercase;
-  text-align: center;
-  margin: 2% 0 2% 0;
-}
-
-#caroussel {
+section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50vw;
-  height: auto;
+}
+
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 3% 0;
+}
+
+#caroussel {
+  width: 75%;
+  height: 50%;
 }
 
 /* Boutons défilement */
 #caroussel > button {
   top: 40%;
-  height: 15%;
+  height: 20%;
   width: 10%;
   background-color: black;
-  border-radius: 50% 50% 50% 50%;
+  border-radius: 100px;
 }
 
 /* Boutons sélection */
+.carousel-indicators {
+  margin-top: 1rem;
+}
+
 .carousel-indicators > button {
   background-color: black;
-  height:0.25rem;
+  height:0.5rem;
+
+  &:hover {
+    background-color: rgb(110, 109, 109);
+  }
 }
+
 button span {
   color: black;
+}
+
+/* Lien page projet */
+a {
+  padding-top: 1rem;
+  color: black;
+  text-decoration: underline;
+  font-size: 1.1rem;
+
+  &:hover {
+    color: rgb(12, 10, 70);
+  }
 }
 </style>
 

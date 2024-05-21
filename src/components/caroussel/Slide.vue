@@ -50,20 +50,13 @@ const props = defineProps({
 .img-container {
   display: flex;
   justify-content: center;
-  position: relative;
-  width: 80%;
-  left: 10%;
-}
-
-img {
-  object-fit:cover;
+  object-fit: cover;
   transition: all 0.3s ease-in-out;
 
   :hover {
       background-color: black;
   }
 }
-
 
 .overlay-text {
   position: absolute;
