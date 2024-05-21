@@ -1,5 +1,8 @@
 <script setup>
 import { ref, onMounted } from 'vue'
+import header from '@fr/header.yml'
+
+const content = header.header;
 
 const props = defineProps({
     noeffect: {
@@ -40,7 +43,8 @@ const setSections = () => {
   });
 }
 
-const linkClasses = (section) => {
+const linkClasses = (path) => {
+  const section = path.replace('/#', '');
   return currentSection.value === section ? 'current' : '';
 };
 
@@ -55,24 +59,12 @@ onMounted(() => {
 
 <template>
   <header :class="{ opaque: isOpaque }">
-    <a id="boutonAccueil" href="/" title="Bilal Oulahal">Bilal Oulahal</a>
-    <ul class="nav">
-      <li>
-        <router-link to="/#contact" :class="linkClasses('contact')">contacts</router-link>
-      </li>
-      <li>
-        <router-link to="/#projets" :class="linkClasses('projets')">projets</router-link>
-      </li>
-      <li>
-        <router-link to="/#competences" :class="linkClasses('competences')">compétences</router-link>
-      </li>
-      <li>
-        <router-link to="/#parcours" :class="linkClasses('parcours')">parcours</router-link>
-      </li>
-      <li>
-        <router-link to="/#about-me" :class="linkClasses('about-me')">à propos de moi</router-link>
-      </li>
-    </ul>
+    <a id="boutonAccueil" href="/" :title="content.home">{{ content.home }}</a>
+      <ul class="nav">
+        <li v-for="(link, index) in content.links" :key="index">
+          <router-link :to="link.path" :class="linkClasses(link.path)">{{ link.name }}</router-link>
+        </li>
+      </ul>
   </header>
 </template>
 
@@ -84,7 +76,7 @@ header.opaque {
 }
 
 .current {
-  color: #F54337;
+  color: black;
 }
 
 header {
@@ -137,10 +129,10 @@ header {
       }
 
       &:hover {
-          color: #F54337;
+          color: black;
 
           &::after {
-              background-color: #F54337;
+              background-color: black;
               width: 95%;
           }
       }
