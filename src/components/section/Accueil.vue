@@ -1,6 +1,12 @@
 <script setup>
 import { onMounted } from 'vue';
-import yml from '@content/accueil.yml'
+
+const props = defineProps({
+  content: {
+    type: Object,
+    required: true
+  }
+});
 
 onMounted(() => {
   particlesJS.load('particles-js', 'src/particle-js/particles.json');
@@ -11,10 +17,10 @@ onMounted(() => {
   <section>
     <div id="particles-js"></div>
     <div class="content">
-      <h1>{{ yml.h1 }}</h1>
-      <h2>{{ yml.h2 }}</h2>
+      <h1>{{ content.h1 }}</h1>
+      <h2>{{ content.h2 }}</h2>
       <button>
-        <router-link :to="yml.button_link">{{ yml.button_text }}</router-link>
+        <router-link :to="content.button_link">{{ content.button_text }}</router-link>
       </button>
     </div>
   </section>

@@ -1,12 +1,15 @@
 <script setup>
 import { ref, onMounted } from 'vue'
-import yml from '@content/header.yml'
 
 const props = defineProps({
-    noeffect: {
-        type: Boolean,
-        default: false
-    }
+  content: {
+    type: Object,
+    required: true
+  },
+  noeffect: {
+    type: Boolean,
+    default: false
+  }
 });
 
 
@@ -57,9 +60,9 @@ onMounted(() => {
 
 <template>
   <header :class="{ opaque: isOpaque }">
-    <a id="boutonAccueil" href="/" :title="yml.home">{{ yml.home }}</a>
+    <a id="boutonAccueil" href="/" :title="content.home">{{ content.home }}</a>
       <ul class="nav">
-        <li v-for="(link, index) in yml.links" :key="index">
+        <li v-for="(link, index) in content.links" :key="index">
           <router-link :to="link.path" :class="linkClasses(link.path)">{{ link.name }}</router-link>
         </li>
       </ul>

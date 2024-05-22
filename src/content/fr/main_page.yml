@@ -1,0 +1,43 @@
+header:
+  home: "Bilal Oulahal"
+  links:
+    - name: "contacts"
+      path: "/#contact"
+    - name: "projets"
+      path: "/#projets"
+    - name: "compétences"
+      path: "/#competences"
+    - name: "parcours"
+      path: "/#parcours"
+    - name: "à propos de moi"
+      path: "/#about-me"
+
+accueil:
+  h1: "à la recherche d'un développeur web backend ?"
+  h2: "Ça tombe bien je suis passionné par ce domaine ! Découvrez juste en dessous mon profil"
+  button_text: "Qui-suis je ?"
+  button_link: "#about-me"
+
+profil:
+  id: "about-me"
+  title: "A propos de moi"
+  paragraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae justo sed nunc fringilla ultrices. Nulla facilisi. Sed nec nunc id nunc lacinia lacinia. Nullam auctor, nunc id aliquet tincidunt, nunc nunc facilisis nunc, vitae lacinia nunc nunc at nunc. Sed id nunc id nunc lacinia lacinia. Nullam auctor, nunc id aliquet tincidunt, nunc nunc facilisis nunc, vitae lacinia nunc nunc at nunc."
+  img:
+    src: "/divers/profile.jpg?url"
+    alt: "Profile Photo"
+
+parcours:
+  title: "Mon parcours"
+  description: "Voici mon parcours professionnel dans le développement web"
+  items:
+    - imageUrl: "/parcours/images.jpg?url"
+      date: "1937"
+      paragraph: "Proin quam velit, efficitur vel neque vitae, rhoncus commodo mi. Suspendisse finibus mauris et bibendum molestie. Aenean ex augue, varius et pulvinar in, pretium non nisi."
+    - date: "1940"
+      paragraph: "Proin iaculis, nibh eget efficitur varius, libero tellus porta dolor, at pulvinar tortor ex eget ligula. Integer eu dapibus arcu, sit amet sollicitudin eros."
+    - date: "1943"
+      paragraph: "In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est."
+    - date: "1946"
+      paragraph: "In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est."
+    - date: "1946"
+      paragraph: "In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est."

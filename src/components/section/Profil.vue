@@ -1,16 +1,22 @@
 <script setup>
 import Anchor from '@component/utils/Anchor.vue';
-import yml from '@content/profil.yml'
+
+const props = defineProps({
+  content: {
+    type: Object,
+    required: true
+  }
+});
 </script>
 
 <template>
-    <Anchor :id="yml.id"/>
+    <Anchor :id="content.id"/>
     <section class="profil">
-        <h1>{{ yml.title }}</h1>
+        <h1>{{ content.title }}</h1>
         <div class="content">
-            <img :src="yml.img.src" :alt="yml.img.alt">
+            <img :src="content.img.src" :alt="content.img.alt">
             <div class="text">
-                <p>{{ yml.paragraph }}</p>
+                <p>{{ content.paragraph }}</p>
             </div>
         </div>
     </section>
