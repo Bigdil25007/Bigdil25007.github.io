@@ -1,7 +1,8 @@
 <script setup>
 import Anchor from '@component/utils/Anchor.vue';
+import { formatBackline } from '/src/utils.js';
 
-const props = defineProps({
+const { content } = defineProps({
   content: {
     type: Object,
     required: true
@@ -16,7 +17,7 @@ const props = defineProps({
         <div class="content">
             <img :src="content.img.src" :alt="content.img.alt">
             <div class="text">
-                <p>{{ content.paragraph }}</p>
+                <p v-html="formatBackline(content.paragraph)"></p>
             </div>
         </div>
     </section>

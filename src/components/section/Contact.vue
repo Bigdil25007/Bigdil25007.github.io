@@ -2,6 +2,17 @@
 import { ref } from 'vue';
 import Anchor from '@component/utils/Anchor.vue';
 
+const { content } = defineProps({
+  content: {
+    type: Object,
+    required: true
+  }
+});
+
+const errors = content.errors;
+const placeholders = content.placeholders;
+const labels = content.labels;
+
 const nom = ref('');
 const email = ref('');
 const message = ref('');
@@ -10,12 +21,12 @@ const sujet = ref('');
 
 const submitForm = async (event) => {
     if (!nom.value || !email.value || !message.value) {
-        displayError("Au moins un champ n'a pas été rempli.");
+        displayError(errors.fieldRequired);
         return;
     }
 
     if (!validateEmail(email.value)) {
-        displayError("L'adresse e-mail n'est pas valide.");
+        displayError(errors.fieldRequired);
         return;
     }
 
@@ -34,13 +45,12 @@ const submitForm = async (event) => {
         });
 
         if (response.ok) {
-            alert('Merci d\'avoir rempli ce formulaire, je vous recontacterai dans les plus brefs délais');
-            window.location.href = window.location.href + '#formulaire';
+            alert(content.successMessage);
         } else {
-            displayError('L\'API pour stocker le formulaire ne peut pas être implémenté tant que le site tourne en localhost.');
+            displayError(content.apiError);
         }
     } catch (error) {
-        displayError('L\'API pour stocker le formulaire ne peut pas être implémenté tant que le site tourne en localhost.');
+        displayError(content.apiError);
     }
 };
 
@@ -59,31 +69,32 @@ const displayError = (message) => {
 </script>
 
 <template>
-  <Anchor id="contact"/>
+  <Anchor :id="content.id"/>
   <section>
     <form @submit.prevent="submitForm">
       <div class="input-field">
-        <label for="name">Nom et prénom<span class="required">*</span></label>
-        <input v-model="nom" id="name" type="text" placeholder="Nom" maxlength="50" required>
+        <label for="name">{{ labels.name }}<span class="required">*</span></label>
+        <input v-model="nom" id="name" type="text" :placeholder="placeholders.name" maxlength="50" required>
         
-        <label for="email">Email<span class="required">*</span></label>
-        <input v-model="email" id="email" type="email" placeholder="Adresse e-mail" maxlength="70" required>
+        <label for="email">{{ labels.email }}<span class="required">*</span></label>
+        <input v-model="email" id="email" type="email" :placeholder="placeholders.email" maxlength="70" required>
 
-        <label for="sujet">Objet</label>
-        <input v-model="sujet" id="sujet" type="text" placeholder="Objet" maxlength="90">
+        <label for="sujet">{{ content.labels.subject }}</label>
+        <input v-model="sujet" id="sujet" type="text" :placeholder="placeholders.subject" maxlength="90">
       </div>
       <div class="send">
-        <label for="name">Message<span class="required">*</span></label>
-        <textarea v-model="message" id="message" placeholder="Votre message" maxlength="2000" required></textarea>
+        <label for="name">{{ content.labels.message }}<span class="required">*</span></label>
+        <textarea v-model="message" id="message" :placeholder="placeholders.message" :maxlength="content.charCounter" required></textarea>
 
-        <div class="char-counter">{{ message.length }}/2000</div>  
+        <div class="char-counter">{{ message.length }}/{{ content.charCounter }}</div>  
 
         <span v-if="errorMessage" class="error">{{ errorMessage }}</span>  
-        <button type="submit">Me contacter</button>
+        <button type="submit">{{ content.buttonText }}</button>
       </div>
     </form>
   </section>
 </template>
+
 
 <style scoped>
 form {

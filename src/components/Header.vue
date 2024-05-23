@@ -1,17 +1,15 @@
 <script setup>
 import { ref, onMounted } from 'vue'
+import yml from '@content/fr/header.yml';
 
 const props = defineProps({
-  content: {
-    type: Object,
-    required: true
-  },
   noeffect: {
     type: Boolean,
     default: false
   }
 });
 
+const content = yml.header;
 
 const isOpaque = ref(props.noeffect);
 const currentSection = ref('');
@@ -137,6 +135,16 @@ header {
               width: 95%;
           }
       }
+  }
+}
+
+@media (max-width: 650px) {
+  header {
+    height: 9% !important;
+  }
+
+ * {
+    font-size: 0.9rem !important;
   }
 }
 </style>

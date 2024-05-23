@@ -1,34 +1,35 @@
 <script setup>
-import Slide from "./Slide.vue";
+import { onMounted } from 'vue';
+import Slide from "@component/utils/Slide.vue";
 import Anchor from '@component/utils/Anchor.vue';
 
-const slides = [
-  {
-    isActive: true,
-    imgSrc: "/projets/0/resultat.webp?url",
-    imgAlt: "...",
-    title: "First slide label",
-    content: "Some representative placeholder content for the first slide."
-  },
-  {
-    imgSrc: "/projets/0/resultat.webp?url",
-    imgAlt: "...",
-    title: "Second slide label",
-    content: "Some representative placeholder content for the second slide."
-  },
-  {
-    imgSrc: "/projets/0/resultat.webp?url",
-    imgAlt: "...",
-    title: "Third slide label",
-    content: "Some representative placeholder content for the third slide."
+const { content } = defineProps({
+  content: {
+    type: Object,
+    required: true
   }
-];
+});
+
+const slides = content.slides;
+const link = content.link;
+
+
+onMounted(() => {
+  let script = document.createElement('script');
+  script.src = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js";
+  script.crossOrigin = "anonymous";
+  document.body.appendChild(script);
+
+  script = document.createElement('script');
+  script.src = "https://code.jquery.com/jquery-3.6.0.min.js";
+  document.body.appendChild(script);
+});
 </script>
 
 <template>
-  <Anchor id="projets"/>
+  <Anchor :id="content.id"/>
   <section>
-    <h2>Mes projets</h2>
+    <h2>{{ content.title }}</h2>
     <div id="caroussel" class="carousel slide">
       <div class="carousel-indicators">
         <button
@@ -36,7 +37,7 @@ const slides = [
           :key="index"
           data-bs-target="#caroussel"
           :data-bs-slide-to="index"
-          :class="{ active: slide.isActive }"
+          :class="{ active: index === 0 }"
         ></button>
       </div>
       <div class="carousel-inner">
@@ -44,6 +45,7 @@ const slides = [
           v-for="(slide, index) in slides"
           :key="index"
           v-bind="slide"
+          :isActive="index === 0"
         />
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#caroussel" data-bs-slide="prev">
@@ -53,7 +55,7 @@ const slides = [
         <span class="carousel-control-next-icon"></span>
       </button>
     </div>
-    <router-link to="/projets">Retrouvez tous les projets ici</router-link>
+    <router-link :to="link.path">{{ link.text }}</router-link>
   </section>
 </template>
 

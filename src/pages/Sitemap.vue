@@ -1,24 +1,19 @@
 <script setup>
 import Header from "@component/Header.vue";
+import yml from '@content/fr/site_map.yml';
+
+const content = yml.sitemap;
+const links = content.links;
 </script>
 
 <template>
   <Header noeffect/>
   <section class="sitemap">
     <div>
-      <h1>Plan du site</h1>
+      <h1>{{ content.title }}</h1>
       <ul>
-        <li>
-          <router-link to="/">Présentation Bilal Oulahal</router-link>
-        </li>
-        <li>
-          <router-link to="/projets">Projets</router-link>
-        </li>
-        <li>
-          <router-link to="/mentions-legales">Mentions légales</router-link>
-        </li>
-        <li>
-          <router-link to="/plan-site">Plan du site</router-link>
+        <li v-for="link in links" :key="link.path">
+          <router-link :to="link.path">{{ link.name }}</router-link>
         </li>
       </ul>
     </div>
@@ -27,12 +22,11 @@ import Header from "@component/Header.vue";
 
 <style scoped>
 .sitemap {
-    margin-top: 13rem;
-    margin-bottom: 11rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  margin: 14rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {

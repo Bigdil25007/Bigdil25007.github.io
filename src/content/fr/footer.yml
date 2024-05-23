@@ -1,0 +1,16 @@
+footer:
+  contactMe: "Contactez-moi !"
+  copyright: "© Copyright 2024 - Bilal Oulahal. Tous droits réservés."
+  socialNetworks:
+    - name: "github"
+      url: "https://github.com/Bigdil25007"
+      icon: "/icons/github.png?url"
+    - name: "linkedin"
+      url: "https://linkedin.com/in/bilal-oulahal"
+      icon: "/icons/linkedin.png?url"
+  mentionsLegales:
+    text: "Mentions légales"
+    to: "/mentions-legales"
+  planSite:
+    text: "Plan du site"
+    to: "/plan-site"

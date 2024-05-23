@@ -1,4 +1,3 @@
-// fichier router/index.js ou un nom similaire
 import { createRouter, createWebHistory } from 'vue-router';
 
 import MainPage from '@page/MainPage.vue';

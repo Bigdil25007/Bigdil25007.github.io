@@ -1,7 +1,8 @@
 <script setup>
 import { onMounted } from 'vue';
+import { formatBackline } from '/src/utils.js';
 
-const props = defineProps({
+const { content } = defineProps({
   content: {
     type: Object,
     required: true
@@ -18,7 +19,7 @@ onMounted(() => {
     <div id="particles-js"></div>
     <div class="content">
       <h1>{{ content.h1 }}</h1>
-      <h2>{{ content.h2 }}</h2>
+      <h2 v-html="formatBackline(content.h2)"></h2>
       <button>
         <router-link :to="content.button_link">{{ content.button_text }}</router-link>
       </button>

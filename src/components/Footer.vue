@@ -1,23 +1,26 @@
+<script setup>
+import yml from '@content/fr/footer.yml';
+
+const content = yml.footer;
+</script>
+
 <template>
   <footer>
-    <span>Contactez-moi !</span>
-    <div class="barre"></div>
-    <ul class="contacts">
-      <a href="https://github.com/Bigdil25007" class="icone-github">
-        <img src="/icons/github.png?url">
+    <span>{{ content.contactMe }}</span>
+    <div class="barre" />
+    <div class="contacts">
+      <a v-for="(network, index) in content.socialNetworks" :key="network.name" :href="network.url">
+        <img :src="network.icon">
       </a>
-      <a href="https://www.linkedin.com/in/bilal-oulahal" class="icone-linkedin">
-        <img src="/icons/linkedin.png?url">
-      </a>
-    </ul>
-    <ul class="pages">
-      <span>© Copyright 2024 - Bilal Oulahal. Tous droits réservés.</span>
+    </div>
+    <div class="pages">
+      <span>{{ content.copyright }}</span>
       <div class="wrapper">
-        <router-link to="/mentions-legales">Mentions légales</router-link>
+        <router-link :to="content.mentionsLegales.to">{{ content.mentionsLegales.text }}</router-link>
         <span>|</span>
-        <router-link to="/plan-site">Plan du site</router-link>
+        <router-link :to="content.planSite.to">{{ content.planSite.text }}</router-link>
       </div>
-    </ul>
+    </div>
   </footer>
 </template>
 

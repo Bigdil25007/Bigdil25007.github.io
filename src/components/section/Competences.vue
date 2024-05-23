@@ -1,42 +1,38 @@
 <script setup>
 import Anchor from '@component/utils/Anchor.vue';
-import CV from "@component/utils/CV.vue";
+import CV from "@component/CV.vue";
 import ProgressBar from "@component/utils/ProgressBar.vue";
 
-const competences = {
-    backend: {
-        Java: 90,
-        Python: 90,
-    },
-    frontend: {
-        Vue: 80,
-        HTML: 85,
-        CSS: 80,
-    },
-    applications: {
-        Git: 95,
-        Docker: 85,
-    },
-};
-
-const colors = ['rgb(25, 135, 84)', 'rgb(13, 202, 240)', 'rgb(255, 193, 7)'];
+const { content } = defineProps({
+  content: {
+    type: Object,
+    required: true
+  }
+});
 </script>
 
 <template>
-    <Anchor id="competences"/>
-    <section>
-        <h1>Compétences</h1>
-        <h2>Voici les compétences que j'ai acquises au cours de mes études et de mes expériences professionnelles</h2>
-        <div class="content">
-          <div class="list">
-            <div v-for="(category, categoryName, index) in competences" :key="categoryName" class="category">
-              <h3 :style="{textTransform: 'capitalize' }">{{ categoryName }}</h3>
-              <ProgressBar v-for="(value, skill) in category" :key="skill" :title="skill" :fill="value" :color="colors[index]"/>
-            </div>
-          </div>
-          <CV />
+  <Anchor :id="content.id"/>
+  <section>
+    <h1>{{ content.title }}</h1>
+    <h2>{{ content.description }}</h2>
+    <div class="content">
+      <div class="list">
+        <div v-for="(category, index) in content.list" :key="index" class="category">
+          <h3 :style="{textTransform: 'capitalize' }">{{ Object.keys(category)[0] }}</h3>
+          <ProgressBar 
+            v-for="(skill, skillIndex) in category[Object.keys(category)[0]]" 
+            :key="skillIndex" 
+            :title="skill.skill" 
+            :fill="skill.value" 
+            :color="content.colors[index]"
+          />
         </div>
-    </section>
+      </div>
+      <!-- CV -->
+      <CV :content="content.cv"/>
+    </div>
+  </section>
 </template>
 
 <style scoped>

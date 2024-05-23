@@ -1,12 +1,16 @@
 <script setup>
-const pdfImagePath = '/cv/CV.jpg?url';
-const pdfFilePath = '/cv/CV.pdf?url';
+const { content } = defineProps({
+  content: {
+    type: Object,
+    required: true
+  }
+});
 </script>
 
 <template>
     <div class="cv">
-        <img :src="pdfImagePath" alt="Curriculum Vitae"/>
-        <button type="submit" @click="() => {window.open(pdfFilePath)}">Télécharger</button>
+        <img :src="content.pdfImagePath" alt="Curriculum Vitae"/>
+        <button type="submit" @click="() => {window.open(content.pdfFilePath)}">{{ content.buttonText }}</button>
     </div>
 </template>
 
