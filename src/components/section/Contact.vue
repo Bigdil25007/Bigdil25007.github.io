@@ -69,7 +69,7 @@ const displayError = (message) => {
 </script>
 
 <template>
-  <Anchor :id="content.id"/>
+  <Anchor :id="content.id" height="1rem"/>
   <section>
     <form @submit.prevent="submitForm">
       <div class="input-field">
@@ -104,7 +104,7 @@ form {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    background-color: rgba(65, 66, 69, 0.479);
+    background-color: rgba(243, 243, 248, 0.604);
     border-radius: 1.25rem;
     padding: 2.5rem 2rem;
 }

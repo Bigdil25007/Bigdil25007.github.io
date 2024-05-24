@@ -1,4 +1,5 @@
 <script setup>
+import Contact from '@component/section/Contact.vue';
 import yml from '@content/fr/footer.yml';
 
 const content = yml.footer;
@@ -8,8 +9,9 @@ const content = yml.footer;
   <footer>
     <span>{{ content.contactMe }}</span>
     <div class="barre" />
+    <Contact :content="content.form" />
     <div class="contacts">
-      <a v-for="(network, index) in content.socialNetworks" :key="network.name" :href="network.url">
+      <a v-for="network in content.socialNetworks" :key="network.name" :href="network.url">
         <img :src="network.icon">
       </a>
     </div>

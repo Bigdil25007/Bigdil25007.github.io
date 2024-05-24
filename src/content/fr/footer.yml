@@ -14,3 +14,22 @@ footer:
   planSite:
     text: "Plan du site"
     to: "/plan-site"
+  form:
+    id: "contact"
+    placeholders:
+      name: "Nom"
+      email: "Adresse e-mail"
+      subject: "Objet"
+      message: "Votre message"
+    labels:
+      name: "Nom et prénom"
+      email: "Email"
+      subject: "Objet"
+      message: "Message"
+    errors:
+      fieldRequired: "Au moins un champ n'a pas été rempli."
+      invalidEmail: "L'adresse e-mail n'est pas valide."
+      apiError: "L'API pour stocker le formulaire ne peut pas être implémenté tant que le site tourne en localhost."
+    successMessage: "Merci d'avoir rempli ce formulaire, je vous recontacterai dans les plus brefs délais"
+    buttonText: "Me contacter"
+    charCounter: 2000

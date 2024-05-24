@@ -8,6 +8,10 @@ const props = defineProps({
         type: String,
         required: true
     },
+    title: {
+        type: String,
+        default: ''
+    },
     paragraph: {
         type: String,
         required: true
@@ -19,6 +23,7 @@ const props = defineProps({
   <li :class="$attrs.class">
     <div>
       <time>{{ date }}</time> 
+      <h2>{{ title }}</h2>
       <p>{{ paragraph }}</p>
       <img :src="imageUrl" alt="">
     </div>
@@ -26,6 +31,12 @@ const props = defineProps({
 </template>
 
 <style scoped>
+h2 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
 li {
   position: relative;
   width: 4px;
@@ -95,7 +106,7 @@ time {
 }
 
 img {
-  width: 60%;
+  width: 50%;
   height: auto;
   margin-top: 8%;
   align-self: center;
