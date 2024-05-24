@@ -7,10 +7,10 @@ import Competences from "@component/section/Competences.vue";
 import Caroussel from "@component/section/Caroussel.vue";
 import Banner from "@component/utils/Banner.vue";
 
-import yml from '@content/fr/main_page.yml'
+// import yml from '@content/fr/pages/main_page.yml'
 
-const banner0 = yml.banners[0];
-const banner1 = yml.banners[1];
+// const banner0 = yml.banners[0];
+// const banner1 = yml.banners[1];
 </script>
 
 <template>

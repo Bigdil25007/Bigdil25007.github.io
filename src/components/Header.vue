@@ -1,6 +1,9 @@
 <script setup>
 import { ref, onMounted } from 'vue'
-import yml from '@content/fr/header.yml';
+import yml from '@content/section/header.yml';
+
+import { getContent } from '/src/utils.js';
+import { useRoute } from 'vue-router';
 
 const props = defineProps({
   noeffect: {
@@ -9,7 +12,7 @@ const props = defineProps({
   }
 });
 
-const content = yml.header;
+const content = getContent(yml, useRoute().params.lang);
 
 const isOpaque = ref(props.noeffect);
 const currentSection = ref('');

@@ -1,8 +1,11 @@
 <script setup>
 import Header from "@component/Header.vue";
-import yml from '@content/fr/site_map.yml';
+import yml from '@content/pages/site_map.yml';
 
-const content = yml.sitemap;
+import { getContent } from '/src/utils.js';
+import { useRoute } from 'vue-router';
+
+const content = getContent(yml, useRoute().params.lang);
 const links = content.links;
 </script>
 

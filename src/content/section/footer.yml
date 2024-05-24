@@ -1,4 +1,4 @@
-footer:
+fr:
   contactMe: "Contactez-moi !"
   copyright: "© Copyright 2024 - Bilal Oulahal. Tous droits réservés."
   socialNetworks:
@@ -33,3 +33,36 @@ footer:
     successMessage: "Merci d'avoir rempli ce formulaire, je vous recontacterai dans les plus brefs délais"
     buttonText: "Me contacter"
     charCounter: 2000
+
+en:
+  contactMe: "Contact me!"
+  copyright: "© Copyright 2024 - Bilal Oulahal. All rights reserved."
+  socialNetworks:
+    - name: "github"
+      url: "https://github.com/Bigdil25007"
+      icon: "/icons/github.png?url"
+    - name: "linkedin"
+      url: "https://linkedin.com/in/bilal-oulahal"
+      icon: "/icons/linkedin.png?url"
+  mentionsLegales:
+    text: "Legal Notice"
+    to: "/en/mentions-legales"
+  planSite:
+    text: "Site Map"
+    to: "/en/plan-site"
+  form:
+    id: "contact"
+    placeholders:
+      name: "Name"
+      email: "Email address"
+      subject: "Subject"
+      message: "Your message"
+    labels:
+      name: "Full name"
+      email: "Email"
+      subject: "Subject"
+      message: "Message"
+    errors:
+      fieldRequired: "At least one field has not been filled."
+      invalidEmail: "The email address is not valid."
+      apiError: "The API to store the form cannot be implemented while the site is running on localhost."

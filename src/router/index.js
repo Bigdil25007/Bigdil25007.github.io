@@ -8,31 +8,36 @@ import Sitemap from '@page/Sitemap.vue';
 
 const routes = [
   {
-    path: '/',
-    name: 'Portfolio',
-    component: MainPage
+    path: '/:lang?',
+    children: [
+      {
+        path: '',
+        name: 'Portfolio',
+        component: MainPage,
+      },
+      {
+        path: 'projets',
+        name: 'Projets',
+        component: Projets,
+      },
+      {
+        path: 'projets/:id',
+        name: 'ProjetDetail',
+        component: ProjetDetail,
+        props: true,
+      },
+      {
+        path: 'mentions-legales',
+        name: 'LegalMentions',
+        component: LegalMentions,
+      },
+      {
+        path: 'plan-site',
+        name: 'PlanSite',
+        component: Sitemap,
+      },
+    ],
   },
-  {
-    path: '/projets',
-    name: 'Projets',
-    component: Projets,
-  },
-  {
-    path: '/projets/:id',
-    name: 'ProjetDetail',
-    component: ProjetDetail,
-    props: true,
-  },
-  {
-    path: '/mentions-legales',
-    name: 'LegalMentions',
-    component: LegalMentions,
-  },
-  {
-    path: '/plan-site',
-    name: 'PlanSite',
-    component: Sitemap,
-  }
 ];
 
 const router = createRouter({

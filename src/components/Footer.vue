@@ -1,8 +1,11 @@
 <script setup>
 import Contact from '@component/section/Contact.vue';
-import yml from '@content/fr/footer.yml';
+import yml from '@content/section/footer.yml';
 
-const content = yml.footer;
+import { getContent } from '/src/utils.js';
+import { useRoute } from 'vue-router';
+
+const content = getContent(yml, useRoute().params.lang);
 </script>
 
 <template>

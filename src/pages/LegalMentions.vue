@@ -1,8 +1,12 @@
 <script setup>
 import Header from "@component/Header.vue";
-import yml from '@content/fr/legal_mentions.yml';
+import Footer from "@component/Footer.vue";
+import yml from '@content/pages/legal_mentions.yml';
 
-const content = yml.legal_mentions;
+import { getContent } from '/src/utils.js';
+import { useRoute } from 'vue-router';
+
+const content = getContent(yml, useRoute().params.lang);
 const sections = content.sections;
 </script>
 
@@ -16,6 +20,7 @@ const sections = content.sections;
       <p v-html="section.content"></p>
     </div>
   </section>
+  <Footer />
 </template>
 
 <style scoped>

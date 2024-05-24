@@ -1,0 +1,27 @@
+fr:
+  home: "Bilal Oulahal"
+  links:
+    - name: "contacts"
+      path: "/#contact"
+    - name: "projets"
+      path: "/#projets"
+    - name: "compétences"
+      path: "/#competences"
+    - name: "parcours"
+      path: "/#parcours"
+    - name: "à propos de moi"
+      path: "/#about-me"
+
+en:
+  home: "Bilal Oulahal"
+  links:
+    - name: "contacts"
+      path: "/en/#contact"
+    - name: "projects"
+      path: "/en/#projects"
+    - name: "skills"
+      path: "/en/#competences"
+    - name: "career"
+      path: "/en/#parcours"
+    - name: "About me"
+      path: "/en/#about-me"
