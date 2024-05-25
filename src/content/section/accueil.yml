@@ -1,0 +1,15 @@
+fr:
+  h1: "à la recherche d'un développeur web backend ?"
+  h2: |
+    Ça tombe bien je suis passionné par ce domaine !
+    Découvrez juste en dessous mon profil et mes projets
+  button_text: "Qui-suis je ?"
+  button_link: "#about-me"
+
+en:
+  h1: "Looking for a backend web developer?"
+  h2: |
+    You're in luck, I'm passionate about this field!
+    Discover my profile and projects just below
+  button_text: "Who am I?"
+  button_link: "#about-me"

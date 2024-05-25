@@ -1,5 +1,6 @@
 <script setup>
 import Header from "@component/Header.vue";
+import Footer from "@component/Footer.vue";
 import yml from '@content/pages/site_map.yml';
 
 import { getContent } from '/src/utils.js';
@@ -21,6 +22,7 @@ const links = content.links;
       </ul>
     </div>
   </section>
+  <Footer />
 </template>
 
 <style scoped>

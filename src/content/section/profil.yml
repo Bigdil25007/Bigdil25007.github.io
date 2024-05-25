@@ -1,0 +1,25 @@
+fr:
+  id: "about-me"
+  title: "Faisons connaissance :)"
+  paragraph: |
+    Hello ! Moi c'est Bilal Oulahal, développeur junior en backend âgé de 20 ans.
+    Je suis actuellement en formation pour obtenir un BUT Informatique (Bac+3) et compte par la suite continuer mes études pour obtenir un diplôme d'ingénieur. Malgré le fait qu'il me reste des années d'étude, je souhaite dès maitenant me mettre en avant sur internet pour attirer les profils intéressés par mon portfolio.
+    Vous pouvez retrouver sur ce site mon parcours, mes compétences (non exhaustif) et mes projets majeurs.
+
+    N'hésitez pas à me contacter grâce au formulaire en fin de page.
+  img:
+    src: "/divers/profile.jpg?url"
+    alt: "Profile Photo"
+
+en:
+  id: "about-me"
+  title: "Let's get to know each other :)"
+  paragraph: |
+    Hello! My name is Bilal Oulahal, a 20 y/o junior backend developer.
+    I am currently studying to obtain a Bachelor's degree in Computer Science (Bac+3) and plan to continue my studies to obtain an engineering degree. Despite having years of study ahead of me, I want to start showcasing myself on the internet to attract profiles interested in my portfolio.
+    On this website, you can find my background, my skills (non-exhaustive), and my major projects.
+
+    Feel free to contact me using the form at the end of the page.
+  img:
+    src: "/divers/profile.jpg?url"
+    alt: "Profile Photo"

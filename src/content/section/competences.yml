@@ -1,0 +1,61 @@
+fr:
+  id: "competences"
+  title: "Compétences"
+  description: "Voici les compétences que j'ai acquises au cours de mes études et de mes expériences professionnelles"
+  list:
+    - backend:
+        - skill: "Java"
+          value: 90
+        - skill: "Python"
+          value: 90
+    - frontend:
+        - skill: "Vue"
+          value: 80
+        - skill: "HTML"
+          value: 85
+        - skill: "CSS"
+          value: 80
+    - applications:
+        - skill: "Git"
+          value: 95
+        - skill: "Docker"
+          value: 85
+  colors:
+    - "rgb(25, 135, 84)"
+    - "rgb(13, 202, 240)"
+    - "rgb(255, 193, 7)"
+  cv:
+    pdfImagePath: "/cv/CV.jpg?url"
+    pdfFilePath: "/cv/CV.pdf?url"
+    buttonText: "Télécharger"
+
+en:
+  id: "competences"
+  title: "Skills"
+  description: "Here are the skills I have acquired during my studies and professional experiences"
+  list:
+    - backend:
+        - skill: "Java"
+          value: 90
+        - skill: "Python"
+          value: 90
+    - frontend:
+        - skill: "Vue"
+          value: 80
+        - skill: "HTML"
+          value: 85
+        - skill: "CSS"
+          value: 80
+    - applications:
+        - skill: "Git"
+          value: 95
+        - skill: "Docker"
+          value: 85
+  colors:
+    - "rgb(25, 135, 84)"
+    - "rgb(13, 202, 240)"
+    - "rgb(255, 193, 7)"
+  cv:
+    pdfImagePath: "/cv/CV.jpg?url"
+    pdfFilePath: "/cv/CV.pdf?url"
+    buttonText: "Télécharger"

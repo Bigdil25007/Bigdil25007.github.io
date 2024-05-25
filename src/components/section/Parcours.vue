@@ -2,13 +2,13 @@
 import { onMounted } from 'vue';
 import Anchor from '@component/utils/Anchor.vue';
 import TimelineItem from '@component/utils/TimelineItem.vue';
+import yml from '@content/section/parcours.yml';
 
-const { content } = defineProps({
-  content: {
-    type: Object,
-    required: true
-  }
-});
+import { getContent } from '/src/utils.js';
+import { useRoute } from 'vue-router';
+
+const content = getContent(yml, useRoute().params.lang);
+
 
 function isElementInViewport(el) {
   var rect = el.getBoundingClientRect();

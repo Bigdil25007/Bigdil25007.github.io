@@ -2,14 +2,12 @@
 import { onMounted } from 'vue';
 import Slide from "@component/utils/Slide.vue";
 import Anchor from '@component/utils/Anchor.vue';
+import yml from '@content/section/caroussel.yml';
 
-const { content } = defineProps({
-  content: {
-    type: Object,
-    required: true
-  }
-});
+import { getContent } from '/src/utils.js';
+import { useRoute } from 'vue-router';
 
+const content = getContent(yml, useRoute().params.lang);
 const slides = content.slides;
 const link = content.link;
 

@@ -1,16 +1,13 @@
 <script setup>
 import { onMounted } from 'vue';
-import { formatBackline } from '/src/utils.js';
+import { formatBackline, getContent } from '/src/utils.js';
+import { useRoute } from 'vue-router';
 
-const { content } = defineProps({
-  content: {
-    type: Object,
-    required: true
-  }
-});
+import yml from '@content/section/accueil.yml';
+const content = getContent(yml, useRoute().params.lang);
 
 onMounted(() => {
-  particlesJS.load('particles-js', 'src/particle-js/particles.json');
+  particlesJS.load('particles-js', '/src/particle-js/particles.json');
 });
 </script>
 

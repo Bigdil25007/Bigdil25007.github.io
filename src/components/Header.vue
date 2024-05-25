@@ -13,6 +13,7 @@ const props = defineProps({
 });
 
 const content = getContent(yml, useRoute().params.lang);
+const home = content.home;
 
 const isOpaque = ref(props.noeffect);
 const currentSection = ref('');
@@ -61,7 +62,7 @@ onMounted(() => {
 
 <template>
   <header :class="{ opaque: isOpaque }">
-    <a id="boutonAccueil" href="/" :title="content.home">{{ content.home }}</a>
+    <router-link id="boutonAccueil" :to="home.link" :title="home.text">{{ home.text }}</router-link>
       <ul class="nav">
         <li v-for="(link, index) in content.links" :key="index">
           <router-link :to="link.path" :class="linkClasses(link.path)">{{ link.name }}</router-link>

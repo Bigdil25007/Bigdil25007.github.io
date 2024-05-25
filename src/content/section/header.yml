@@ -1,5 +1,7 @@
 fr:
-  home: "Bilal Oulahal"
+  home:
+    text: "Bilal Oulahal"
+    link: "/"
   links:
     - name: "contacts"
       path: "/#contact"
@@ -13,12 +15,14 @@ fr:
       path: "/#about-me"
 
 en:
-  home: "Bilal Oulahal"
+  home:
+    text: "Bilal Oulahal"
+    link: "/en"
   links:
     - name: "contacts"
       path: "/en/#contact"
     - name: "projects"
-      path: "/en/#projects"
+      path: "/en/#projets"
     - name: "skills"
       path: "/en/#competences"
     - name: "career"

@@ -1,120 +1,21 @@
-accueil:
-  h1: "à la recherche d'un développeur web backend ?"
-  h2: |
-    Ça tombe bien je suis passionné par ce domaine !
-    Découvrez juste en dessous mon profil et mes projets
-  button_text: "Qui-suis je ?"
-  button_link: "#about-me"
+fr:  
+  banners:
+    - src: "/background/servor.jpg?url"
+      html:
+        - type: "h1"
+          content: "Actuellement :"
+        - type: "p"
+          content: "Développeur logiciel chez OVHcloud (stage)"
+    - src: "/background/servor.jpg?url"
+      html: ""
 
-profil:
-  id: "about-me"
-  title: "Faisons connaissance :)"
-  paragraph: |
-    Hello ! Moi c'est Bilal Oulahal, développeur junior en backend âgé de 20 ans.
-    Je suis actuellement en formation pour obtenir un BUT Informatique (Bac+3) et compte par la suite continuer mes études pour obtenir un diplôme d'ingénieur. Malgré le fait qu'il me reste des années d'étude, je souhaite dès maitenant me mettre en avant sur internet pour attirer les profils intéressés par mon portfolio.
-    Vous pouvez retrouver sur ce site mon parcours, mes compétences (non exhaustif) et mes projets majeurs.
-
-    N'hésitez pas à me contacter grâce au formulaire en fin de page.
-
-  img:
-    src: "/divers/profile.jpg?url"
-    alt: "Profile Photo"
-
-parcours:
-  id: "parcours"
-  title: "Mon parcours"
-  description: "Voici mon parcours professionnel dans le développement web"
-  items:
-    - date: "2024"
-      title: "Développeur logiciel chez OVHcloud (stage)"
-      imageUrl: "/parcours/ovh.webp?url"
-      paragraph: >
-        Pendant 3 mois, j'ai eu l'opportunité de travailler chez OVHcloud en tant que développeur logiciel.
-        J'ai pu travailler sur un projet de wizard (assistant logiciel) pour faciliter la configuration des ordinateurs portables des employés. 
-        Du côté technique, j'ai pu découvrir Electron (framework pour créer des applications desktop) et ReactJS. J'ai aussi appris à mieux utiliser Git et profiter de ses avantages.
-        De manière plus générale, j'ai appris à travailler en équipe et à communiquer avec des personnes de différents domaines pour se mettre d'accord sur les besoins.
-
-    - date: "2022 - Aujourd'hui"
-      title: "BUT Informatique (Parcours : Réalisation d'applications)"
-      imageUrl: "/parcours/iut.webp?url"
-      paragraph: >
-        Actuellement en formation pour obtenir ce diplôme, j'ai pu découvrir de nombreux domaines de l'informatique de manière plus ou moins approfondie.
-        J'ai pu faire de nombreux projets d'équipe (que vous pouvez retrouver sur ce site !) comme des applications webs ou des jeux vidéos. 
-        Pour ce qui est spécifiquement du développement web, j'ai pu découvrir de nombreux frameworks comme VueJS et ExpressJS.
-        J'ai particulièrement apprécié apprendre NodeJS pour apprendre le routage (gestion des requêtes HTTP) et  la communication avec une API ou une base de données (SQL et NoSQL).
-
-    - date: "2022"
-      title: "BAC Général (Spécialité NSI)"
-      paragraph: >
-        En 2022, j'ai obtenu ce diplôme après avoir eu 2 ans de cours de NSI (Numérique et Sciences de l'Informatique).
-        J'ai pu découvrir la programmation avec Python, les bases de données avec SQL et le développement web de manière plus concrète.
-        C'est à cette période que je me suis rendu compte que la partie backend m'intéressait plus que le frontend.
-
-    - date: "2019"
-      title: "Stage de découverte du développement web"
-      imageUrl: "/parcours/adista.webp?url"
-      paragraph: >
-        Ma première expérience avec le développement web a été lors d'un stage de découverte du monde professionnel. 
-        C'est à ce moment que j'ai découvert pour la première fois ce domaine qui me suit depuis.
-        J'ai alors démarré par apprendre les rudiments : HTML, CSS et JavaScript.
-
-competences:
-  id: "competences"
-  title: "Compétences"
-  description: "Voici les compétences que j'ai acquises au cours de mes études et de mes expériences professionnelles"
-  list:
-    - backend:
-        - skill: "Java"
-          value: 90
-        - skill: "Python"
-          value: 90
-    - frontend:
-        - skill: "Vue"
-          value: 80
-        - skill: "HTML"
-          value: 85
-        - skill: "CSS"
-          value: 80
-    - applications:
-        - skill: "Git"
-          value: 95
-        - skill: "Docker"
-          value: 85
-  colors:
-    - "rgb(25, 135, 84)"
-    - "rgb(13, 202, 240)"
-    - "rgb(255, 193, 7)"
-  cv:
-    pdfImagePath: "/cv/CV.jpg?url"
-    pdfFilePath: "/cv/CV.pdf?url"
-    buttonText: "Télécharger"
-
-caroussel:
-  id: "projets"
-  title: "Mes projets"
-  link:
-    text: "Retrouvez tous mes projets ici !"
-    path: "/projets"
-  slides:
-    - imgSrc: "/projets/0/resultat.webp?url"
-      imgAlt: "..."
-      title: "First slide label"
-      content: "Some representative placeholder content for the first slide."
-    - imgSrc: "/projets/0/resultat.webp?url"
-      imgAlt: "..."
-      title: "Second slide label"
-      content: "Some representative placeholder content for the second slide."
-    - imgSrc: "/projets/0/resultat.webp?url"
-      imgAlt: "..."
-      title: "Third slide label"
-      content: "Some representative placeholder content for the third slide."
-
-banners:
-  - src: "/background/servor.jpg?url"
-    html:
-      - type: "h1"
-        content: "Actuellement :"
-      - type: "p"
-        content: "Développeur logiciel chez OVHcloud (stage)"
-  - src: "/background/servor.jpg?url"
-    html: ""
+en: 
+  banners:
+    - src: "/background/servor.jpg?url"
+      html:
+        - type: "h1"
+          content: "Currently:"
+        - type: "p"
+          content: "Software Developer at OVHcloud (internship)"
+    - src: "/background/servor.jpg?url"
+      html: ""

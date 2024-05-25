@@ -1,13 +1,10 @@
 <script setup>
 import Anchor from '@component/utils/Anchor.vue';
-import { formatBackline } from '/src/utils.js';
+import { formatBackline, getContent } from '/src/utils.js';
+import { useRoute } from 'vue-router';
 
-const { content } = defineProps({
-  content: {
-    type: Object,
-    required: true
-  }
-});
+import yml from '@content/section/profil.yml';
+const content = getContent(yml, useRoute().params.lang);
 </script>
 
 <template>

@@ -12,14 +12,14 @@ const sections = content.sections;
 
 <template>
   <Header noeffect/>
-  <section class="legal-mentions">
+  <div class="legal-mentions">
     <h1>{{ content.title }}</h1>
     
-    <div v-for="(section, index) in sections" :key="index" class="wrapper">
+    <section v-for="(section, index) in sections" :key="index" class="wrapper">
       <h2>{{ section.title }}</h2>
       <p v-html="section.content"></p>
-    </div>
-  </section>
+    </section>
+  </div>
   <Footer />
 </template>
 

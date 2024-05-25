@@ -106,7 +106,7 @@ time {
 }
 
 img {
-  width: 50%;
+  width: 40%;
   height: auto;
   margin-top: 8%;
   align-self: center;
