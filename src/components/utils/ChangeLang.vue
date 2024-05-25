@@ -18,10 +18,10 @@ const getPath = (extension) => {
 
 <template>
   <div class="languages">
-    <div v-for="lang in languages" :key="lang.lang">
+    <div class="link" v-for="lang in languages" :key="lang.lang">
       <router-link :to="getPath(lang.path)">
         <img :src="lang.img" />
-      </router-link> 
+      </router-link>
     </div>
   </div>
 </template>
@@ -31,23 +31,33 @@ const getPath = (extension) => {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 1rem;
+    align-items: center;
+    margin-top: 1.5rem;
+    gap: 10rem;
+}
+
+.link {
+    width: 8%;
+    height: auto;
 }
 
 img {
-    width: 30px;
-    height: 30px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
     margin: 0 0.5rem;
     cursor: pointer;
+    transition: all 0.3s ease;
 
     &:hover {
         transform: scale(1.1);
+        opacity: 0.8;
     }
 }
 
-@media (max-width: 400px) {
-    .languages {
-        flex-direction: column;
+@media (max-width: 900px) {
+    .link {
+        width: 12%;
     }
 }
 </style>
