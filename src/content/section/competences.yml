@@ -56,6 +56,6 @@ en:
     - "rgb(13, 202, 240)"
     - "rgb(255, 193, 7)"
   cv:
-    pdfImagePath: "/cv/CV.jpg?url"
-    pdfFilePath: "/cv/CV.pdf?url"
+    pdfImagePath: "/cv/CV-EN.jpg?url"
+    pdfFilePath: "/cv/CV-EN.pdf?url"
     buttonText: "Télécharger"
