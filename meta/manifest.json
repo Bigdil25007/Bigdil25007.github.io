@@ -1,0 +1,22 @@
+{
+  "name":"Portfolio de Bilal Oulahal",
+  "short_name":"Portfolio Bilal-Oulahal",
+  "description":"Bilal OULAHAL, étudiant et développeur web | backend en Rhônes-Alpes. Création de sites internet dynamiques. Voici mon portfolio où vous pourrez retrouver mon parcours et tous mes projets.",
+  "theme_color":"#ffffff",
+  "background_color":"#1c385e",
+  "display":"standalone",
+  "icons":[
+    {
+      "src":"/meta/favicon/favicon-192x192.png",
+      "sizes":"192x192","type":"image/png"
+    },
+    {
+      "src":"/meta/favicon/favicon-16x16.png",
+      "sizes":"16x16","type":"image/png"
+    },
+    {
+      "src":"/meta/favicon/favicon-32x32.png",
+      "sizes":"32x32","type":"image/png"
+    }
+  ]
+}
