@@ -66,3 +66,5 @@ en:
       fieldRequired: "At least one field has not been filled."
       invalidEmail: "The email address is not valid."
       apiError: "The API to store the form cannot be implemented while the site is running on localhost."
+    buttonText: "Contact me"
+    charCounter: 2000

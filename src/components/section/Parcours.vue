@@ -1,14 +1,18 @@
 <script setup>
-import { onMounted } from 'vue';
+import { onMounted, ref, watch } from 'vue';
+
 import Anchor from '@component/utils/Anchor.vue';
 import TimelineItem from '@component/utils/TimelineItem.vue';
-import yml from '@content/section/parcours.yml';
 
-import { getContent } from '/src/utils.js';
+import yml from '@content/section/parcours.yml';
 import { useRoute } from 'vue-router';
 
-const content = getContent(yml, useRoute().params.lang);
+const router = useRoute();
+const content = ref(yml[router.params.lang]);
 
+watch(() => router.params.lang, (newLang) => {
+  content.value = yml[newLang];
+});
 
 function isElementInViewport(el) {
   var rect = el.getBoundingClientRect();

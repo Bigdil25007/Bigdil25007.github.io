@@ -8,7 +8,11 @@ import Sitemap from '@page/Sitemap.vue';
 
 const routes = [
   {
-    path: '/:lang?',
+    path: '/',
+    redirect: '/fr',
+  },
+  {
+    path: '/:lang',
     children: [
       {
         path: '',

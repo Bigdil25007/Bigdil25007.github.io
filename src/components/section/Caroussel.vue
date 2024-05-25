@@ -1,15 +1,22 @@
 <script setup>
-import { onMounted } from 'vue';
+import { onMounted, ref, watch } from 'vue';
+
 import Slide from "@component/utils/Slide.vue";
 import Anchor from '@component/utils/Anchor.vue';
-import yml from '@content/section/caroussel.yml';
 
-import { getContent } from '/src/utils.js';
+import yml from '@content/section/caroussel.yml';
 import { useRoute } from 'vue-router';
 
-const content = getContent(yml, useRoute().params.lang);
-const slides = content.slides;
-const link = content.link;
+const router = useRoute();
+const content = ref(yml[router.params.lang]);
+const slides = ref(content.value.slides);
+const link = ref(content.value.link);
+
+watch(() => router.params.lang, (newLang) => {
+  content.value = yml[newLang];
+  slides.value = content.value.slides;
+  link.value = content.value.link;
+});
 
 
 onMounted(() => {

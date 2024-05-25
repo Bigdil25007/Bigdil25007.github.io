@@ -1,10 +1,17 @@
 <script setup>
-import { onMounted } from 'vue';
-import { formatBackline, getContent } from '/src/utils.js';
+import { onMounted, ref, watch } from 'vue';
 import { useRoute } from 'vue-router';
 
+import { formatBackline } from '/src/utils.js';
 import yml from '@content/section/accueil.yml';
-const content = getContent(yml, useRoute().params.lang);
+
+const router = useRoute();
+const content = ref(yml[router.params.lang]);
+
+watch(() => router.params.lang, (newLang) => {
+  content.value = yml[newLang];
+});
+
 
 onMounted(() => {
   particlesJS.load('particles-js', '/src/particle-js/particles.json');

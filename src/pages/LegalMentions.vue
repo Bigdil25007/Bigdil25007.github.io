@@ -1,13 +1,20 @@
 <script setup>
 import Header from "@component/Header.vue";
 import Footer from "@component/Footer.vue";
+
 import yml from '@content/pages/legal_mentions.yml';
-
-import { getContent } from '/src/utils.js';
 import { useRoute } from 'vue-router';
+import { ref, watch } from 'vue';
 
-const content = getContent(yml, useRoute().params.lang);
-const sections = content.sections;
+const router = useRoute();
+
+const content = ref(yml[router.params.lang]);
+const sections = ref(content.value.sections);
+
+watch(() => router.params.lang, (newLang) => {
+  content.value = yml[newLang];
+  sections.value = content.value.sections;
+});
 </script>
 
 <template>
@@ -20,7 +27,7 @@ const sections = content.sections;
       <p v-html="section.content"></p>
     </section>
   </div>
-  <Footer />
+  <Footer :path="router.path"/>
 </template>
 
 <style scoped>

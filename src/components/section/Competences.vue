@@ -2,12 +2,17 @@
 import Anchor from '@component/utils/Anchor.vue';
 import CV from "@component/CV.vue";
 import ProgressBar from "@component/utils/ProgressBar.vue";
+
 import yml from '@content/section/competences.yml';
-
-import { getContent } from '/src/utils.js';
 import { useRoute } from 'vue-router';
+import { ref, watch } from 'vue';
 
-const content = getContent(yml, useRoute().params.lang);
+const router = useRoute();
+const content = ref(yml[router.params.lang]);
+
+watch(() => router.params.lang, (newLang) => {
+  content.value = yml[newLang];
+});
 </script>
 
 <template>

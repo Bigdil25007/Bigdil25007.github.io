@@ -1,10 +1,17 @@
 <script setup>
 import Anchor from '@component/utils/Anchor.vue';
-import { formatBackline, getContent } from '/src/utils.js';
+import { formatBackline } from '/src/utils.js';
 import { useRoute } from 'vue-router';
+import { ref, watch } from 'vue';
 
 import yml from '@content/section/profil.yml';
-const content = getContent(yml, useRoute().params.lang);
+
+const router = useRoute();
+const content = ref(yml[router.params.lang]);
+
+watch(() => router.params.lang, (newLang) => {
+  content.value = yml[newLang];
+});
 </script>
 
 <template>

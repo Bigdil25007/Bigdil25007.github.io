@@ -1,4 +1,6 @@
 <script setup>
+import { watch, ref } from 'vue';
+
 import Header from "@component/Header.vue";
 import Footer from "@component/Footer.vue";
 import Accueil from "@component/section/Accueil.vue";
@@ -9,13 +11,18 @@ import Caroussel from "@component/section/Caroussel.vue";
 import Banner from "@component/utils/Banner.vue";
 
 import yml from '@content/pages/main_page.yml';
-
-import { getContent } from '/src/utils.js';
 import { useRoute } from 'vue-router';
+const router = useRoute();
 
-const content = getContent(yml, useRoute().params.lang);
-const banner0 = content.banners[0];
-const banner1 = content.banners[1];
+const content = ref(yml[router.params.lang]);
+const banner0 = ref(content.value.banners[0]);
+const banner1 = ref(content.value.banners[1]);
+
+watch(() => router.params.lang, (newLang) => {
+  content.value = yml[newLang];
+  banner0.value = content.value.banners[0];
+  banner1.value = content.value.banners[1];
+});
 </script>
 
 <template>
@@ -31,7 +38,7 @@ const banner1 = content.banners[1];
   <Banner :src="banner1.src" />
   <Competences />
   <Caroussel />
-  <Footer />
+  <Footer :path="router.path"/>
 </template>
 
 <style scoped>

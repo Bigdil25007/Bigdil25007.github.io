@@ -1,13 +1,20 @@
 <script setup>
 import Header from "@component/Header.vue";
 import Footer from "@component/Footer.vue";
+
 import yml from '@content/pages/site_map.yml';
-
-import { getContent } from '/src/utils.js';
 import { useRoute } from 'vue-router';
+import { ref, watch } from 'vue';
 
-const content = getContent(yml, useRoute().params.lang);
-const links = content.links;
+const router = useRoute();
+
+const content = ref(yml[router.params.lang]);
+const links = ref(content.value.links);
+
+watch(() => router.params.lang, (newLang) => {
+  content.value = yml[newLang];
+  links.value = content.value.links;
+});
 </script>
 
 <template>
@@ -22,7 +29,7 @@ const links = content.links;
       </ul>
     </div>
   </section>
-  <Footer />
+  <Footer :path="router.path"/>
 </template>
 
 <style scoped>

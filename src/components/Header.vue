@@ -1,9 +1,15 @@
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, watch } from 'vue';
+import { useRoute } from 'vue-router';
 import yml from '@content/section/header.yml';
 
-import { getContent } from '/src/utils.js';
-import { useRoute } from 'vue-router';
+const router = useRoute();
+const content = ref(yml[router.params.lang]);
+const home = ref(content.value.home);
+
+watch(() => router.params.lang, (newLang) => {
+  content.value = yml[newLang];
+});
 
 const props = defineProps({
   noeffect: {
@@ -11,9 +17,6 @@ const props = defineProps({
     default: false
   }
 });
-
-const content = getContent(yml, useRoute().params.lang);
-const home = content.home;
 
 const isOpaque = ref(props.noeffect);
 const currentSection = ref('');

@@ -1,11 +1,22 @@
 <script setup>
+import { useRoute } from 'vue-router';
+import { ref, watch } from 'vue';
+
 import Contact from '@component/section/Contact.vue';
+import ChangeLang from '@component/utils/ChangeLang.vue';
 import yml from '@content/section/footer.yml';
 
-import { getContent } from '/src/utils.js';
-import { useRoute } from 'vue-router';
+const router = useRoute();
+const content = ref(yml[router.params.lang]);
+const path = ref(router.path);
 
-const content = getContent(yml, useRoute().params.lang);
+watch(() => router.params.lang, (newLang) => {
+  content.value = yml[newLang];
+});
+
+watch(() => router.path, (newPath) => {
+  path.value = newPath;
+});
 </script>
 
 <template>
@@ -18,6 +29,9 @@ const content = getContent(yml, useRoute().params.lang);
         <img :src="network.icon">
       </a>
     </div>
+
+    <ChangeLang :path="path"/>
+
     <div class="pages">
       <span>{{ content.copyright }}</span>
       <div class="wrapper">
