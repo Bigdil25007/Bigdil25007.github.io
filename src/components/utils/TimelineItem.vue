@@ -1,4 +1,6 @@
 <script setup>
+import { formatBackline } from '/src/utils.js';
+
 const props = defineProps({
     imageUrl: {
         type: String,
@@ -24,7 +26,7 @@ const props = defineProps({
     <div>
       <time>{{ date }}</time> 
       <h2>{{ title }}</h2>
-      <p>{{ paragraph }}</p>
+      <p v-html="formatBackline(paragraph) "></p>
       <img :src="imageUrl" alt="">
     </div>
   </li>
@@ -64,7 +66,7 @@ li div {
   flex-direction: column;
   position: relative;
   bottom: 0;
-  width: 400px;
+  width: 600px;
   padding: 15px;
   background: #f45b69;
 }
@@ -89,7 +91,7 @@ li:nth-child(odd) div {
 }
 
 li:nth-child(even) div {
-  left: -439px;
+  left: -639px;
 
   &:before {
       right: -15px;
@@ -107,6 +109,7 @@ time {
 
 img {
   width: 40%;
+  object-fit: scale-down;
   height: auto;
   margin-top: 8%;
   align-self: center;
@@ -172,6 +175,7 @@ li.in-view div {
     left: -15px;
     border-width: 8px 16px 8px 0;
     border-color: transparent #f45b69 transparent transparent;
+    rotate: 180deg;
   }
 }
 </style>

@@ -14,11 +14,11 @@ fr:
     - date: "2022 - Aujourd'hui"
       title: "BUT Informatique (Parcours : Réalisation d'applications)"
       imageUrl: "/parcours/iut.webp?url"
-      paragraph: >
-        Cette formation me permet de découvrir de nombreux domaines de l'informatique (web, jeu vidéo, réseau, base de données, ...).
-        J'ai pu faire de nombreux projets d'équipe (que vous pouvez retrouver sur ce site !) comme des applications webs ou des jeux vidéos. 
+      paragraph: |
+        Découverte de nombreux domaines de l'informatique (web, jeu vidéo, réseau, base de données, ...)
+        Création de plusieurs projets d'équipe (que vous pouvez retrouver sur ce site !) comme des applications webs ou jeux vidéos. 
         Pour ce qui est spécifiquement du développement web, j'ai découvert de nombreux frameworks comme VueJS et ExpressJS.
-        J'ai particulièrement apprécié apprendre NodeJS avec le routage (gestion des requêtes HTTP) et la communication avec des API ou bases de données (SQL et NoSQL).
+        J'ai aussi découvert NodeJS et ses outils. Par exemple : le routage (gestion des requêtes HTTP) et la communication avec des API ou bases de données (SQL et NoSQL).
 
     - date: "2022"
       title: "BAC Général (Spécialité NSI)"
