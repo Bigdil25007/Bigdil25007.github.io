@@ -27,7 +27,7 @@ watch(() => router.params.lang, (newLang) => {
       <p v-html="section.content"></p>
     </section>
   </div>
-  <Footer :path="router.path"/>
+  <Footer disableContact :path="router.path"/>
 </template>
 
 <style scoped>

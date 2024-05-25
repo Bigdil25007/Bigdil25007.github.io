@@ -17,27 +17,37 @@ watch(() => router.params.lang, (newLang) => {
 watch(() => router.path, (newPath) => {
   path.value = newPath;
 });
+
+const props = defineProps({
+  disableContact: {
+    type: Boolean,
+    default: false
+  }
+});
 </script>
 
 <template>
   <footer>
-    <span>{{ content.contactMe }}</span>
-    <div class="barre" />
-    <Contact :content="content.form" />
-    <div class="contacts">
-      <a v-for="network in content.socialNetworks" :key="network.name" :href="network.url">
-        <img :src="network.icon">
-      </a>
+    <div v-if="!props.disableContact" class="contactSection">
+      <span>{{ content.contactMe }}</span>
+      <div class="barre" />
+      <Contact :content="content.form" />
+      <div class="contacts">
+        <a v-for="network in content.socialNetworks" :key="network.name" :href="network.url">
+          <img :src="network.icon">
+        </a>
+      </div>
     </div>
 
-    <ChangeLang :path="path"/>
-
-    <div class="pages">
-      <span>{{ content.copyright }}</span>
-      <div class="wrapper">
-        <router-link :to="content.mentionsLegales.to">{{ content.mentionsLegales.text }}</router-link>
-        <span>|</span>
-        <router-link :to="content.planSite.to">{{ content.planSite.text }}</router-link>
+    <div class="subfooter">
+      <ChangeLang :path="path"/>
+      <div class="pages">
+        <span>{{ content.copyright }}</span>
+        <div class="wrapper">
+          <router-link :to="content.mentionsLegales.to">{{ content.mentionsLegales.text }}</router-link>
+          <span>|</span>
+          <router-link :to="content.planSite.to">{{ content.planSite.text }}</router-link>
+        </div>
       </div>
     </div>
   </footer>
@@ -54,11 +64,16 @@ footer {
     flex-direction: column;
     margin-top: 4rem;
     background-color: #244057;
+}
 
-    &>span {
+.contactSection {
+    display: flex;
+    flex-direction: column;
+
+    & span {
         font-size: 200%;
         margin-top: 1%;
-    }
+    }    
 }
 
 .barre {
@@ -72,6 +87,7 @@ footer {
 
 .contacts {
     margin-top: 1.5rem;
+    margin-bottom: 1rem;
     display: flex;
     justify-content: center;
     gap: 10rem;
@@ -88,10 +104,7 @@ footer {
     }
 }
 
-.pages {
-    margin-top: 1%;
-    padding-top: 0.5%;
-    margin-bottom: 0;
+.subfooter {
     display: flex;
     flex-direction: column;
     box-shadow: 0px -2px 10px 5px rgba(0, 0, 0, 0.2);
@@ -109,5 +122,14 @@ footer {
             }
         }
     }
+}
+
+.pages {
+  padding-top: 1.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
 }
 </style>

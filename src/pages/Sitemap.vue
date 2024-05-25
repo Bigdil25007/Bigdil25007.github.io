@@ -29,7 +29,7 @@ watch(() => router.params.lang, (newLang) => {
       </ul>
     </div>
   </section>
-  <Footer :path="router.path"/>
+  <Footer disableContact :path="router.path"/>
 </template>
 
 <style scoped>

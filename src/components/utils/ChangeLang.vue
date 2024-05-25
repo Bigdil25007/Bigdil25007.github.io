@@ -26,7 +26,7 @@ const getPath = (extension) => {
   </div>
 </template>
 
-<style>
+<style scoped>
 .languages {
     display: flex;
     flex-direction: row;
@@ -37,7 +37,7 @@ const getPath = (extension) => {
 }
 
 .link {
-    width: 8%;
+    width: 6%;
     height: auto;
 }
 
@@ -57,7 +57,7 @@ img {
 
 @media (max-width: 900px) {
     .link {
-        width: 12%;
+        width: 10%;
     }
 }
 </style>
