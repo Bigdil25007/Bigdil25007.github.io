@@ -14,7 +14,7 @@ watch(() => router.params.lang, (newLang) => {
 
 
 onMounted(() => {
-  particlesJS.load('particles-js', '/src/particle-js/particles.json');
+  particlesJS.load('particles-js', '/particle-js/particles.json?url');
 });
 </script>
 
