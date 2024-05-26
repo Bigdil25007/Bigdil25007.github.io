@@ -27,7 +27,8 @@ function isElementInViewport(el) {
 
 function callbackFunc(listItems) {
     for (var i = 0; i < listItems.length; i++) {
-      if (isElementInViewport(listItems[i])) listItems[i].classList.add("in-view");
+      if (!listItems[i].classList.contains("in-view") && isElementInViewport(listItems[i])) 
+        listItems[i].classList.add("in-view");
     }
 }
 

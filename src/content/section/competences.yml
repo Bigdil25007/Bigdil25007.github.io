@@ -4,22 +4,26 @@ fr:
   description: "Voici les compétences que j'ai acquises au cours de mes études et de mes expériences professionnelles"
   list:
     - backend:
-        - skill: "Java"
-          value: 90
-        - skill: "Python"
-          value: 90
+        - skill: "ExpressJS"
+          value: 85
+        - skill: "PHP"
+          value: 70
     - frontend:
-        - skill: "Vue"
+        - skill: "VueJS"
+          value: 90
+        - skill: "ReactJS"
           value: 80
-        - skill: "HTML"
-          value: 85
         - skill: "CSS"
+          value: 70
+    - Bases de données:
+        - skill: "MySQL"
           value: 80
-    - applications:
+        - skill: "MongoDB"
+          value: 90
+    - outils:
         - skill: "Git"
-          value: 95
-        - skill: "Docker"
           value: 85
+
   colors:
     - "rgb(25, 135, 84)"
     - "rgb(13, 202, 240)"

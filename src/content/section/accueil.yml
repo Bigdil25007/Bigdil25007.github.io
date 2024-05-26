@@ -3,7 +3,7 @@ fr:
   h2: |
     Ça tombe bien je suis passionné par ce domaine !
     Découvrez juste en dessous mon profil et mes projets
-  button_text: "Qui-suis je ?"
+  button_text: "Qui suis-je ?"
   button_link: "/fr/#about-me"
 
 en:
@@ -11,5 +11,5 @@ en:
   h2: |
     You're in luck, I'm passionate about this field!
     Discover my profile and projects just below
-  button_text: "Who am I?"
+  button_text: "Who am I ?"
   button_link: "/en/#about-me"

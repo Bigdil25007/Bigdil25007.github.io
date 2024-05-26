@@ -30,13 +30,13 @@ watch(() => router.params.lang, (newLang) => {
   <Header />
   <Accueil />
   <Profil />
-  <Banner :src="banner0.src">
+  <Banner :src="banner0.src" :height="banner0.height">
     <component v-for="(item, index) in banner0.html" :is="item.type" :key="index">
       {{ item.content }}
     </component>
   </Banner>
   <Parcours />
-  <Banner :src="banner1.src" />
+  <Banner :src="banner1.src" :height="banner1.height"/>
   <Competences />
   <Caroussel />
   <Footer :path="router.path"/>

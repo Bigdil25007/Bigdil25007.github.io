@@ -27,7 +27,7 @@ const props = defineProps({
       <time>{{ date }}</time> 
       <h2>{{ title }}</h2>
       <p v-html="formatBackline(paragraph) "></p>
-      <img :src="imageUrl" alt="">
+      <img v-if="imageUrl" :src="imageUrl" alt="">
     </div>
   </li>
 </template>
@@ -109,9 +109,10 @@ time {
 
 img {
   width: 40%;
-  object-fit: scale-down;
-  height: auto;
-  margin-top: 8%;
+  max-height: 200px;
+  max-width: 300px;
+  object-fit: contain;
+  margin-top: 3%;
   align-self: center;
 }
 

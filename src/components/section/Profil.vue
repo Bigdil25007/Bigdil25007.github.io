@@ -29,7 +29,7 @@ watch(() => router.params.lang, (newLang) => {
 
 <style scoped>
 section {
-    width: 70%;
+    width: 60%;
     margin: 2% auto;
     position: relative;
     display: flex;
@@ -44,7 +44,6 @@ img {
 }
 
 .content {
-    width: 70%;
     margin: 5% auto;
     display: flex;
     flex-direction: row;

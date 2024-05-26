@@ -8,6 +8,7 @@ fr:
           content: "Développeur logiciel chez OVHcloud (stage)"
     - src: "/background/servor.jpg?url"
       html: ""
+      height: "10rem"
 
 en: 
   banners:

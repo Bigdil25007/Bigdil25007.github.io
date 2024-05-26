@@ -63,7 +63,7 @@ section {
 }
 
 .category {
-    margin: 1rem 0;
+    margin-bottom: 1rem;
 }
 
 @media (max-width: 1150px) {

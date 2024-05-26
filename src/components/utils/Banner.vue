@@ -10,7 +10,7 @@ const props = defineProps({
     },
     height: {
         type: String,
-        default: '25rem'
+        default: '20rem'
     }
 });
 </script>

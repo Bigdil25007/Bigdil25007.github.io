@@ -6,34 +6,38 @@ fr:
     - date: "2024"
       title: "Développeur logiciel chez OVHcloud (stage de 3 mois)"
       imageUrl: "/parcours/ovh.webp?url"
-      paragraph: >
-        J'ai pu travailler sur un projet de wizard (assistant logiciel) pour faciliter la configuration des ordinateurs portables des employés. 
-        Du côté technique, j'ai pu découvrir Electron et ReactJS ainsi que les avantages de Git.
-        De manière plus générale, j'ai appris à travailler en équipe et communiquer au sujet de point technique avec des personnes néophytes.
+      paragraph: |
+        Création d'un assistant logiciel d'installation utilisant Electron et ReactJS. 
+        Utilisation d'outils collaboratifs comme BitBucket (Git) et Jira  avec le framework AGILE.
 
     - date: "2022 - Aujourd'hui"
       title: "BUT Informatique (Parcours : Réalisation d'applications)"
       imageUrl: "/parcours/iut.webp?url"
       paragraph: |
-        Découverte de nombreux domaines de l'informatique (web, jeu vidéo, réseau, base de données, ...)
-        Création de plusieurs projets d'équipe (que vous pouvez retrouver sur ce site !) comme des applications webs ou jeux vidéos. 
-        Pour ce qui est spécifiquement du développement web, j'ai découvert de nombreux frameworks comme VueJS et ExpressJS.
-        J'ai aussi découvert NodeJS et ses outils. Par exemple : le routage (gestion des requêtes HTTP) et la communication avec des API ou bases de données (SQL et NoSQL).
+        Création de projets d'équipe (que vous pouvez retrouver sur ce site !) comme des applications webs ou jeux vidéos. 
+        Découverte de nombreux frameworks comme VueJS et ExpressJS.
+        Utilisation en majorité de NodeJS pour les apps web (routage, communication avec des API ou bases de données).
 
-    - date: "2022"
+    - date: "2023"
+      title: Obtention d'une certification "Introduction to Cyber Security" (Cisco)
+      paragraph: |
+        Intéressé par la cybersécurité, j'ai suivi un module pour comprendre les bases de ce domaine.
+        À la fin de cette formation, j'ai obtenu une certification de la part de Cisco, entreprise reconnue de réseau et cybersécurité.
+        (Certification visible sur mon profil LinkedIn)
+
+    - date: "2019 - 2022"
       title: "BAC Général (Spécialité NSI)"
-      paragraph: >
-        En 2022, j'ai obtenu ce diplôme après avoir eu 2 ans de cours de NSI (Numérique et Sciences de l'Informatique).
-        J'ai pu découvrir la programmation avec Python, les bases de données avec SQL et le développement web de manière plus concrète.
+      paragraph: |
+        NSI : Numérique et Sciences de l'Informatique
+        Cette spécialité m'a permis de découvrir la programmation avec Python, les bases de données avec SQL et le développement web de manière plus concrète.
         C'est à cette période que je me suis rendu compte que la partie backend m'intéressait plus que le frontend.
 
     - date: "2019"
       title: "Stage de découverte du développement web"
-      imageUrl: "/parcours/adista.webp?url"
-      paragraph: >
-        Ma première expérience avec le développement web a été lors d'un stage de découverte du monde professionnel. 
-        C'est à ce moment que j'ai découvert pour la première fois ce domaine qui me suit depuis.
-        J'ai alors démarré par apprendre les rudiments : HTML, CSS et JavaScript.
+      imageUrl: "/parcours/adista.jpg?url"
+      paragraph: |
+        Première expérience avec le développement web lors d'un stage de découverte du monde professionnel.
+        C'est à cette occasion que j'ai découvert pour la première fois ce domaine qui me suit depuis. J'ai alors démarré par apprendre les rudiments : HTML, CSS et JavaScript.
 
 en:
   id: "parcours"
@@ -67,7 +71,7 @@ en:
 
     - date: "2019"
       title: "Web Development Discovery Internship"
-      imageUrl: "/parcours/adista.webp?url"
+      imageUrl: "/parcours/adista.jpg?url"
       paragraph: >
         My first experience with web development was during a discovery internship in the professional world.
         It was at this moment that I first discovered this field that has been with me ever since.
