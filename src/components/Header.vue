@@ -9,6 +9,7 @@ const home = ref(content.value.home);
 
 watch(() => router.params.lang, (newLang) => {
   content.value = yml[newLang];
+  home.value = content.value.home;
 });
 
 const props = defineProps({

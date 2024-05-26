@@ -58,4 +58,4 @@ en:
   cv:
     pdfImagePath: "/cv/CV-EN.jpg?url"
     pdfFilePath: "/cv/CV-EN.pdf?url"
-    buttonText: "Télécharger"
+    buttonText: "Download"

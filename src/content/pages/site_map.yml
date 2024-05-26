@@ -2,13 +2,13 @@ fr:
   title: "Plan du site"
   links:
     - name: "Présentation Bilal Oulahal"
-      path: "/"
+      path: "/fr"
     - name: "Projets"
-      path: "/projets"
+      path: "/fr/projets"
     - name: "Mentions légales"
-      path: "/mentions-legales"
+      path: "/fr/mentions-legales"
     - name: "Plan du site"
-      path: "/plan-site"
+      path: "/fr/plan-site"
 
 en:
   title: "Site map"

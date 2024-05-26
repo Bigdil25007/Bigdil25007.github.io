@@ -1,18 +1,18 @@
 fr:
   home:
     text: "Bilal Oulahal"
-    link: "/"
+    link: "/fr"
   links:
     - name: "contacts"
-      path: "/#contact"
+      path: "/fr/#contact"
     - name: "projets"
-      path: "/#projets"
+      path: "/fr/#projets"
     - name: "compétences"
-      path: "/#competences"
+      path: "/fr/#competences"
     - name: "parcours"
-      path: "/#parcours"
+      path: "/fr/#parcours"
     - name: "à propos de moi"
-      path: "/#about-me"
+      path: "/fr/#about-me"
 
 en:
   home:

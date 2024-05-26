@@ -10,10 +10,10 @@ fr:
       icon: "/icons/linkedin.png?url"
   mentionsLegales:
     text: "Mentions légales"
-    to: "/mentions-legales"
+    to: "/fr/mentions-legales"
   planSite:
     text: "Plan du site"
-    to: "/plan-site"
+    to: "/fr/plan-site"
   form:
     id: "contact"
     placeholders:

@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory } from 'vue-router';
+import { createRouter, createWebHashHistory, createWebHistory } from 'vue-router';
 
 import MainPage from '@page/MainPage.vue';
 import Projets from '@page/Projets.vue';
@@ -44,8 +44,10 @@ const routes = [
   },
 ];
 
+const isDev = import.meta.env.MODE === 'development';
+
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: isDev ? createWebHistory() : createWebHashHistory(),
   routes,
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
