@@ -1,0 +1,10 @@
+fr:
+  title: "Remindr"
+  description: "Remindr est une application de gestion de tâches et de rappels."
+  sections:
+    - paragraph: "Cette application utilise React, Redux, Node.js, Express, MongoDB, Docker et Kubernetes."
+      imgpath: "/images/remindr.png"
+    - paragraph: "Cette application utilise React, Redux, Node.js, Express, MongoDB, Docker et Kubernetes."
+      imgpath: "/images/remindr.png"
+    - paragraph: "Cette application utilise React, Redux, Node.js, Express, MongoDB, Docker et Kubernetes."
+      imgpath: "/images/remindr.png"
