@@ -9,9 +9,9 @@ const { content } = defineProps({
   }
 });
 
-const errors = content.errors;
-const placeholders = content.placeholders;
-const labels = content.labels;
+const errors = ref(content.errors);
+const placeholders = ref(content.placeholders);
+const labels = ref(content.labels);
 
 const nom = ref('');
 const email = ref('');
@@ -21,12 +21,12 @@ const sujet = ref('');
 
 const submitForm = async (event) => {
     if (!nom.value || !email.value || !message.value) {
-        displayError(errors.fieldRequired);
+        displayError(errors.value.fieldRequired);
         return;
     }
 
     if (!validateEmail(email.value)) {
-        displayError(errors.fieldRequired);
+        displayError(errors.value.invalidEmail);
         return;
     }
 
@@ -45,12 +45,12 @@ const submitForm = async (event) => {
         });
 
         if (response.ok) {
-            alert(content.successMessage);
+            alert(errors.value.successMessage);
         } else {
-            displayError(content.apiError);
+            displayError(errors.value.apiError);
         }
     } catch (error) {
-        displayError(content.apiError);
+        displayError(errors.value.apiError);
     }
 };
 
@@ -79,11 +79,11 @@ const displayError = (message) => {
         <label for="email">{{ labels.email }}<span class="required">*</span></label>
         <input v-model="email" id="email" type="email" :placeholder="placeholders.email" maxlength="70" required>
 
-        <label for="sujet">{{ content.labels.subject }}</label>
+        <label for="sujet">{{ labels.subject }}</label>
         <input v-model="sujet" id="sujet" type="text" :placeholder="placeholders.subject" maxlength="90">
       </div>
       <div class="send">
-        <label for="name">{{ content.labels.message }}<span class="required">*</span></label>
+        <label for="name">{{ labels.message }}<span class="required">*</span></label>
         <textarea v-model="message" id="message" :placeholder="placeholders.message" :maxlength="content.charCounter" required></textarea>
 
         <div class="char-counter">{{ message.length }}/{{ content.charCounter }}</div>  
