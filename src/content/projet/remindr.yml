@@ -4,10 +4,10 @@ fr:
   sections:
     - subtitle: "Technologies utilisées"
       paragraph: "Cette application utilise React, Redux, Node.js, Express, MongoDB, Docker et Kubernetes."
-      image: "/images/remindr.png"
+      image: "/projets/remindr/dashboard.png?url"
     - subtitle: "Technologies utilisées 2"
       paragraph: "Cette application utilise React, Redux, Node.js, Express, MongoDB, Docker et Kubernetes."
-      image: "/images/remindr.png"
+      image: "/projets/remindr/rappels.png?url"
     - subtitle: "Technologies utilisées 3"
       paragraph: "Cette application utilise React, Redux, Node.js, Express, MongoDB, Docker et Kubernetes."
-      image: "/images/remindr.png"
+      image: "/projets/remindr/create-rappel.png?url"
