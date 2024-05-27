@@ -35,6 +35,17 @@ const props = defineProps({
     object-fit: cover;
     filter: brightness(60%);
   }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(31, 31, 90, 0.219); /* blue overlay */
+    filter: blur(8px);
+  }
 }
 
 .slot-wrapper {

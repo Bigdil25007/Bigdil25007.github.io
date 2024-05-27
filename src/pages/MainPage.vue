@@ -12,10 +12,10 @@ import Banner from "@component/utils/Banner.vue";
 
 import yml from '@content/pages/main_page.yml';
 import { useRoute } from 'vue-router';
+
 const router = useRoute();
-console.log(yml);
 const content = ref(yml[router.params.lang]);
-console.log(content.value);
+
 const banner0 = ref(content.value.banners[0]);
 const banner1 = ref(content.value.banners[1]);
 
