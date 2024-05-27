@@ -1,4 +1,4 @@
-fr:  
+fr:
   banners:
     - src: "/background/servor.jpg?url"
       html:
@@ -6,11 +6,12 @@ fr:
           content: "Actuellement :"
         - type: "p"
           content: "Développeur logiciel chez OVHcloud (stage)"
+    - src: "/background/computer.jpg?url"
+      html: ""
     - src: "/background/servor.jpg?url"
       html: ""
-      height: "10rem"
 
-en: 
+en:
   banners:
     - src: "/background/servor.jpg?url"
       html:
@@ -18,5 +19,7 @@ en:
           content: "Currently:"
         - type: "p"
           content: "Software Developer at OVHcloud (internship)"
+    - src: "/background/computer.jpg?url"
+      html: ""
     - src: "/background/servor.jpg?url"
       html: ""

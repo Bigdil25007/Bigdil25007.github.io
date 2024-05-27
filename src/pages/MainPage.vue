@@ -18,6 +18,7 @@ const content = ref(yml[router.params.lang]);
 
 const banner0 = ref(content.value.banners[0]);
 const banner1 = ref(content.value.banners[1]);
+const banner2 = ref(content.value.banners[2]);
 
 watch(() => router.params.lang, (newLang) => {
   content.value = yml[newLang];
@@ -38,6 +39,7 @@ watch(() => router.params.lang, (newLang) => {
   <Parcours />
   <Banner :src="banner1.src" :height="banner1.height"/>
   <Competences />
+  <Banner :src="banner2.src" :height="banner2.height"/>
   <Caroussel />
   <Footer :path="router.path"/>
 </template>
