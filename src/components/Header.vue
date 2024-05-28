@@ -44,14 +44,9 @@ const handleScroll = () => {
   currentSection.value = detectCurrentSection(scrollPosition);
 }
 
-const setSections = () => {
-  return document.querySelectorAll('.anchor').forEach((section) => {
-    sections[section.id] = section.offsetTop;
-  });
-}
-
 const linkClasses = (path) => {
-  const section = path.replace('/#', '');
+  const section = path.split('#').pop();
+  console.log(section, currentSection.value);
   return currentSection.value === section ? 'current' : '';
 };
 
@@ -59,7 +54,10 @@ onMounted(() => {
   //On désactive l'effet de scroll si la props noeffect est à true
   if (props.noeffect) return;
 
-  setSections();
+  document.querySelectorAll('.anchor').forEach((section) => {
+    sections[section.id] = section.offsetTop;
+  });
+
   window.addEventListener('scroll', handleScroll)
 })
 </script>
