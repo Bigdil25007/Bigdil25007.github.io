@@ -37,7 +37,7 @@ onMounted(() => {
 <template>
   <Anchor :id="content.id"/>
   <section>
-    <h2>{{ content.title }}</h2>
+    <h1 style="margin: 3% 0">{{ content.title }}</h1>
     <div id="caroussel" class="carousel slide">
       <div class="carousel-indicators">
         <button
@@ -74,12 +74,6 @@ section {
   align-items: center;
 }
 
-h2 {
-  text-transform: uppercase;
-  text-align: center;
-  margin: 3% 0;
-}
-
 #caroussel {
   width: 75%;
   height: 50%;
@@ -96,20 +90,20 @@ h2 {
 
 /* Boutons sélection */
 .carousel-indicators {
-  margin-top: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .carousel-indicators > button {
-  background-color: black;
-  height:0.5rem;
+  background-color: rgb(0, 0, 0);
+  height:0.4rem;
 
   &:hover {
     background-color: rgb(110, 109, 109);
   }
-}
 
-button span {
-  color: black;
+  &.active {
+    background-color: rgb(215, 211, 211);
+  }
 }
 
 /* Lien page projet */

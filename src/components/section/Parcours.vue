@@ -45,7 +45,7 @@ onMounted(() => {
   <section>
     <div class="title">
         <h1>{{ content.title }}</h1>
-        <p>{{ content.description }}</p>
+        <h2>{{ content.description }}</h2>
     </div>
     <div class="timeline">
       <ul>
@@ -61,11 +61,14 @@ onMounted(() => {
 
 <style scoped>
 .title {
-    text-align: center;
-    margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
 }
 
 section {
-    padding: 2% 0;
+  padding: 2% 0;
+  align-items: center;
 }
 </style>

@@ -161,6 +161,11 @@ img {
   padding: 0.8rem;
 }
 
+h1 {
+  text-align: left;
+  text-transform: none;
+}
+
 @media (max-width: 900px) {
   .header {
     margin-top: 5rem;

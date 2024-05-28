@@ -22,3 +22,17 @@ a {
   text-decoration: none;
   color: white;
 }
+
+h1 {
+  font-size: 2.25rem;
+  width: fit-content;
+  text-transform: capitalize;
+  text-align: center;
+  padding-bottom: 1rem;
+  border-bottom: #b31616 3px solid;
+}
+
+h2 {
+  padding-top: 1rem;
+  font-size: 1.25rem;
+}

@@ -25,6 +25,12 @@ watch(() => router.params.lang, (newLang) => {
       <ul>
         <li v-for="link in links" :key="link.path">
           <router-link :to="link.path">{{ link.name }}</router-link>
+          
+          <ul v-if="link.list">
+            <li v-for="sublink in link.list" :key="sublink.path">
+              <router-link :to="sublink.path">{{ sublink.name }}</router-link>
+            </li>
+          </ul>
         </li>
       </ul>
     </div>
@@ -34,7 +40,7 @@ watch(() => router.params.lang, (newLang) => {
 
 <style scoped>
 .sitemap {
-  margin: 14rem 0;
+  margin: 10rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -61,6 +67,12 @@ li {
     &:hover {
       color: #696868;
     }
+  }
+
+  & li {
+    list-style: square;
+    margin: 0.5rem;
+    margin-left: 10%;
   }
 }
 

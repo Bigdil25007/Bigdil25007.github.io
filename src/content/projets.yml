@@ -7,5 +7,5 @@ fr:
   - title: Remindr
     description: Description du projet 2
     img: "/projets/remindr/dashboard.png?url"
-    link: '/en/projets/api_mongoDB'
+    link: '/fr/projets/remindr'
 

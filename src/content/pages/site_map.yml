@@ -5,6 +5,12 @@ fr:
       path: "/fr"
     - name: "Projets"
       path: "/fr/projets"
+      list:
+        - name: "API de gestion de défis d'éco-développement informatique"
+          path: "/fr/projets/api_defi"
+        - name: "Remindr - Application web de rappels"
+          path: "/fr/projets/remindr"
+
     - name: "Mentions légales"
       path: "/fr/mentions-legales"
     - name: "Plan du site"

@@ -18,8 +18,10 @@ watch(() => router.params.lang, (newLang) => {
 <template>
   <Anchor :id="content.id"/>
   <section>
-    <h1>{{ content.title }}</h1>
-    <h2>{{ content.description }}</h2>
+    <div class="title">
+        <h1>{{ content.title }}</h1>
+        <h2>{{ content.description }}</h2>
+    </div>
     <div class="content">
       <div class="list">
         <div v-for="(category, index) in content.list" :key="index" class="category">
@@ -40,6 +42,12 @@ watch(() => router.params.lang, (newLang) => {
 </template>
 
 <style scoped>
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 section {
     width: 75%;
     margin: 2% auto;

@@ -61,6 +61,7 @@ section {
         font-weight: bold;
         font-size: 2.5rem;
         margin-bottom: 1.5rem;
+        border-bottom: none;
     }
 
     h2 {

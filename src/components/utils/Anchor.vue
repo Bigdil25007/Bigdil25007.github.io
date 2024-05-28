@@ -6,7 +6,7 @@ const props = defineProps({
     },
     height : {
         type: String,
-        default: '4rem'
+        default: '3.5rem'
     }
 });
 </script>

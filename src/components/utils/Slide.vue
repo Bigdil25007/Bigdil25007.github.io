@@ -43,19 +43,20 @@ const props = defineProps({
 </template>
 
 <style scoped>
-* {
-    color: black;
-}
-
 .img-container {
   display: flex;
   justify-content: center;
-  object-fit: cover;
   transition: all 0.3s ease-in-out;
 
   :hover {
       background-color: black;
   }
+}
+
+img {
+  object-fit: fill;
+  width: 1000px;
+  height: 445px;
 }
 
 .overlay-text {
@@ -71,5 +72,22 @@ const props = defineProps({
 .img-container:hover + .overlay-text {
   visibility: visible;
 } 
+
+.carousel-caption {
+  bottom: 0;
+  background-color: #323131;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 2rem;
+
+  & h5 {
+    font-weight: bold;
+    color: #EF3724;
+  }
+
+  & p {
+    color: white;
+  }
+}
 
 </style>

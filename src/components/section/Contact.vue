@@ -112,13 +112,13 @@ form {
 .input-field {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 45%;
 }
 
 .send {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 45%;
     align-items: center;
 }
 
