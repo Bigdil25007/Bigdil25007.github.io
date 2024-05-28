@@ -3,7 +3,7 @@ fr:
   title: "Mes projets"
   link:
     text: "Retrouvez tous mes projets ici !"
-    path: "/projets"
+    path: "/fr/projets"
   slides:
     - imgSrc: "/projets/0/resultat.webp?url"
       imgAlt: "..."
