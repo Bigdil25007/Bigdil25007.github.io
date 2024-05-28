@@ -63,7 +63,7 @@ onMounted(() => {
         <span class="carousel-control-next-icon"></span>
       </button>
     </div>
-    <router-link :to="link.path">{{ link.text }}</router-link>
+    <router-link :to="link.path" class="textLink">{{ link.text }}</router-link>
   </section>
 </template>
 
@@ -109,13 +109,7 @@ section {
 /* Lien page projet */
 a {
   padding-top: 1rem;
-  color: black;
-  text-decoration: underline;
   font-size: 1.1rem;
-
-  &:hover {
-    color: rgb(12, 10, 70);
-  }
 }
 </style>
 

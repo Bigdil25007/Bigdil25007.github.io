@@ -47,7 +47,7 @@ onMounted(async () => {
 <template>
   <div class="header" v-if="content !== null">
     <h1>{{ content.title }}</h1>
-    <p>{{ content.description }}</p>
+    <h2>{{ content.description }}</h2>
   </div>
 
   <div class="projet" v-if="content !== null">
@@ -81,7 +81,7 @@ onMounted(async () => {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
   margin-top: 10rem;
   margin-bottom: 2rem;
 }
@@ -100,18 +100,6 @@ onMounted(async () => {
   justify-content: center;
   align-items: center;
   gap: 3rem;
-}
-
-.projet > section:nth-child(3n) {
-  flex-direction: row-reverse;
-}
-
-.projet > section:nth-child(3n + 1) {
-  flex-direction: row;
-}
-
-.projet > section:nth-child(3n + 2) {
-  flex-direction: column;
 }
 
 .competences {
@@ -164,6 +152,18 @@ img {
 h1 {
   text-align: left;
   text-transform: none;
+}
+
+.projet > section:nth-child(3n) {
+  flex-direction: row-reverse;
+}
+
+.projet > section:nth-child(3n + 1) {
+  flex-direction: row;
+}
+
+.projet > section:nth-child(3n + 2) {
+  flex-direction: column;
 }
 
 @media (max-width: 900px) {

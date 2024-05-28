@@ -34,9 +34,11 @@ fr:
         Ce second ajout nous a même fait réaliser les avantages de Prisma. En tant que ORM, en plus de communiquer avec la base de données, il peut la modifier sans requêtes SQL.
         Il faut tout de même noté que notre appli n'est pas très belle. Même si nous avons utilisé Bootstrap pour le design, il faudrait prendre du temps pour améliorer l'interface utilisateur. De plus il serait intéressant de déployer cette appli pour en faire profiter tous le monde.
 
-        Lien GitHub : <strong>https://github.com/Bigdil25007/Remindr</strong>
+        <a class="textLink" href="https://github.com/Bigdil25007/Remindr">Lien GitHub :<strong>https://github.com/Bigdil25007/Remindr</strong></a>
 
       image: "/projets/remindr/create-rappel.png?url"
+
+  link:
 
   competences:
     - techniques:

@@ -36,3 +36,12 @@ h2 {
   padding-top: 1rem;
   font-size: 1.25rem;
 }
+
+.textLink {
+  color: black;
+  text-decoration: underline;
+  
+  &:hover {
+    color: rgb(12, 10, 70);
+  }
+}
