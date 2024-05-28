@@ -1,10 +1,5 @@
 import { createRouter, createWebHashHistory, createWebHistory } from 'vue-router';
 
-import MainPage from '@page/MainPage.vue';
-import Projets from '@page/Projets.vue';
-import LegalMentions from '@page/LegalMentions.vue';
-import Sitemap from '@page/Sitemap.vue';
-
 const routes = [
   {
     path: '/',
@@ -16,23 +11,23 @@ const routes = [
       {
         path: '',
         name: 'Portfolio',
-        component: MainPage,
+        component: () => import('@page/MainPage.vue'),
       },
       {
         path: 'projets/:id?',
         name: 'Projets',
-        component: Projets,
+        component: () => import('@page/Projets.vue'),
         props: true,
       },
       {
         path: 'mentions-legales',
         name: 'LegalMentions',
-        component: LegalMentions,
+        component: () => import('@page/LegalMentions.vue'),
       },
       {
         path: 'plan-site',
         name: 'PlanSite',
-        component: Sitemap,
+        component: () => import('@page/Sitemap.vue'),
       },
     ],
   },
