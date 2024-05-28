@@ -1,0 +1,11 @@
+fr:
+  - title: API de gestion de défis d'éco-développement informatique
+    description: Description du projet 1
+    img: "/projets/api_mongoDB/mongodb.jpg?url"
+    link: '/fr/projets/api_mongoDB'
+
+  - title: Remindr
+    description: Description du projet 2
+    img: "/projets/remindr/dashboard.png?url"
+    link: '/en/projets/api_mongoDB'
+

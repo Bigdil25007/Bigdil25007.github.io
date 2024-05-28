@@ -152,8 +152,8 @@ img {
 
   &:hover {
     cursor: pointer;
-    opacity: 0.8;
-    filter: brightness(0.85);
+    filter: brightness(0.7);
+    transform: scale(1.05);
   }
 }
 

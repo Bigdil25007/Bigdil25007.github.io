@@ -5,16 +5,19 @@ import Slide from "@component/utils/Slide.vue";
 import Anchor from '@component/utils/Anchor.vue';
 
 import yml from '@content/section/caroussel.yml';
+import yml_projet from '@content/projets.yml';
 import { useRoute } from 'vue-router';
 
 const router = useRoute();
+
 const content = ref(yml[router.params.lang]);
-const slides = ref(content.value.slides);
 const link = ref(content.value.link);
+
+const slides = ref(yml_projet[router.params.lang]);
 
 watch(() => router.params.lang, (newLang) => {
   content.value = yml[newLang];
-  slides.value = content.value.slides;
+  slides.value = yml_projet[newLang];
   link.value = content.value.link;
 });
 

@@ -4,7 +4,7 @@ const props = defineProps({
     type: Boolean,
     default: false
   },
-  imgSrc: {
+  img: {
     type: String,
     required: true
   },
@@ -20,7 +20,7 @@ const props = defineProps({
     type: String,
     default: ''
   },
-  content: {
+  description: {
     type: String,
     default: ''
   }
@@ -31,13 +31,13 @@ const props = defineProps({
   <div :class="['carousel-item', { active: isActive }]">
     <div class="img-container">
       <router-link :to="link">
-        <img :src="imgSrc" :alt="imgAlt" class="d-block w-100">
+        <img :src="img" :alt="imgAlt" class="d-block w-100">
       </router-link>
       <span class="overlay-text">En savoir plus</span>
     </div>
     <div class="carousel-caption d-md-block">
       <h5>{{ title }}</h5>
-      <p>{{ content }}</p>
+      <p>{{ description }}</p>
     </div>
   </div>
 </template>

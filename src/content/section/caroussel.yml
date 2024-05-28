@@ -4,19 +4,6 @@ fr:
   link:
     text: "Retrouvez tous mes projets ici !"
     path: "/fr/projets"
-  slides:
-    - imgSrc: "/projets/0/resultat.webp?url"
-      imgAlt: "..."
-      title: "First slide label"
-      content: "Some representative placeholder content for the first slide."
-    - imgSrc: "/projets/0/resultat.webp?url"
-      imgAlt: "..."
-      title: "Second slide label"
-      content: "Some representative placeholder content for the second slide."
-    - imgSrc: "/projets/0/resultat.webp?url"
-      imgAlt: "..."
-      title: "Third slide label"
-      content: "Some representative placeholder content for the third slide."
 
 en:
   id: "projets"
@@ -24,16 +11,3 @@ en:
   link:
     text: "Find all my projects here!"
     path: "/en/projets"
-  slides:
-    - imgSrc: "/projets/0/resultat.webp?url"
-      imgAlt: "..."
-      title: "First slide label"
-      content: "Some representative placeholder content for the first slide."
-    - imgSrc: "/projets/0/resultat.webp?url"
-      imgAlt: "..."
-      title: "Second slide label"
-      content: "Some representative placeholder content for the second slide."
-    - imgSrc: "/projets/0/resultat.webp?url"
-      imgAlt: "..."
-      title: "Third slide label"
-      content: "Some representative placeholder content for the third slide."
