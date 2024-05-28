@@ -46,7 +46,6 @@ const handleScroll = () => {
 
 const linkClasses = (path) => {
   const section = path.split('#').pop();
-  console.log(section, currentSection.value);
   return currentSection.value === section ? 'current' : '';
 };
 
