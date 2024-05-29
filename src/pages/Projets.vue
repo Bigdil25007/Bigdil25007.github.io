@@ -1,10 +1,7 @@
 <script setup>
+import { defineAsyncComponent } from "vue";
 import Header from "@component/Header.vue";
 import Footer from "@component/Footer.vue";
-import ProjetDetail from "@component/projet/ProjetDetail.vue";
-import ListProjet from "@component/projet/ListProjet.vue";
-import Caroussel from "@component/section/Caroussel.vue";
-import Banner from "@component/utils/Banner.vue";
 
 const props = defineProps({
     id: String,
@@ -13,14 +10,25 @@ const props = defineProps({
         required: true
     }
 });
+
+/* Importation dynamique */
+let ProjetDetail, ListProjet, Caroussel, Banner;
+
+if (props.id) {
+  ProjetDetail = defineAsyncComponent(() => import("@component/projet/ProjetDetail.vue"));
+  Banner = defineAsyncComponent(() => import("@component/utils/Banner.vue"));
+  Caroussel = defineAsyncComponent(() => import("@component/section/Caroussel.vue"));
+} else {
+  ListProjet = defineAsyncComponent(() => import("@component/projet/ListProjet.vue"));
+}
 </script>
 
 <template>
     <Header noeffect/>
-    <ProjetDetail v-if="props.id" :id="props.id" :lang="props.lang"/>
-    <ListProjet v-else/>
-    <Banner src="/background/computer.jpg?url"/>
-    <Caroussel/>
+    <ListProjet v-if="ListProjet"/>
+    <ProjetDetail :id="props.id" :lang="props.lang" v-if="ProjetDetail"/>
+    <Banner src="/background/computer.jpg?url" v-if="Banner"/>
+    <Caroussel v-if="Caroussel"/>
     <Footer disableContact/>
 </template>
 
