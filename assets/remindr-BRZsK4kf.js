@@ -1,4 +1,4 @@
-const e={fr:{title:"Remindr",description:"Application de gestion de tâches et de rappels.",sections:[{subtitle:"Contexte",paragraph:`Dans le cadre d'un projet universitaire, nous avons eu un mois pour créer cette application web à 2. 
+const e={fr:{title:"Remindr",description:"Application de gestion de tâches et de rappels",sections:[{subtitle:"Contexte",paragraph:`Dans le cadre d'un projet universitaire, nous avons eu un mois pour créer cette application web à 2. 
 L'objectif était de nous familiariser avec ExpressJS en développant cette appli qui permet de créer des groupes et d'affecter des rappels à ces derniers.
 
 Puisque le projet n'a pas beaucoup de fonctionnalités différentes, le parcours utilisateur est plutôt simple.
