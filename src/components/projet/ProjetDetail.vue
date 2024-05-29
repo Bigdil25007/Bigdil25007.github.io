@@ -1,6 +1,6 @@
 <script setup>
 import { ref, onMounted, watch } from 'vue';
-import { formatBackline } from '/src/utils.js';
+import { formatHTML } from '/src/utils.js';
 
 import ImageViewer from '@component/utils/ImageViewer.vue';
 import ProgressBar from "@component/utils/ProgressBar.vue";
@@ -54,7 +54,7 @@ onMounted(async () => {
     <section v-for="(section, index) in content.sections" :key="index">
       <div class="wrapper">
         <h1>{{ section.subtitle }}</h1>
-        <p v-html="formatBackline(section.paragraph)"></p>
+        <p v-html="formatHTML(section.paragraph)"></p>
       </div>
       <img :src="section.image" alt="" @click="activateViewer(section.image)"/>
     </section>

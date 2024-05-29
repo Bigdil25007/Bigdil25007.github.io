@@ -24,13 +24,17 @@ const currentSection = ref('');
 
 let sections = {};
 const threshold = 200;
+const OFFSET = 100;
 
 const detectCurrentSection = (scrollPosition) => {
+  const position = scrollPosition + OFFSET;
   const sectionNames = Object.keys(sections);
+  
   return sectionNames.find((section, i) => {
     const currentSectionStart = sections[section];
     const nextSectionStart = sections[sectionNames[i + 1]] || Infinity;
-    return scrollPosition >= currentSectionStart && scrollPosition < nextSectionStart;
+
+    return position >= currentSectionStart && position < nextSectionStart;
   }) || '';
 }
 

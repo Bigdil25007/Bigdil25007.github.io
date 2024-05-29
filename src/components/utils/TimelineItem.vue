@@ -1,5 +1,5 @@
 <script setup>
-import { formatBackline } from '/src/utils.js';
+import { formatHTML } from '/src/utils.js';
 
 const props = defineProps({
     imageUrl: {
@@ -26,7 +26,7 @@ const props = defineProps({
     <div>
       <time>{{ date }}</time> 
       <h2>{{ title }}</h2>
-      <p v-html="formatBackline(paragraph) "></p>
+      <p v-html="formatHTML(paragraph) "></p>
       <img v-if="imageUrl" :src="imageUrl" alt="">
     </div>
   </li>

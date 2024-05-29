@@ -1,6 +1,6 @@
 <script setup>
 import Anchor from '@component/utils/Anchor.vue';
-import { formatBackline } from '/src/utils.js';
+import { formatHTML } from '/src/utils.js';
 import { useRoute } from 'vue-router';
 import { ref, watch } from 'vue';
 
@@ -21,7 +21,7 @@ watch(() => router.params.lang, (newLang) => {
         <div class="content">
             <img :src="content.img.src" :alt="content.img.alt">
             <div class="text">
-                <p v-html="formatBackline(content.paragraph)"></p>
+                <p v-html="formatHTML(content.paragraph)"></p>
             </div>
         </div>
     </section>

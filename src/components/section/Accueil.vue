@@ -2,7 +2,7 @@
 import { onMounted, ref, watch } from 'vue';
 import { useRoute } from 'vue-router';
 
-import { formatBackline } from '/src/utils.js';
+import { formatHTML } from '/src/utils.js';
 import yml from '@content/section/accueil.yml';
 
 const router = useRoute();
@@ -23,7 +23,7 @@ onMounted(() => {
     <div id="particles-js"></div>
     <div class="content">
       <h1>{{ content.h1 }}</h1>
-      <h2 v-html="formatBackline(content.h2)"></h2>
+      <h2 v-html="formatHTML(content.h2)"></h2>
       <button>
         <router-link :to="content.button_link">{{ content.button_text }}</router-link>
       </button>

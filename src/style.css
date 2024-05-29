@@ -45,3 +45,7 @@ h2 {
     color: rgb(12, 10, 70);
   }
 }
+
+img {
+  border: 2px solid black;
+}
