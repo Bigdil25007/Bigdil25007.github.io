@@ -1,6 +1,7 @@
 fr:
   id: "projets"
   title: "Mes projets"
+  subtitle: "Faites défiler les images pour découvrir mes projets et cliquez dessus pour en savoir plus !"
   link:
     text: "Retrouvez tous mes projets ici !"
     path: "/fr/projets"
@@ -8,6 +9,7 @@ fr:
 en:
   id: "projets"
   title: "My projects"
+  subtitle: "Faites défiler les images pour découvrir mes projets et cliquez dessus pour en savoir plus !"
   link:
     text: "Find all my projects here!"
     path: "/en/projets"

@@ -33,7 +33,6 @@ const props = defineProps({
       <router-link :to="link">
         <img :src="img" :alt="imgAlt" class="d-block w-100">
       </router-link>
-      <span class="overlay-text">En savoir plus</span>
     </div>
     <div class="carousel-caption d-md-block">
       <h5>{{ title }}</h5>
@@ -48,30 +47,17 @@ const props = defineProps({
   justify-content: center;
   transition: all 0.3s ease-in-out;
 
-  :hover {
-      background-color: black;
+  & img:hover {
+      filter: brightness(0.8);
   }
 }
 
 img {
   object-fit: fill;
-  width: 1000px;
-  height: 445px;
-}
-
-.overlay-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  visibility: hidden;
+  width: 900px;
+  height: 400px;
   transition: all 0.3s ease-in-out;
 }
-
-.img-container:hover + .overlay-text {
-  visibility: visible;
-} 
 
 .carousel-caption {
   bottom: 0;

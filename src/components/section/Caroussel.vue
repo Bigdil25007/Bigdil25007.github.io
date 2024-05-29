@@ -37,7 +37,10 @@ onMounted(() => {
 <template>
   <Anchor :id="content.id"/>
   <section>
-    <h1 style="margin: 3% 0">{{ content.title }}</h1>
+    <div class="wrapper-title">
+      <h1>{{ content.title }}</h1>
+      <h2>{{ content.subtitle }}</h2>
+    </div>
     <div id="caroussel" class="carousel slide">
       <div class="carousel-indicators">
         <button
@@ -74,8 +77,16 @@ section {
   align-items: center;
 }
 
+.wrapper-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3% 0;
+}
+
 #caroussel {
-  width: 75%;
+  width: 65%;
   height: 50%;
 }
 
