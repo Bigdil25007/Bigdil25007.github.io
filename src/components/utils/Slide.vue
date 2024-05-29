@@ -60,6 +60,7 @@ img {
 }
 
 .carousel-caption {
+  max-height: 30%;
   bottom: 0;
   background-color: #323131;
   text-align: center;
@@ -68,12 +69,34 @@ img {
 
   & h5 {
     font-weight: bold;
+    font-size: 1rem;
     color: #EF3724;
   }
 
   & p {
     color: white;
+    font-size: 0.9rem;
   }
 }
 
+
+@media (max-width: 900px) {
+  img {
+    object-fit: scale-down;
+    width: fit-content;
+    height: auto;
+  }
+
+  .carousel-caption {
+    padding: 0.5rem;
+
+    & h5 {
+      font-size: 0.8rem;
+    }
+  
+    & p {
+      font-size: 0.5rem;
+    }
+  }
+}
 </style>

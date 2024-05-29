@@ -1,11 +1,21 @@
 fr:
   - title: API de gestion de défis d'éco-développement informatique
-    description: Description du projet 1
+    description: Création et gestion d'une base de données MongoDB à l'aide de requêtes HTTP
     img: "/projets/api_mongoDB/mongodb.jpg?url"
-    link: '/fr/projets/api_mongoDB'
+    link: "/fr/projets/api_mongoDB"
 
   - title: Remindr
-    description: Description du projet 2
+    description: Application de gestion de tâches et de rappels
     img: "/projets/remindr/dashboard.png?url"
-    link: '/fr/projets/remindr'
+    link: "/fr/projets/remindr"
 
+en:
+  - title: API for managing eco-development challenges in computing
+    description: Creation and management of a MongoDB database using HTTP requests
+    img: "/projets/api_mongoDB/mongodb.jpg?url"
+    link: "/en/projets/api_mongoDB"
+
+  - title: Remindr
+    description: Task and Reminder management web app
+    img: "/projets/remindr/dashboard.png?url"
+    link: "/en/projets/remindr"

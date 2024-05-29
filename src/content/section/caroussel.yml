@@ -9,7 +9,7 @@ fr:
 en:
   id: "projets"
   title: "My projects"
-  subtitle: "Faites défiler les images pour découvrir mes projets et cliquez dessus pour en savoir plus !"
+  subtitle: "Scroll through the images to discover my projects and click on them to learn more !"
   link:
     text: "Find all my projects here!"
     path: "/en/projets"
