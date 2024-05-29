@@ -4,12 +4,16 @@ fr:
       html:
         - type: "h1"
           content: "Actuellement :"
-        - type: "p"
-          content: "Développeur logiciel chez OVHcloud (stage)"
+        - type: "h2"
+          content: "Développeur logiciel chez OVHcloud"
     - src: "/background/computer.jpg?url"
       html: ""
     - src: "/background/servor.jpg?url"
-      html: ""
+      html:
+        - type: "h1"
+          content: "Fait intéressant :"
+        - type: "p"
+          content: "Je suis un grand amateur de natation et de plongée sous-marine mais aussi de jazz dansant. Un de mes rêves : Écouter du Frank Sinatra à 30 mètres de profondeur !"
 
 en:
   banners:
@@ -18,8 +22,12 @@ en:
         - type: "h1"
           content: "Currently:"
         - type: "p"
-          content: "Software Developer at OVHcloud (internship)"
+          content: "Software Developer at OVHcloud"
     - src: "/background/computer.jpg?url"
       html: ""
     - src: "/background/servor.jpg?url"
-      html: ""
+      html:
+        - type: "h1"
+          content: "Interesting fact :"
+        - type: "p"
+          content: "I am a big fan of swimming and scuba diving, as well as dancing to jazz. One of my dreams: Listening to Frank Sinatra at 30 meters underwater !"

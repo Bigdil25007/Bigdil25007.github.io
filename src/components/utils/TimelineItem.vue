@@ -111,6 +111,8 @@ img {
   width: 40%;
   max-height: 200px;
   max-width: 300px;
+  width: fit-content;
+  height: fit-content;
   object-fit: contain;
   margin-top: 3%;
   align-self: center;

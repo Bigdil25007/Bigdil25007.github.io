@@ -43,8 +43,8 @@ fr:
 
 en:
   id: "parcours"
-  title: "My journey"
-  description: "Here is my professional journey in web development"
+  title: "My career"
+  description: "Discover my professional journey in the field of web development below"
   items:
     - date: "2024"
       title: "Software Developer at OVHcloud (3-month internship)"
@@ -74,7 +74,7 @@ en:
       paragraph: >
         NSI: Digital and Computer Science (in french)
         Introduction to programming with Python, databases with SQL, and more concrete web development.
-        
+
         It was during this period that I developed a preference for backend development over frontend.
 
     - date: "2019"

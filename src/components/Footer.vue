@@ -96,6 +96,7 @@ footer {
         width: 3rem;
         height: auto;
         transition: transform 0.25s ease-in-out;
+        border: none;
 
         &:hover {
             transform: scale(1.1);

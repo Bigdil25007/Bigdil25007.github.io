@@ -64,9 +64,17 @@ const props = defineProps({
   color: white;
   
   & * {
-    font-size: 1.5rem;
+    text-transform: inherit;
     padding: 2%;
   }
+}
+
+p {
+  font-size: 1rem;
+}
+
+h1, h2 {
+  font-size: 1.5rem;
 }
 
 </style>

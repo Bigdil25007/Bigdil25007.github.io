@@ -24,6 +24,7 @@ watch(() => router.params.lang, (newLang) => {
   content.value = yml[newLang];
   banner0.value = content.value.banners[0];
   banner1.value = content.value.banners[1];
+  banner2.value = content.value.banners[2];
 });
 </script>
 
@@ -39,7 +40,11 @@ watch(() => router.params.lang, (newLang) => {
   <Parcours />
   <Banner :src="banner1.src" :height="banner1.height"/>
   <Competences />
-  <Banner :src="banner2.src" :height="banner2.height"/>
+  <Banner :src="banner2.src" :height="banner2.height">
+    <component v-for="(item, index) in banner2.html" :is="item.type" :key="index">
+      {{ item.content }}
+    </component>
+  </Banner>
   <Caroussel />
   <Footer :path="router.path"/>
 </template>
