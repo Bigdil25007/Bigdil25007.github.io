@@ -1,43 +1,45 @@
 fr:
   id: "parcours"
   title: "Mon parcours"
-  description: "Voici mon parcours professionnel dans le développement web"
+  description: "Découvrez ci-dessous mon parcours professionnel dans le domaine du développement web"
   items:
     - date: "2024"
       title: "Développeur logiciel chez OVHcloud (stage de 3 mois)"
       imageUrl: "/parcours/ovh.webp?url"
       paragraph: |
-        Création d'un assistant logiciel d'installation utilisant Electron et ReactJS. 
-        Utilisation d'outils collaboratifs comme BitBucket (Git) et Jira  avec le framework AGILE.
+        Création d'un assistant logiciel d'installation (wizard) en utilisant Electron et **ReactJS**. 
+        Utilisation d'outils collaboratifs comme BitBucket **(Git)** et Jira  avec le framework AGILE.
 
     - date: "2022 - Aujourd'hui"
       title: "BUT Informatique (Parcours : Réalisation d'applications)"
       imageUrl: "/parcours/iut.webp?url"
       paragraph: |
         Création de projets d'équipe (que vous pouvez retrouver sur ce site !) comme des applications webs ou jeux vidéos. 
-        Découverte de nombreux frameworks comme VueJS et ExpressJS.
-        Utilisation en majorité de NodeJS pour les apps web (routage, communication avec des API ou bases de données).
+        Découverte de nombreux frameworks comme **VueJS et ExpressJS**.
+        Utilisation en majorité de **NodeJS** pour les applis web (gestion de routage et communication avec des API ou bases de données).
 
     - date: "2023"
       title: Obtention d'une certification "Introduction to Cyber Security" (Cisco)
       paragraph: |
         Intéressé par la cybersécurité, j'ai suivi un module pour comprendre les bases de ce domaine.
         À la fin de cette formation, j'ai obtenu une certification de la part de Cisco, entreprise reconnue de réseau et cybersécurité.
-        (Certification visible sur mon profil LinkedIn)
+        J'ai ainsi appris les menaces courantes sur les sites webs et comment s'en protéger (ex : injections SQL ou XSS)
+        **(Certification visible sur mon profil LinkedIn)**
 
     - date: "2019 - 2022"
       title: "BAC Général (Spécialité NSI)"
       paragraph: |
         NSI : Numérique et Sciences de l'Informatique
-        Cette spécialité m'a permis de découvrir la programmation avec Python, les bases de données avec SQL et le développement web de manière plus concrète.
-        C'est à cette période que je me suis rendu compte que la partie backend m'intéressait plus que le frontend.
+        Découverte de la programmation à l'aide de Python, des bases de données avec SQL et du développement web de manière plus concrète.
+
+        C'est à cette période que je me suis plus orienté dans le backend par préférence, comparé au front-end.
 
     - date: "2019"
       title: "Stage de découverte du développement web"
       imageUrl: "/parcours/adista.jpg?url"
       paragraph: |
         Première expérience avec le développement web lors d'un stage de découverte du monde professionnel.
-        C'est à cette occasion que j'ai découvert pour la première fois ce domaine qui me suit depuis. J'ai alors démarré par apprendre les rudiments : HTML, CSS et JavaScript.
+        C'est à cette occasion que j'ai découvert pour la première fois ce domaine. L'ayant trouvé intéressant, j'ai alors démarré par apprendre les rudiments : HTML, CSS et JavaScript.
 
 en:
   id: "parcours"
@@ -45,34 +47,39 @@ en:
   description: "Here is my professional journey in web development"
   items:
     - date: "2024"
-      title: "Software Developer at OVHcloud (internship)"
+      title: "Software Developer at OVHcloud (3-month internship)"
       imageUrl: "/parcours/ovh.webp?url"
       paragraph: >
-        For 3 months, I had the opportunity to work at OVHcloud as a software developer.
-        I worked on a wizard project to facilitate the configuration of employees' laptops.
-        On the technical side, I got to discover Electron (a framework for creating desktop applications) and ReactJS. I also learned to use Git more effectively and take advantage of its benefits.
-        In general, I learned to work in a team and communicate with people from different domains to agree on requirements.
+        Creation of an installation assistant (wizard) using Electron and **ReactJS**. 
+        Utilized collaborative tools like BitBucket **(Git)** and Jira with the AGILE framework.
 
     - date: "2022 - Present"
       title: "Bachelor's Degree in Computer Science (Specialization: Application Development)"
       imageUrl: "/parcours/iut.webp?url"
       paragraph: >
-        Currently pursuing this degree, I have been able to explore various areas of computer science to varying degrees.
-        I have worked on numerous team projects (which you can find on this website!) such as web applications and video games.
-        Specifically in web development, I have had the opportunity to explore various frameworks like VueJS and ExpressJS.
-        I particularly enjoyed learning NodeJS for handling routing (HTTP request management) and communicating with APIs or databases (SQL and NoSQL).
+        Creation of team projects (which you can find on this site !) such as web applications or video games.
+        Exploration of numerous frameworks like **VueJS and ExpressJS**.
+        Extensive use of **NodeJS** for web apps (handling routing and communication with APIs or databases).
+
+    - date: "2023"
+      title: Obtained a certification "Introduction to Cyber Security" (Cisco)
+      paragraph: |
+        Interested in cybersecurity, I completed a module to understand the basics of this field.
+        At the end of this training, I obtained a certification from Cisco, a renowned company in networking and cybersecurity.
+        I learned about common threats to websites and how to protect against them (e.g., SQL injections or XSS).
+        **(Certification visible on my LinkedIn profile)**
 
     - date: "2022"
       title: "General Baccalaureate (Specialization: NSI)"
       paragraph: >
-        In 2022, I obtained this diploma after completing 2 years of NSI (Digital Sciences and Computer Science) courses.
-        I got to explore programming with Python, databases with SQL, and web development in a more concrete way.
-        It was during this time that I realized my interest in backend development outweighed frontend.
+        NSI: Digital and Computer Science (in french)
+        Introduction to programming with Python, databases with SQL, and more concrete web development.
+        
+        It was during this period that I developed a preference for backend development over frontend.
 
     - date: "2019"
       title: "Web Development Discovery Internship"
       imageUrl: "/parcours/adista.jpg?url"
       paragraph: >
-        My first experience with web development was during a discovery internship in the professional world.
-        It was at this moment that I first discovered this field that has been with me ever since.
-        I started by learning the basics: HTML, CSS, and JavaScript.
+        First experience with web development during an introductory internship in the professional world.
+        It was on this occasion that I discovered this field for the first time. Finding it interesting, I began by learning the basics: HTML, CSS, and JavaScript.
