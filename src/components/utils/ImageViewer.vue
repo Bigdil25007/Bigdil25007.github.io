@@ -36,5 +36,7 @@ const hideOverlay = () => {
 .overlay-image {
   max-width: 90%;
   max-height: 90%;
+  border: 2px solid #8B0000;
+  box-shadow: 0 0 0 2px white, 0 0 0 4px #8B0000;
 }
 </style>

@@ -102,29 +102,16 @@ onMounted(async () => {
   gap: 3rem;
 }
 
-.competences {
-  margin: 5rem auto;
-  width: 70%;
-  position: relative;
+.projet > section:nth-child(3n) {
+  flex-direction: row-reverse;
+}
 
-  display: flex;
+.projet > section:nth-child(3n + 1) {
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 10rem;
+}
 
-  background-color: #d1caca;
-  border: 2px solid black;
-  border-radius: 15px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-  padding: 1rem;
-
-  & > div {
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+.projet > section:nth-child(3n + 2) {
+  flex-direction: column;
 }
 
 img {
@@ -149,21 +136,38 @@ img {
   padding: 0.8rem;
 }
 
+p {
+  text-align: justify;
+}
+
 h1 {
   text-align: left;
   text-transform: none;
 }
 
-.projet > section:nth-child(3n) {
-  flex-direction: row-reverse;
-}
+.competences {
+  margin: 5rem auto;
+  width: 70%;
+  position: relative;
 
-.projet > section:nth-child(3n + 1) {
+  display: flex;
   flex-direction: row;
-}
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
 
-.projet > section:nth-child(3n + 2) {
-  flex-direction: column;
+  background-color: #d1caca;
+  border: 2px solid black;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  padding: 1rem;
+
+  & > div {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 900px) {
