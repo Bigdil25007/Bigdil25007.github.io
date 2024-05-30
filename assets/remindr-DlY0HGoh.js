@@ -22,7 +22,7 @@ Il faut tout de même noté que notre appli n'est pas très belle. Même si nous
 
 Retrouvez le projet sur GitHub (avec plus d'infos dans le wiki) :
 <a class="textLink" href="https://github.com/Bigdil25007/Remindr">https://github.com/Bigdil25007/Remindr</a>
-`,image:"/projets/remindr/create-rappel.png?url"}],link:null,competences:[{techniques:[{skill:"ExpressJS",value:90},{skill:"Prisma",value:70},{skill:"Handlebars",value:80},{skill:"Git",value:75}]},{concepts:[{skill:"Modèle MVC",value:90},{skill:"Gestion des routes (middlewares)",value:85},{skill:"ORM (Object-Relational Mapping)",value:80}]}],colors:["rgb(25, 135, 84)","rgb(13, 202, 240)","rgb(255, 193, 7)"]},en:{title:"Remindr",description:"Task and Reminder Management Application",sections:[{subtitle:"Context",paragraph:`As part of a university project, we had one month to create this web application as a team of two. 
+`,image:"/projets/remindr/create-rappel.png?url"}],competences:[{techniques:[{skill:"ExpressJS",value:90},{skill:"Prisma",value:70},{skill:"Handlebars",value:80},{skill:"Git",value:75}]},{concepts:[{skill:"Modèle MVC",value:90},{skill:"Gestion des routes (middlewares)",value:85},{skill:"ORM (Object-Relational Mapping)",value:80}]}],colors:["rgb(25, 135, 84)","rgb(13, 202, 240)","rgb(255, 193, 7)"]},en:{title:"Remindr",description:"Task and Reminder Management Application",sections:[{subtitle:"Context",paragraph:`As part of a university project, we had one month to create this web application as a team of two. 
 The objective was to familiarize ourselves with ExpressJS by developing this app, which allows users to create groups and assign reminders to them.
 
 Since the project doesn't have many different features, the user journey is quite simple. 
@@ -46,4 +46,4 @@ However, it should be noted that our application is not very visually appealing.
 
 Find the project on GitHub (with more information in the wiki) :
 <a class="textLink" href="https://github.com/Bigdil25007/Remindr">https://github.com/Bigdil25007/Remindr</a>
-`,image:"/projets/remindr/create-rappel.png?url"}],link:null,competences:[{technicals:[{skill:"ExpressJS",value:90},{skill:"Prisma",value:70},{skill:"Handlebars",value:80},{skill:"Git",value:75}]},{notions:[{skill:"MVC Template",value:90},{skill:"Route Management (Middlewares)",value:85},{skill:"ORM (Object-Relational Mapping)",value:80}]}],colors:["rgb(25, 135, 84)","rgb(13, 202, 240)","rgb(255, 193, 7)"]}};export{e as default};
+`,image:"/projets/remindr/create-rappel.png?url"}],competences:[{technicals:[{skill:"ExpressJS",value:90},{skill:"Prisma",value:70},{skill:"Handlebars",value:80},{skill:"Git",value:75}]},{concepts:[{skill:"MVC Template",value:90},{skill:"Route Management (Middlewares)",value:85},{skill:"ORM (Object-Relational Mapping)",value:80}]}],colors:["rgb(25, 135, 84)","rgb(13, 202, 240)","rgb(255, 193, 7)"]}};export{e as default};
