@@ -112,13 +112,14 @@ onMounted(async () => {
 
 .projet > section:nth-child(3n + 2) {
   flex-direction: column;
+  gap: 1.5rem ;
 }
 
 img {
-  width: 40%;
+  width: fit-content ;
   height: auto;
   max-height: 400px;
-  max-width: 600px;
+  max-width: 500px;
   object-fit: contain;
 
   border: 2px solid #8B0000;
