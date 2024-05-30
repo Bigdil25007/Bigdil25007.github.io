@@ -38,9 +38,7 @@ fr:
         <a class="textLink" href="https://github.com/Bigdil25007/Remindr">https://github.com/Bigdil25007/Remindr</a>
 
       image: "/projets/remindr/create-rappel.png?url"
-
-  link:
-
+    
   competences:
     - techniques:
         - skill: "ExpressJS"
@@ -105,8 +103,6 @@ en:
 
       image: "/projets/remindr/create-rappel.png?url"
 
-  link:
-
   competences:
     - technicals:
         - skill: "ExpressJS"
@@ -117,7 +113,7 @@ en:
           value: 80
         - skill: "Git"
           value: 75
-    - notions:
+    - concepts:
         - skill: "MVC Template"
           value: 90
         - skill: "Route Management (Middlewares)"

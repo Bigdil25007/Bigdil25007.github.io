@@ -9,6 +9,11 @@ fr:
     img: "/projets/remindr/dashboard.png?url"
     link: "/fr/projets/remindr"
 
+  - title: Portfolio
+    description: Site web personnel fait en VueJS
+    img: "/projets/remindr/dashboard.png?url"
+    link: "/fr/projets/portfolio"
+
 en:
   - title: API for managing eco-development challenges in computing
     description: Creation and management of a MongoDB database using HTTP requests

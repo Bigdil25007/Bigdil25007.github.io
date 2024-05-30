@@ -56,7 +56,7 @@ onMounted(async () => {
         <h1>{{ section.subtitle }}</h1>
         <p v-html="formatHTML(section.paragraph)"></p>
       </div>
-      <img :src="section.image" alt="" @click="activateViewer(section.image)"/>
+      <img v-if="section.image"  :src="section.image" alt="" @click="activateViewer(section.image)"/>
     </section>
     <ImageViewer :show="showOverlay" :image-src="overlayImageSrc" @update:show="showOverlay = $event" />
   </div>
@@ -115,7 +115,7 @@ onMounted(async () => {
 }
 
 img {
-  width: 50%;
+  width: 40%;
   height: auto;
   max-height: 400px;
   max-width: 600px;
@@ -132,7 +132,7 @@ img {
   }
 }
 
-.projet .wrapper *{
+.projet .wrapper > *{
   padding: 0.8rem;
 }
 
