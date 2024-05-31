@@ -21,7 +21,7 @@ Ce second ajout nous a même fait réaliser les avantages de Prisma. En tant que
 Il faut tout de même noté que notre appli n'est pas très belle. Même si nous avons utilisé Bootstrap pour le design, il faudrait prendre du temps pour améliorer l'interface utilisateur. De plus il serait intéressant de déployer cette appli pour en faire profiter tous le monde.
 
 Retrouvez le projet sur GitHub (avec plus d'infos dans le wiki) :
-<a class="textLink" href="https://github.com/Bigdil25007/Remindr">https://github.com/Bigdil25007/Remindr</a>
+<a class="textLink" href="https://github.com/Bigdil25007/Remindr" target="_blank" rel="noopener noreferrer">https://github.com/Bigdil25007/Remindr</a>
 `,image:"/projets/remindr/create-rappel.png?url"}],competences:[{techniques:[{skill:"ExpressJS",value:90},{skill:"Prisma",value:70},{skill:"Handlebars",value:80},{skill:"Git",value:75}]},{concepts:[{skill:"Modèle MVC",value:90},{skill:"Gestion des routes (middlewares)",value:85},{skill:"ORM (Object-Relational Mapping)",value:80}]}],colors:["rgb(25, 135, 84)","rgb(13, 202, 240)","rgb(255, 193, 7)"]},en:{title:"Remindr",description:"Task and Reminder Management Application",sections:[{subtitle:"Context",paragraph:`As part of a university project, we had one month to create this web application as a team of two. 
 The objective was to familiarize ourselves with ExpressJS by developing this app, which allows users to create groups and assign reminders to them.
 
@@ -45,5 +45,5 @@ This second addition even made us realize the advantages of Prisma. As an ORM, i
 However, it should be noted that our application is not very visually appealing. Even though we used Bootstrap for design, it would be necessary to take time to improve the user interface. Additionally, it would be interesting to deploy this application to make it available to everyone.
 
 Find the project on GitHub (with more information in the wiki) :
-<a class="textLink" href="https://github.com/Bigdil25007/Remindr">https://github.com/Bigdil25007/Remindr</a>
+<a class="textLink" href="https://github.com/Bigdil25007/Remindr" target="_blank" rel="noopener noreferrer">https://github.com/Bigdil25007/Remindr</a>
 `,image:"/projets/remindr/create-rappel.png?url"}],competences:[{technicals:[{skill:"ExpressJS",value:90},{skill:"Prisma",value:70},{skill:"Handlebars",value:80},{skill:"Git",value:75}]},{concepts:[{skill:"MVC Template",value:90},{skill:"Route Management (Middlewares)",value:85},{skill:"ORM (Object-Relational Mapping)",value:80}]}],colors:["rgb(25, 135, 84)","rgb(13, 202, 240)","rgb(255, 193, 7)"]}};export{e as default};

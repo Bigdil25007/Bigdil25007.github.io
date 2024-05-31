@@ -29,7 +29,7 @@ Au niveau de l'organisation du code, nous avons bien réussi à profiter de VueJ
 Et justement un point d'évolution serait le design. En effet, nous avons utilisé **Bootstrap** pour gagner du temps mais le site s'en retrouve impacté et n'est pas très attractif.
 
 Retrouvez le projet sur GitHub :
-<a class="textLink" href="https://github.com/malosseRomain/Encyclopedie-HarryPotter">https://github.com/malosseRomain/Encyclopedie-HarryPotter</a>
+<a class="textLink" href="https://github.com/malosseRomain/Encyclopedie-HarryPotter" target="_blank" rel="noopener noreferrer">https://github.com/malosseRomain/Encyclopedie-HarryPotter</a>
 `,image:"/projets/encyclopedie_HP/categorie.png?url"}],competences:[{techniques:[{skill:"VueJS",value:85},{skill:"Axios",value:85},{skill:"NodeJS",value:80}]},{concepts:[{skill:"Pagination et optimisation des requêtes",value:85},{skill:"API REST",value:75}]}],colors:["rgb(25, 135, 84)","rgb(13, 202, 240)","rgb(255, 193, 7)"]},en:{title:"Harry Potter Encyclopedia",description:"Website built with VueJS and communicating with a REST API",sections:[{subtitle:"Context",paragraph:`As part of an end-of-year university project, we had 1 month to create a website that visually presents information retrieved from a REST API; PotterDB.
 The goal was to deepen our skills in VueJS and to discover interactions with a REST API.
 
@@ -61,5 +61,5 @@ In terms of code organization, we successfully utilized VueJS to separate the pa
 One area for improvement would be the design. Indeed, we used Bootstrap to save time, but as a result, the site is not very attractive.
 
 Find the project on Github :
-<a class="textLink" href="https://github.com/malosseRomain/Encyclopedie-HarryPotter">https://github.com/malosseRomain/Encyclopedie-HarryPotter</a>
+<a class="textLink" href="https://github.com/malosseRomain/Encyclopedie-HarryPotter" target="_blank" rel="noopener noreferrer">https://github.com/malosseRomain/Encyclopedie-HarryPotter</a>
 `,image:"/projets/encyclopedie_HP/categorie.png?url"}],competences:[{technicals:[{skill:"VueJS",value:85},{skill:"Axios",value:85},{skill:"NodeJS",value:80}]},{concepts:[{skill:"Pagination and query optimization",value:85},{skill:"REST API",value:75}]}],colors:["rgb(25, 135, 84)","rgb(13, 202, 240)","rgb(255, 193, 7)"]}};export{e as default};

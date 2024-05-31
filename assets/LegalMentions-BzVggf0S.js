@@ -1,4 +1,4 @@
-import{F as h,H as g}from"./Footer-D6VoVSZz.js";import{_ as f,r,w as b,b as o,c as i,f as c,d as t,t as u,F as d,k as v,e as y,u as _}from"./index-D6rc_AFL.js";const m={fr:{title:"Mentions légales",sections:[{title:"Informations légales",content:`<ul>
+import{F as h,H as g}from"./Footer-DEz1Ji2l.js";import{_ as f,r,w as b,b as o,c as i,f as c,d as t,t as u,F as d,k as v,e as y,u as _}from"./index-h5mJ3F57.js";const m={fr:{title:"Mentions légales",sections:[{title:"Informations légales",content:`<ul>
   <li><strong>Nom du site</strong> : "Non établi pour le moment"</li>
   <li><strong>Propriétaire</strong> : Bilal Oulahal</li>
   <li><strong>Adresse</strong> : 2 allée des dauphins, Andrézieux-Bouthéon (42160)</li>
