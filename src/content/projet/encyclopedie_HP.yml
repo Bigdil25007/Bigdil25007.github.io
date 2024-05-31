@@ -50,7 +50,7 @@ fr:
         Et justement un point d'évolution serait le design. En effet, nous avons utilisé **Bootstrap** pour gagner du temps mais le site s'en retrouve impacté et n'est pas très attractif.
 
         Retrouvez le projet sur GitHub :
-        <a class="textLink" href="https://github.com/malosseRomain/Encyclopedie-HarryPotter">https://github.com/malosseRomain/Encyclopedie-HarryPotter</a>
+        <a class="textLink" href="https://github.com/malosseRomain/Encyclopedie-HarryPotter" target="_blank" rel="noopener noreferrer">https://github.com/malosseRomain/Encyclopedie-HarryPotter</a>
 
       image: "/projets/encyclopedie_HP/categorie.png?url"
 
@@ -126,7 +126,7 @@ en:
         One area for improvement would be the design. Indeed, we used Bootstrap to save time, but as a result, the site is not very attractive.
 
         Find the project on Github :
-        <a class="textLink" href="https://github.com/malosseRomain/Encyclopedie-HarryPotter">https://github.com/malosseRomain/Encyclopedie-HarryPotter</a>
+        <a class="textLink" href="https://github.com/malosseRomain/Encyclopedie-HarryPotter" target="_blank" rel="noopener noreferrer">https://github.com/malosseRomain/Encyclopedie-HarryPotter</a>
 
       image: "/projets/encyclopedie_HP/categorie.png?url"
 

@@ -35,10 +35,10 @@ fr:
         Il faut tout de même noté que notre appli n'est pas très belle. Même si nous avons utilisé Bootstrap pour le design, il faudrait prendre du temps pour améliorer l'interface utilisateur. De plus il serait intéressant de déployer cette appli pour en faire profiter tous le monde.
 
         Retrouvez le projet sur GitHub (avec plus d'infos dans le wiki) :
-        <a class="textLink" href="https://github.com/Bigdil25007/Remindr">https://github.com/Bigdil25007/Remindr</a>
+        <a class="textLink" href="https://github.com/Bigdil25007/Remindr" target="_blank" rel="noopener noreferrer">https://github.com/Bigdil25007/Remindr</a>
 
       image: "/projets/remindr/create-rappel.png?url"
-    
+
   competences:
     - techniques:
         - skill: "ExpressJS"
@@ -99,7 +99,7 @@ en:
         However, it should be noted that our application is not very visually appealing. Even though we used Bootstrap for design, it would be necessary to take time to improve the user interface. Additionally, it would be interesting to deploy this application to make it available to everyone.
 
         Find the project on GitHub (with more information in the wiki) :
-        <a class="textLink" href="https://github.com/Bigdil25007/Remindr">https://github.com/Bigdil25007/Remindr</a>
+        <a class="textLink" href="https://github.com/Bigdil25007/Remindr" target="_blank" rel="noopener noreferrer">https://github.com/Bigdil25007/Remindr</a>
 
       image: "/projets/remindr/create-rappel.png?url"
 
