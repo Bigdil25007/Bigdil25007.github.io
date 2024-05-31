@@ -6,10 +6,14 @@ fr:
     - name: "Projets"
       path: "/fr/projets"
       list:
-        - name: "API de gestion de défis d'éco-développement informatique"
-          path: "/fr/projets/api_defi"
         - name: "Remindr - Application web de rappels"
           path: "/fr/projets/remindr"
+        - name: "Encyclopédie Harry Potter"
+          path: "/fr/projets/encyclopedie_HP"
+        - name: "API de gestion de défis d'éco-développement informatique"
+          path: "/fr/projets/api_defi"
+        - name: "Mon portfolio"
+          path: "/fr/projets/portfolio"
 
     - name: "Mentions légales"
       path: "/fr/mentions-legales"
@@ -23,6 +27,16 @@ en:
       path: "/en"
     - name: "Projects"
       path: "/en/projets"
+      list:
+        - name: "Remindr - Task management web-application"
+          path: "/en/projets/remindr"
+        - name: "Harry Potter Encyclopedia"
+          path: "/en/projets/encyclopedie_HP"
+        - name: "API for managing eco-development challenges in computing"
+          path: "/en/projets/api_defi"
+        - name: "My portfolio"
+          path: "/en/projets/portfolio"
+
     - name: "Legal notices"
       path: "/en/mentions-legales"
     - name: "Site map"

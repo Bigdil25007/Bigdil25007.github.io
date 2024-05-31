@@ -13,7 +13,7 @@ fr:
         - type: "h1"
           content: "Fait intéressant :"
         - type: "p"
-          content: "Je suis un grand amateur de natation et de plongée sous-marine mais aussi de jazz dansant. Un de mes rêves : Écouter du Frank Sinatra à 30 mètres de profondeur !"
+          content: "Je suis un grand amateur de natation et de plongée sous-marine mais aussi de jazz dansant. Vous voulez savoir un de mes rêves ? Écouter du Frank Sinatra à 30 mètres de profondeur !"
 
 en:
   banners:
@@ -30,4 +30,4 @@ en:
         - type: "h1"
           content: "Interesting fact :"
         - type: "p"
-          content: "I am a big fan of swimming and scuba diving, as well as dancing to jazz. One of my dreams: Listening to Frank Sinatra at 30 meters underwater !"
+          content: "I am a big fan of swimming and scuba diving, as well as dancing to jazz. You want to know one of my dreams ? Listening to Frank Sinatra at 30 meters underwater !"
