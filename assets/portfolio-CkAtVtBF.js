@@ -53,7 +53,7 @@ The further down the list, the smaller and more reusable the components are by t
 Since my site has multiple pages and I wanted to optimize component loading, I used **vue-router** and its dynamic import feature. This allowed me to load only the necessary components for the current page.
 Additionally, with vue-router, I could define routes with dynamic parameters. For example, the "/projects" route can have an "id" parameter which allows either displaying a list of all projects (if id is empty) or displaying the details of a particular project.
 (Another example is present in the next section...)
-`,image:"/projets/portfolio/vue-router.png?url"},{subtitle:"Point technique : Gestion des langues",paragraph:`During development, an idea came to mind: to offer the site in both French and English ! 
+`,image:"/projets/portfolio/vue-router.png?url"},{subtitle:"Technical Point: Language management",paragraph:`During development, an idea came to mind: to offer the site in both French and English ! 
 I had to think about the best approach since I could either use extensions like vue-i18n or create my own translation files. 
 
 I ultimately preferred to create my own system because using vue-i18n isn't the simplest, and I already had in mind to separate the text content from the layout of the components. After some thought, I decided to use **YAML** files to store the text content in all available languages. I preferred this format over JSON because it is more readable and easier to write.
