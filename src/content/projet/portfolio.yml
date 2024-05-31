@@ -113,7 +113,7 @@ en:
 
       image: "/projets/portfolio/vue-router.png?url"
 
-    - subtitle: "Point technique : Gestion des langues"
+    - subtitle: "Technical Point: Language management"
       paragraph: |
         During development, an idea came to mind: to offer the site in both French and English ! 
         I had to think about the best approach since I could either use extensions like vue-i18n or create my own translation files. 
