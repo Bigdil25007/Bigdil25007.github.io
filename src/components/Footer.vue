@@ -34,7 +34,7 @@ const props = defineProps({
       <div class="barre" />
       <Contact :content="content.form" />
       <div class="contacts">
-        <a v-for="network in content.socialNetworks" :key="network.name" :href="network.url">
+        <a v-for="network in content.socialNetworks" :key="network.name" :href="network.url" target="_blank" rel="noopener noreferrer">
           <img :src="network.icon">
         </a>
       </div>
