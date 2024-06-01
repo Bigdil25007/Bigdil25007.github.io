@@ -68,7 +68,7 @@ li div {
   bottom: 0;
   width: 600px;
   padding: 15px;
-  background: #f45b69;
+  background: #8098AC;
 }
 
 li div::before {
@@ -86,7 +86,7 @@ li:nth-child(odd) div {
   &:before {
     left: -15px;
     border-width: 8px 16px 8px 0;
-    border-color: transparent #f45b69 transparent transparent;
+    border-color: transparent #8098AC transparent transparent;
   }
 }
 
@@ -96,7 +96,7 @@ li:nth-child(even) div {
   &:before {
       right: -15px;
       border-width: 8px 0 8px 16px;
-      border-color: transparent transparent transparent #f45b69;
+      border-color: transparent transparent transparent #6a7e8f;
   }
 }
 
@@ -127,7 +127,7 @@ li::after {
 }
 
 li.in-view::after {
-  background: #f45b69;
+  background: #51606c;
 }
 
 li div {
@@ -177,7 +177,7 @@ li.in-view div {
   li:nth-child(even) div::before {
     left: -15px;
     border-width: 8px 16px 8px 0;
-    border-color: transparent #f45b69 transparent transparent;
+    border-color: transparent #8098AC transparent transparent;
     rotate: 180deg;
   }
 }
