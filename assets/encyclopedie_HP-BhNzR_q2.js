@@ -55,7 +55,7 @@ So, we added 2 features:
 
 These two features were added thanks to the API options accessible through the URLs 
 --(example: https://api.potterdb.com/v1/potions?page[size]=5&page[number]=2 => retrieve 5 potions from page number 2).--
-`,image:"/projets/encyclopedie_HP/communicationAPI.png?url"},{subtitle:"Feedback and Areas for improvement",paragraph:`This project was overall a success. We created a complete website in 1 month and deepened our skills in VueJS and communication with APIs, all while using **Git** as a collaborative tool.
+`,image:"/projets/encyclopedie_HP/communicationAPI.png?url"},{subtitle:"Feedback and Improvement points",paragraph:`This project was overall a success. We created a complete website in 1 month and deepened our skills in VueJS and communication with APIs, all while using **Git** as a collaborative tool.
 In terms of code organization, we successfully utilized VueJS to separate the parts of the site in a coherent manner. Additionally, the separation between the design of the components, the data processing logic, and the communication with the API allows for a maintainable and scalable site.
 
 One area for improvement would be the design. Indeed, we used Bootstrap to save time, but as a result, the site is not very attractive.
