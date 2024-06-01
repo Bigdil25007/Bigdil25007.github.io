@@ -1,5 +1,5 @@
 <script setup>
-import { defineAsyncComponent } from "vue";
+import { defineAsyncComponent, watch } from "vue";
 import Header from "@component/Header.vue";
 import Footer from "@component/Footer.vue";
 
@@ -14,18 +14,31 @@ const props = defineProps({
 /* Importation dynamique */
 let ProjetDetail, ListProjet, Caroussel, Banner;
 
-if (props.id) {
-  ProjetDetail = defineAsyncComponent(() => import("@component/projet/ProjetDetail.vue"));
-  Banner = defineAsyncComponent(() => import("@component/utils/Banner.vue"));
-  Caroussel = defineAsyncComponent(() => import("@component/section/Caroussel.vue"));
-} else {
-  ListProjet = defineAsyncComponent(() => import("@component/projet/ListProjet.vue"));
-}
+const update = () => {
+    if (props.id) {
+        ProjetDetail = defineAsyncComponent(() => import("@component/projet/ProjetDetail.vue"));
+        Banner = defineAsyncComponent(() => import("@component/utils/Banner.vue"));
+        Caroussel = defineAsyncComponent(() => import("@component/section/Caroussel.vue"));
+        ListProjet = null;
+    } else {
+        ListProjet = defineAsyncComponent(() => import("@component/projet/ListProjet.vue"));
+        ProjetDetail = null;
+        Banner = null;
+        Caroussel = null;
+    }
+};
+
+// Initial render
+update();
+
+watch(() => props.id, () => {
+  update();
+});
 </script>
 
 <template>
     <Header noeffect/>
-    <ListProjet v-if="ListProjet"/>
+    <ListProjet v-if="ListProjet" :lang="props.lang"/>
     <ProjetDetail :id="props.id" :lang="props.lang" v-if="ProjetDetail"/>
     <Banner src="/background/computer.jpg?url" v-if="Banner"/>
     <Caroussel v-if="Caroussel"/>
