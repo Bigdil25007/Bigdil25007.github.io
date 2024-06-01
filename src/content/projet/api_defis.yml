@@ -8,7 +8,7 @@ fr:
         L'objectif était de nous familiariser avec les opérations CRUD de MongoDB (Create/Read/Update/Delete), tout en faisant travailler nos compétences en ExpressJS.
         Notre API devait donc permettre de créer des défis d'éco-conception informatique puis de les modifier, supprimer ou récupérer sous format JSON.
 
-      image: "/projets/api_mongoDB/mongodb.jpg?url"
+      image: "/projets/api_defis/mongodb.jpg?url"
 
     - subtitle: "Organisation du projet"
       paragraph: |
@@ -21,8 +21,9 @@ fr:
 
         Pour les autres opérations, la tâche a été plus complexe car nous devions implémenter un système d'authentifaction avec **JWT** (JSON Web Token) pour sécuriser les routes, puisque POST, PUT et DELETE implique des modifications. Nous avons donc dû apprendre à générer ces jetons, les envoyer et les vérifier **(à l'aide d'un middleware)** pour autoriser ou non l'accès à certaines opérations.
         Juste le fait de tester les jetons étaient compliqués car, au début, nous ne savions même pas comment les renseigner dans l'en-tête des requêtes HTTP.
+        Mais une fois compris, nous avons pu nous occuper des opérations. Malgré le fait que Create/Update/Delete étaient plus compliquées à mettre en place que l'opération Read, elles ne nous ont pas posé de problèmes particuliers grâce à Mongoose. 
 
-      image: "/projets/api_mongoDB/middleware.png?url"
+      image: "/projets/api_defis/middleware.png?url"
 
     - subtitle: "Point technique : Gestion d'erreur"
       paragraph: |
@@ -32,7 +33,7 @@ fr:
 
         Pour faire tous ces test, nous avons créé un script JS qui permet d'envoyer une requête HTTP personnalisable.
 
-      image: "/projets/api_mongoDB/testRequest.jpg?url"
+      image: "/projets/api_defis/testRequest.jpg?url"
 
     - subtitle: "Retour d'expérience et points d'amélioration"
       paragraph: |
@@ -74,51 +75,52 @@ fr:
     - "rgb(255, 193, 7)"
 
 en:
-  title: "API de gestion de défis d'éco-développement informatique"
-  description: "Création et gestion d'une base de données MongoDB à l'aide de requêtes HTTP"
+  title: "API for managing eco-development challenges in computing"
+  description: "Creation and management of a MongoDB database using HTTP requests"
   sections:
     - subtitle: "Context"
       paragraph: |
-        Dans le cadre de nos cours sur les bases de données NoSQL, nous avons eu un mois pour créer une API à 2 permettant de communiquer avec. 
-        L'objectif était de nous familiariser avec les opérations CRUD de MongoDB (Create/Read/Update/Delete), tout en faisant travailler nos compétences en ExpressJS.
-        Notre API devait donc permettre de créer des défis d'éco-conception informatique puis de les modifier, supprimer ou récupérer sous format JSON.
+        As part of our NoSQL database courses, we had a month to create a 2-person API to communicate with. 
+        The goal was to familiarize ourselves with the CRUD operations of MongoDB (Create/Read/Update/Delete), while working on our ExpressJS skills.
+        Our API should therefore allow us to create computer eco-design challenges and then modify, delete or retrieve them in JSON format.
 
-      image: "/projets/api_mongoDB/mongodb.jpg?url"
+      image: "/projets/api_defis/mongodb.jpg?url"
 
     - subtitle: "Project Organization"
       paragraph: |
-        Pour la partie base de données **(BdD)**, nous sommes passés par MongoDB Compass pour facilement ajouter des données et les visualiser pour vérifier leur intégrité tout du long du développement.
-        Une fois cette dernière exposée sur un serveur local, nous avons pu commencer à créer le serveur de l'API.
+        For the database **(DB)** part, we went through MongoDB Compass to easily add data and visualize it to check its integrity throughout the development.
+        Once it was exposed on a local server, we were able to start creating the API server.
 
-        Avant de même de créer les opérations et les routes, nous avons dû prendre beaucoup de temps pour comprendre comment se connecter et intéragir avec la BdD. Nous sommes parti sur **Mongoose** (bibliothèque NodeJS pour MongoDB) qui facilite les requêtes mais demande la définition de **schémas et modèles** pour interpréter les résultats des requêtes.
-        Nous avons donc mis du temps au départ, mais pour avoir au final un schéma clair et précis.
-        La requête GET a ainsi été rapide à mettre en place puisque l'objectif était simplement de récupérer X défis aléatoires.
+        Even before creating the operations and routes, we had to take a lot of time to understand how to connect and interact with the DB. We went with **Mongoose** (NodeJS library for MongoDB) which facilitates queries but requires the definition of **schemas and models** to interpret the results of the queries.
+        So we took time at the beginning, but to have a clear and precise schema in the end (which will be useful for the following features).
+        The GET request was thus quick to set up since the goal was simply to retrieve X random challenges.
 
-        Pour les autres opérations, la tâche a été plus complexe car nous devions implémenter un système d'authentifaction avec **JWT** (JSON Web Token) pour sécuriser les routes, puisque POST, PUT et DELETE implique des modifications. Nous avons donc dû apprendre à générer ces jetons, les envoyer et les vérifier **(à l'aide d'un middleware)** pour autoriser ou non l'accès à certaines opérations.
-        Juste le fait de tester les jetons étaient compliqués car, au début, nous ne savions même pas comment les renseigner dans l'en-tête des requêtes HTTP.
+        For the other operations, the task was more complex because we had to implement an authentication system with **JWT** (JSON Web Token) to secure the routes, since POST, PUT and DELETE involve modifications. We had to learn how to generate these tokens, send them and verify them **(with a middleware)** to allow or deny access to these operations.
+        Just testing the tokens was complicated because, at the beginning, we didn't even know how to fill them in the HTTP request headers.
+        But once understood, we were able to take care of the operations. Despite the fact that Create/Update/Delete were more complicated to set up than the Read operation, they did not pose any particular problems thanks to Mongoose.
 
-      image: "/projets/api_mongoDB/middleware.png?url"
+      image: "/projets/api_defis/middleware.png?url"
 
     - subtitle: "Technical Point : Error management"
       paragraph: |
-        Pour essayer d'avoir une API la plus proche de la réalité, nous avons pris le temps de gérer les erreurs en renseignant les bons codes en fonction de la situation. 
-        Par exemple, si un utilisateur tente de créer un défi sans être connecté, cela singifie qu'il tente d'accèder à une route non autorisé. On renvoie donc un message d'erreur ayant le statut 403 (Forbidden). De la même manière si du côté de serveur, une erreur se produit en faisant une opération, nous renverrons un code d'erreur 500 pour signfie que le problème vient du côté serveur.
-        Pour faire ça proprement dans le code, nous avons séparé en fichier les fonctions d'interactions avec la BdD et les gestions de routes. Si une erreur se produit dans la première fonction, on "throw" une erreur qui sera récupéré dans la route pour renvoyer le bon code d'erreur.
+        To try to have an API as close to reality as possible, we took the time to manage errors by providing the right codes depending on the situation.
+        For example, if a user tries to create a challenge without being connected, this means that he is trying to access an unauthorized route. We therefore return an error message with the status 403 (Forbidden). Similarly, if a server-side error occurs while performing an operation, we will return an error code 500 to indicate that the problem comes from the server side.
+        To do this cleanly in the code, we separated the functions for interacting with the DB and the route management. If an error occurs in the first function, we "throw" an error that will be caught in the route to return the correct error code.
 
-        Pour faire tous ces test, nous avons créé un script JS qui permet d'envoyer une requête HTTP personnalisable.
+        To do all these tests, we created a JS script that allows you to send a customizable HTTP request.
 
-      image: "/projets/api_mongoDB/testRequest.jpg?url"
+      image: "/projets/api_defis/testRequest.jpg?url"
 
-    - subtitle: "Feedback and Areas for improvement"
+    - subtitle: "Feedback and Improvement points"
       paragraph: |
-        J'ai bien aimé faire ce projet puisque c'était la première fois que je créais une API. J'ai ainsi découvert MongoDB et ses avantages comme l'accès plus facile aux données pour des requêtes simples (comparé aux requêtes SQL).  
+        I really enjoyed doing this project since it was the first time I created an API. I thus discovered MongoDB and its advantages such as easier access to data for simple queries (compared to SQL queries).  
 
-        Comparé à d'autres projets web, celui-ci demandait plus de compréhension sur les requêtes HTTP (en-têtes, corps, méthodes, etc.) et la sécurité au niveau d'une API avec les jetons d'authentification. J'ai donc appris beaucoup de choses malgré le fait que ce projet était parmi les plus court que j'ai fait.
-        Et justement, puisque ce projet était assez réduit en terme de fonctionalités, il y a beaucoup de choses que j'aurais aimé ajouter comme :
-         - Un système de recherche pour trouver des défis en fonction de leur nom voir même d'autres critères
-         - Créer un site web de documentation pour lister les routes disponibles voir même permettre au site d'intéragir avec l'API pour avoir une interface graphique plutôt que de communiquer avec la commande "curl" ou bien un script JS.
+        Compared to other web projects, this one required more understanding of HTTP requests (headers, body, methods, etc.) and security at the API level with authentication tokens. So I learned a lot of things even though this project was among the shortest I have done.
+        And precisely, since this project was quite limited in terms of features, there are many things I would have liked to add such as:
+         - A search system to find challenges based on their name or even other criteria
+         - Create a documentation website to list the available routes or even allow the site to interact with the API to have a graphical interface rather than communicating with the "curl" command or a JS script.
 
-        Ce sont des idées qui pourraient être longues à rajouter mais permettrait de faire de cette API, un vrai projet d'envergure. 
+        These are ideas that could take a long time to add but would make this API a real large-scale project.
 
         Find the project on Github :
         <a class="textLink" href="https://github.com/Bigdil25007/API_MongoDB" target="_blank" rel="noopener noreferrer">https://github.com/Bigdil25007/API_MongoDB</a>

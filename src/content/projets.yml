@@ -11,8 +11,8 @@ fr:
 
   - title: API de gestion de défis d'éco-développement informatique
     description: Création et gestion d'une base de données MongoDB à l'aide de requêtes HTTP
-    img: "/projets/api_mongoDB/mongodb.jpg?url"
-    link: "/fr/projets/api_mongoDB"
+    img: "/projets/api_defis/mongodb.jpg?url"
+    link: "/fr/projets/api_defis"
 
   - title: Portfolio
     description: Site web personnel fait en VueJS
@@ -32,8 +32,8 @@ en:
 
   - title: API for managing eco-development challenges in computing
     description: Creation and management of a MongoDB database using HTTP requests
-    img: "/projets/api_mongoDB/mongodb.jpg?url"
-    link: "/en/projets/api_mongoDB"
+    img: "/projets/api_defis/mongodb.jpg?url"
+    link: "/en/projets/api_defis"
 
   - title: Portfolio
     description: Personal website made with VueJS

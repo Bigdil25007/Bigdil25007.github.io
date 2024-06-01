@@ -118,7 +118,7 @@ en:
 
       image: "/projets/encyclopedie_HP/communicationAPI.png?url"
 
-    - subtitle: "Feedback and Areas for improvement"
+    - subtitle: "Feedback and Improvement points"
       paragraph: |
         This project was overall a success. We created a complete website in 1 month and deepened our skills in VueJS and communication with APIs, all while using **Git** as a collaborative tool.
         In terms of code organization, we successfully utilized VueJS to separate the parts of the site in a coherent manner. Additionally, the separation between the design of the components, the data processing logic, and the communication with the API allows for a maintainable and scalable site.

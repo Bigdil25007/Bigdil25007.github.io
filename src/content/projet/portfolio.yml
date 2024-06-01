@@ -125,7 +125,7 @@ en:
 
       image: "/projets/portfolio/diagrammeEN.png?url"
 
-    - subtitle: "Feedback and Areas for improvement"
+    - subtitle: "Feedback and Improvement points"
       paragraph: |
         In many ways, this project was a real pleasure to work on. I was able to improve my skills in VueJS and discover new things like YAML files. I am also happy to have been able to implement logic in the site, not just front-end development. 
         Speaking of the front-end, that will be the only negative point of this project. Whether it's my experience during development or the actual result, it has been my pet peeve. I tried to help myself by basing my work on other portfolios and templates found on the web, but my front-end skills are quite limited, which means my site isn't up to my expectations. 

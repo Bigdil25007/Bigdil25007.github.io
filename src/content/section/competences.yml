@@ -24,6 +24,23 @@ fr:
         - skill: "Git"
           value: 85
 
+  ecologie:
+    title: Numérique responsable, éco-conception et Green IT
+    paragraph: |
+      Dans le cadre de ma formation pour mon BUT Informatique, j'ai pu avoir une **sensibilisation au numérique responsable**. Ce point est important à aborder puisqu'aujourd'hui, le numérique est présent partout et a un impact majeur sur l'environnement.
+      Il est donc tout aussi important d'apprendre à concevoir des applications et des sites web de manière éco-responsable.
+
+      Pour ma sensibilisation, j'ai d'abord découvert le **cycle de vie d'un produit numérique** pour comprendre les différentes étapes et leur impact sur l'environnement. 
+      Savoir à quel point créer un produit numérique est polluant est selon moi une information nécessaire. Ça nous permet de réaliser que limiter **l'obsolence logicielle et matérielle** doit être un objectif majeur dans le domaine de l'**IT**, en créant des **produits plus durables**.
+
+      Un autre atelier que j'ai pu faire pour sensibiliser à l'éco-conception a été de mesurer l'empreinte carbone de sites web. J'ai choisi celui d'une marque de montre de luxe et j'ai analysé son score d'éco-conception à l'aide d'outils comme **EcoIndex** et **Lighthouse**.
+      J'ai pu constater de mauvais scores souvent dû à des ressources images et vidéos trop lourdes, des scripts trop gourmands ou bien une navigation trop complexe pour l'utilisateur ce qu'il le fait rester plus longtemps sur le site. 
+      Pour ne pas seulement faire de l'analyse, j'ai aussi imaginé des solutions en m'aidant de ce site listant des bonnes pratiques pour l'éco-conception : <a class="textLink" href="https://collectif.greenit.fr/ecoconception-web/115-bonnes-pratiques-eco-conception_web.html" target="_blank" rel="noopener noreferrer">Collectif GreenIT - 115 bonnes pratiques</a>. 
+      J'ai par exemple découvert que compresser les images, réduire le nombre de requêtes HTTP ou encore utiliser des polices de caractères plus légères pouvait améliorer grandement le score d'éco-conception. il est aussi expliqué qu'il vaut mieux éviter les carrousels et autres éléments en autoplay (mon portfolio a un carrousel mais il ne se lance pas automatiquement ^^).
+      Cette atelier était plus intéressant que le premier car nous avons pu voir des exemples et solutions concrètes pour alléger les sites web. J'ai ainsi pu profiter de ces connaissances lors de mes projets de web suivants.
+
+      Vous l'aurez donc vu, ma formation m'a permis de me sensibiliser numérique responsable tout en m'apprenant à éco-concevoir. Ces compétences me sont déjà utiles aujourd'hui et le seront encore plus dans le futur.
+
   colors:
     - "rgb(25, 135, 84)"
     - "rgb(13, 202, 240)"
@@ -58,6 +75,24 @@ en:
     - tools:
         - skill: "Git"
           value: 85
+
+  ecologie:
+    title: Digital responsibility, eco-design and Green IT
+    paragraph: |
+      As part of my training for my BUT in Computer Science, I was able to have a **sensitization to digital responsibility**. This point is important to address because today, digital technology is present everywhere and has a major impact on the environment.
+      It is therefore just as important to learn how to design applications and websites in an eco-responsible manner.
+
+      For my awareness, I first discovered the **life cycle of a digital product** to understand the different stages and their impact on the environment.
+      Knowing how polluting creating a digital product is is, in my opinion, necessary information. It allows us to realize that limiting **software and hardware obsolescence** must be a major objective in the field of **IT**, by creating **more sustainable products**.
+
+      Another workshop I was able to do to raise awareness of eco-design was to measure the carbon footprint of websites. I chose that of a luxury watch brand and analyzed its eco-design score using tools such as **EcoIndex** and **Lighthouse**.
+      I was able to see poor scores often due to too heavy image and video resources, too greedy scripts or a navigation too complex for the user which makes him stay longer on the site.
+      To not only do analysis, I also imagined solutions by using this site listing good practices for eco-design: <a class="textLink" href="https://collectif.greenit.fr/ecoconception-web/115-bonnes-pratiques-eco-conception_web.html" target="_blank" rel="noopener noreferrer">Collectif GreenIT - 115 good practices</a>.
+      I discovered, for example, that compressing images, reducing the number of HTTP requests or using lighter fonts could greatly improve the eco-design score. it is also explained that it is better to avoid carousels and other autoplay elements (my portfolio has a carousel but it does not start automatically ^^).
+      This workshop was more interesting than the first because we were able to see concrete examples and solutions to lighten websites. I was thus able to benefit from this knowledge during my following web projects.
+
+      You will have seen that my training has allowed me to raise awareness of digital responsibility while teaching me to eco-design. These skills are already useful today for my projects and will be even more so in the future.      
+
   colors:
     - "rgb(25, 135, 84)"
     - "rgb(13, 202, 240)"

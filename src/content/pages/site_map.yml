@@ -11,7 +11,7 @@ fr:
         - name: "Encyclopédie Harry Potter"
           path: "/fr/projets/encyclopedie_HP"
         - name: "API de gestion de défis d'éco-développement informatique"
-          path: "/fr/projets/api_defi"
+          path: "/fr/projets/api_defis"
         - name: "Mon portfolio"
           path: "/fr/projets/portfolio"
 
@@ -33,7 +33,7 @@ en:
         - name: "Harry Potter Encyclopedia"
           path: "/en/projets/encyclopedie_HP"
         - name: "API for managing eco-development challenges in computing"
-          path: "/en/projets/api_defi"
+          path: "/en/projets/api_defis"
         - name: "My portfolio"
           path: "/en/projets/portfolio"
 

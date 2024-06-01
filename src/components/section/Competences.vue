@@ -3,15 +3,19 @@ import Anchor from '@component/utils/Anchor.vue';
 import CV from "@component/CV.vue";
 import ProgressBar from "@component/utils/ProgressBar.vue";
 
+import { formatHTML } from '/src/utils.js';
+
 import yml from '@content/section/competences.yml';
 import { useRoute } from 'vue-router';
 import { ref, watch } from 'vue';
 
 const router = useRoute();
 const content = ref(yml[router.params.lang]);
+const ecologie = ref(content.value.ecologie);
 
 watch(() => router.params.lang, (newLang) => {
   content.value = yml[newLang];
+  ecologie.value = content.value.ecologie;
 });
 </script>
 
@@ -38,6 +42,11 @@ watch(() => router.params.lang, (newLang) => {
       <!-- CV -->
       <CV :content="content.cv"/>
     </div>
+
+    <div class="ecologieWrapper">
+      <h3>{{ ecologie.title }}</h3>
+      <p v-html="formatHTML(ecologie.paragraph)"></p>
+    </div>
   </section>
 </template>
 
@@ -49,29 +58,44 @@ watch(() => router.params.lang, (newLang) => {
 }
 
 section {
-    width: 75%;
-    margin: 2% auto;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+  width: 75%;
+  margin: 2% auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .content {
-    margin-top: 5%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .list {
-    display: flex;
-    flex-direction: column;
-    width: 40%;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
 }
 
 .category {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.ecologieWrapper {
+  margin: 5% 0;
+  
+  h3 {
+    width: fit-content;
+    padding-bottom: 0.5rem;
+    border-bottom: #b31616 3px solid;
+  }
+
+  p {
+    padding-top: 2%;
+    text-align: justify;
+  }
 }
 
 @media (max-width: 1150px) {

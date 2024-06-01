@@ -12,7 +12,6 @@ const path = ref(router.path);
 
 watch(() => router.params.lang, (newLang) => {
   content.value = yml[newLang];
-  console.log(content.value.form);
 });
 
 watch(() => router.path, (newPath) => {

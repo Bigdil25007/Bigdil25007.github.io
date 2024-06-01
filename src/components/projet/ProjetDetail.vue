@@ -23,6 +23,7 @@ const props = defineProps({
 const loadProject = async () => {
   try {
     const project = await import(`../../content/projet/${props.id}.yml`);
+    console.log('Project loaded:', project.default[props.lang])
     return project.default[props.lang];
   } catch (error) {
     console.error('Error loading project:', error);
@@ -35,9 +36,9 @@ const activateViewer = (imageSrc) => {
   showOverlay.value = true;
 };
 
-watch(() => props.id, async () => {
+watch(() => props, async () => {
   content.value = await loadProject();
-});
+}, { deep: true });
 
 onMounted(async () => {
   content.value = await loadProject();
