@@ -33,7 +33,7 @@ Cependant, au niveau des fonctionnalités et de l'organisation du code, je suis 
  - Gérer le formulaire de contact pour la version du site déployé
 
 Retrouvez le projet sur GitHub :
-<a class="textLink" href="https://github.com/Bigdil25007/Bigdil25007.github.io" target="_blank" rel="noopener noreferrer">https://github.com/Bigdil25007/Bigdil25007.github.io</a>
+<a class="textLink" href="https://github.com/Bigdil25007/portfolio" target="_blank" rel="noopener noreferrer">https://github.com/Bigdil25007/portfolio</a>
 `,image:""}],competences:[{techniques:[{skill:"VueJS",value:90},{skill:"YAML",value:70},{skill:"Vite",value:80}]},{concepts:[{skill:"Modèle MVC",value:90},{skill:"Importation dynamique de composants",value:85},{skill:"Optimisation du SEO",value:80}]}],colors:["rgb(25, 135, 84)","rgb(13, 202, 240)","rgb(255, 193, 7)"]},en:{title:"Portfolio",description:"Personal website made with VueJS",sections:[{subtitle:"Context",paragraph:`Since I wanted to highlight myself on the web, I decided to create my own website to showcase my projects and profile.
 
 Initially, I created a first version using PHP, but when I started separating the HTML content into different files, I realized it was very complicated to manage (especially since it meant at least one CSS and JS file per HTML file). I then set this project aside until I discovered VueJS. 
@@ -69,5 +69,5 @@ However, in terms of functionality and code organization, I am satisfied with wh
  - Manage the contact form for the deployed version of the site
 
 Find the project on Github :
-<a class="textLink" href="https://github.com/Bigdil25007/Bigdil25007.github.io" target="_blank" rel="noopener noreferrer">https://github.com/Bigdil25007/Bigdil25007.github.io</a>
+<a class="textLink" href="https://github.com/Bigdil25007/portfolio" target="_blank" rel="noopener noreferrer">https://github.com/Bigdil25007/portfolio</a>
 `,image:""}],competences:[{technicals:[{skill:"VueJS",value:90},{skill:"YAML",value:70},{skill:"Vite",value:80}]},{concepts:[{skill:"MVC Template",value:90},{skill:"Dynamic Component Import",value:85},{skill:"SEO Optimization",value:80}]}],colors:["rgb(25, 135, 84)","rgb(13, 202, 240)","rgb(255, 193, 7)"]}};export{e as default};
