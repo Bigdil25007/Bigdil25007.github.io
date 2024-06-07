@@ -182,14 +182,22 @@ h1 {
     flex-direction: column !important;
   }
 
-  .competences {
-    width: 90%;
-  }
 
   img {
     width: 60%;
     max-height: none;
     max-width: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .competences {
+    flex-direction: column;
+    gap: 2rem;
+
+    & > div {
+      width: 100%;
+    }
   }
 }
 </style>
