@@ -12,7 +12,7 @@ C'est pourquoi j'ai décidé dès le début de séparer mes composants en 3 cat�
  - page
  - section 
  - utilitaire
-Plus on descends dans la liste, plus les composants sont réduits et réutilisables par ceux venant d'une catégorie supérieure. Gardé cette hiérarchie en tête m'a permis de mieux visualiser les dépendances entre mes composants et de mieux les organiser. 
+Plus on descends dans la liste, plus les composants sont réduits et réutilisables par ceux venant d'une catégorie supérieure. Garder cette hiérarchie en tête m'a permis de mieux visualiser les dépendances entre mes composants et de mieux les organiser. 
 
 Puisque mon site a plusieurs pages et que je souhaitais optimiser l'importation des composants, j'ai utilisé **vue-router** et sa fonctionnalité d'importation dynamique. Ça m'a permis de charger uniquement les composants nécessaires pour la page actuelle.
 De plus avec vue-router, j'ai pu définir des routes ayant des paramètres dynamiques. Par exemple la route "/projets" peut avoir un paramètre "id" qui permet de soit afficher une liste de tous les projets (si id est vide) soit d'afficher les détails d'un projet particulier. 
@@ -23,7 +23,7 @@ J'ai donc dû réfléchir à la meilleure approche car je pouvais soit utiliser 
 J'ai finalement préféré créer mon propre système car l'utilisation du vue-i18n n'est pas le plus simple et que j'avais déjà en tête de séparer le contenu texte et la mise en page des composants. Après réfléxion, je suis partie sur des fichiers **YAML** pour stocker le contenu texte dans toutes les langues disponibles. J'ai préféré ce format au JSON car il est plus lisible et facile à écrire.
 Une fois les fichiers créés, j'ai dû ajouter un système aux composants majeurs (page et section) pour qu'ils puissent avoir conscience de la route sur laquelle ils se trouvent, grâce à **vue-router**, et donc du contenu à aller chercher dans les fichiers YAML. 
 
-Enfin, j'ai ajouté un bouton permettant de changer de langue. Puisque elle est "stockée" dans la route, il suffisait de récupérer le chemin actuel et de changer (FR -> EN ou EN -> FR) dans la première partie de la route.
+Enfin, j'ai ajouté un bouton permettant de changer de langue. Puisqu'elle est "stockée" dans la route, il suffisait de récupérer le chemin actuel et de changer (FR -> EN ou EN -> FR) dans la première partie de la route.
 `,image:"/projets/portfolio/diagrammeFR.png?url"},{subtitle:"Retour d'expérience et points d'amélioration",paragraph:`Sur certains points, ce projet aura été un réel plaisir à faire. J'ai pu améliorer mes compétences en VueJS et découvrir de nouvelles choses comme les fichier YAML. Je suis aussi content d'avoir pu implémenter de la logique dans le site et ne donc pas faire que du front-end. 
 Et justement, au sujet du front-end, ce sera le seul point négatif de ce projet. Que ce soit sur mon ressenti du développement ou bien sur le résultat concret, ça aura été ma bête noire. J'ai essayé de m'aider en me basant sur d'autres portfolios et templates trouvés sur le web mais mes compétences en front-end sont assez limités ce qui fait que mon site n'est pas à la hauteur de mes atteintes. 
 
