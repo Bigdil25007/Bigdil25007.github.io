@@ -3,6 +3,14 @@ fr:
   title: "Mon parcours"
   description: "Découvrez ci-dessous mon parcours professionnel dans le domaine du développement web"
   items:
+    - date: "2024 - 2025"
+      title: "Développeur web chez Advercity (alternance)"
+      imageUrl: "/parcours/advercity.webp?url"
+      paragraph: |
+        - Développement de sites et applications web (frontend et backend)
+        - Utilisation de technologies comme **Symfony, Angular et AWS**
+        - Dockerisation de projets pour faciliter le déploiement et la gestion des environnements de développement
+
     - date: "2024"
       title: "Développeur logiciel chez OVHcloud (stage de 3 mois)"
       imageUrl: "/parcours/ovh.webp?url"
@@ -46,6 +54,14 @@ en:
   title: "My career"
   description: "Discover my professional journey in the field of web development below"
   items:
+    - date: "2024 - 2025"
+      title: "Web Developer at Advercity (cooperative training course)"
+      imageUrl: "/parcours/advercity.webp?url"
+      paragraph: |
+        - Development of websites and web applications (frontend and backend)
+        - Use of technologies like **Symfony, Angular and AWS**
+        - Dockerization of projects to facilitate deployment and management of development environments
+
     - date: "2024"
       title: "Software Developer at OVHcloud (3-month internship)"
       imageUrl: "/parcours/ovh.webp?url"

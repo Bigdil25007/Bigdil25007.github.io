@@ -33,7 +33,7 @@ watch(() => router.params.lang, (newLang) => {
   <Accueil />
   <Profil />
   <Banner :src="banner0.src" :height="banner0.height">
-    <component v-for="(item, index) in banner0.html" :is="item.type" :key="index">
+    <component v-for="(item, index) in banner0.html" :is="item.type" :key="index" :class="item.class">
       {{ item.content }}
     </component>
   </Banner>
@@ -41,7 +41,7 @@ watch(() => router.params.lang, (newLang) => {
   <Banner :src="banner1.src" :height="banner1.height"/>
   <Competences />
   <Banner :src="banner2.src" :height="banner2.height">
-    <component v-for="(item, index) in banner2.html" :is="item.type" :key="index">
+    <component v-for="(item, index) in banner2.html" :is="item.type" :key="index" :class="item.class">
       {{ item.content }}
     </component>
   </Banner>

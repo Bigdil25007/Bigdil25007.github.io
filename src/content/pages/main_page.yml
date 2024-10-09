@@ -1,33 +1,41 @@
 fr:
   banners:
-    - src: "/background/servor.jpg?url"
-      html:
-        - type: "h1"
-          content: "Actuellement :"
-        - type: "h2"
-          content: "À la recherche d'une entreprise pour une alternance"
     - src: "/background/computer.jpg?url"
-      html: ""
-    - src: "/background/servor.jpg?url"
       html:
         - type: "h1"
+          class: "title"
+          content: "Actuellement :"
+        - type: "p"
+          class: "content"
+          content: "En contrat d'alternance jusqu'à 2025"
+    - src: "/background/servor.jpg?url"
+      html: ""
+    - src: "/background/computer.jpg?url"
+      html:
+        - type: "h1"
+          class: "title"
           content: "Fait intéressant :"
         - type: "p"
-          content: "Je suis un grand amateur de natation et de plongée sous-marine mais aussi de jazz dansant. Vous voulez savoir un de mes rêves ? Écouter du Frank Sinatra à 30 mètres de profondeur !"
+          class: "content"
+          content: "Le développement web, c’est comme la natation : tu plonges dans le code, tu trouves ton rythme... et puis un bug arrive et tu bois la tasse !"
 
 en:
   banners:
-    - src: "/background/servor.jpg?url"
+    - src: "/background/computer.jpg?url"
       html:
         - type: "h1"
+          class: "title"
           content: "Currently:"
         - type: "p"
-          content: "Looking for a work-study position"
-    - src: "/background/computer.jpg?url"
-      html: ""
+          class: "content"
+          content: "In a cooperative training course contract until 2025"
     - src: "/background/servor.jpg?url"
+      html: ""
+    - src: "/background/computer.jpg?url"
       html:
         - type: "h1"
+          class: "title"
           content: "Interesting fact :"
         - type: "p"
-          content: "I am a big fan of swimming and scuba diving, as well as dancing to jazz. You want to know one of my dreams ? Listening to Frank Sinatra at 30 meters underwater !"
+          class: "content"
+          content: "Web development is like swimming: you dive into the code, you find your pace... and then a bug pops up and you end up swallowing water!"

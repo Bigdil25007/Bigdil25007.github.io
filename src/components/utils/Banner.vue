@@ -63,18 +63,18 @@ const props = defineProps({
   transform: translate(-50%, -50%);
   color: white;
   
-  & * {
+  * {
     text-transform: inherit;
     padding: 2%;
   }
 }
 
-p {
-  font-size: 1rem;
+::v-deep .title {
+  padding-bottom: 0.3rem;
 }
 
-h1, h2 {
-  font-size: 1.5rem;
+::v-deep .content {
+  font-size: large;
+  padding-top: 1.3rem;
 }
-
 </style>
